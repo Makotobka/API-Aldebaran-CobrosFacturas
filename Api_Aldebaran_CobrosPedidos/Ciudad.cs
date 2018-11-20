@@ -19,7 +19,6 @@ namespace Api_Aldebaran_CobrosPedidos
         {
             this.Cliente = new HashSet<Cliente>();
             this.Empresa = new HashSet<Empresa>();
-            this.Institucion = new HashSet<Institucion>();
             this.Sector = new HashSet<Sector>();
             this.Sucursal = new HashSet<Sucursal>();
         }
@@ -35,8 +34,6 @@ namespace Api_Aldebaran_CobrosPedidos
         public virtual ICollection<Cliente> Cliente { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Empresa> Empresa { get; set; }
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<Institucion> Institucion { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Sector> Sector { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]

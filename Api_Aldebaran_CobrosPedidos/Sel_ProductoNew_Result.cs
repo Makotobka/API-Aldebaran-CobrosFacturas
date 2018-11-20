@@ -34,12 +34,11 @@ namespace Api_Aldebaran_CobrosPedidos
         public decimal PCP { get; set; }
         public decimal PVP { get; set; }
         public decimal PVM { get; set; }
-        public Nullable<int> Tipo { get; set; }
+        public string Tipo { get; set; }
         public bool IVA { get; set; }
         public Nullable<bool> IRBP { get; set; }
         public Nullable<bool> ICE { get; set; }
         public Nullable<bool> Serie { get; set; }
-        public Nullable<int> Clasificacion { get; set; }
         public Nullable<bool> Combo { get; set; }
         public Nullable<decimal> Minimo { get; set; }
         public Nullable<decimal> Maximo { get; set; }

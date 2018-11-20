@@ -14,11 +14,9 @@ namespace Api_Aldebaran_CobrosPedidos
     
     public partial class FVDetalle
     {
-        public int IDDFV { get; set; }
         public int IDFV { get; set; }
         public int IDPD { get; set; }
         public bool AplicaIVA { get; set; }
-        public Nullable<int> IDIVA { get; set; }
         public decimal PorcentajeIVA { get; set; }
         public string Codigo { get; set; }
         public string Descripcion { get; set; }
@@ -31,7 +29,6 @@ namespace Api_Aldebaran_CobrosPedidos
         public decimal PCP { get; set; }
         public Nullable<decimal> Descuento { get; set; }
         public string Tipo { get; set; }
-        public Nullable<int> IDClasificacion { get; set; }
     
         public virtual FactVenta FactVenta { get; set; }
         public virtual Producto Producto { get; set; }

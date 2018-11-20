@@ -15,7 +15,6 @@ namespace Api_Aldebaran_CobrosPedidos
     public partial class DVDetalle
     {
         public int IDDV { get; set; }
-        public int IDDFV { get; set; }
         public int IDPD { get; set; }
         public bool AplicaIVA { get; set; }
         public decimal PorcentajeIVA { get; set; }

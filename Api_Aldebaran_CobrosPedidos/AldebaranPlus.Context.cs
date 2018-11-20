@@ -36,8 +36,6 @@ namespace Api_Aldebaran_CobrosPedidos
         public virtual DbSet<CategoriaProveedor> CategoriaProveedor { get; set; }
         public virtual DbSet<Ciudad> Ciudad { get; set; }
         public virtual DbSet<Cliente> Cliente { get; set; }
-        public virtual DbSet<ClienteCta> ClienteCta { get; set; }
-        public virtual DbSet<ClienteCtaDetalle> ClienteCtaDetalle { get; set; }
         public virtual DbSet<ClienteEmail> ClienteEmail { get; set; }
         public virtual DbSet<ClienteInfoAdicional> ClienteInfoAdicional { get; set; }
         public virtual DbSet<Continente> Continente { get; set; }
@@ -46,7 +44,6 @@ namespace Api_Aldebaran_CobrosPedidos
         public virtual DbSet<Denominacion> Denominacion { get; set; }
         public virtual DbSet<DesgloceRubro> DesgloceRubro { get; set; }
         public virtual DbSet<DevCompra> DevCompra { get; set; }
-        public virtual DbSet<DevTHabiente> DevTHabiente { get; set; }
         public virtual DbSet<DevVenta> DevVenta { get; set; }
         public virtual DbSet<Documento> Documento { get; set; }
         public virtual DbSet<Empleado> Empleado { get; set; }
@@ -58,7 +55,6 @@ namespace Api_Aldebaran_CobrosPedidos
         public virtual DbSet<FactVenta> FactVenta { get; set; }
         public virtual DbSet<FlujoDinero> FlujoDinero { get; set; }
         public virtual DbSet<FormaPago> FormaPago { get; set; }
-        public virtual DbSet<FVDetalle> FVDetalle { get; set; }
         public virtual DbSet<Grupo> Grupo { get; set; }
         public virtual DbSet<Impuesto> Impuesto { get; set; }
         public virtual DbSet<ImpuestoRetencion> ImpuestoRetencion { get; set; }
@@ -69,8 +65,6 @@ namespace Api_Aldebaran_CobrosPedidos
         public virtual DbSet<Modulo> Modulo { get; set; }
         public virtual DbSet<MotivoMovInv> MotivoMovInv { get; set; }
         public virtual DbSet<MovInvCab> MovInvCab { get; set; }
-        public virtual DbSet<MSpeer_conflictdetectionconfigrequest> MSpeer_conflictdetectionconfigrequest { get; set; }
-        public virtual DbSet<MSpeer_lsns> MSpeer_lsns { get; set; }
         public virtual DbSet<Objetos> Objetos { get; set; }
         public virtual DbSet<Pais> Pais { get; set; }
         public virtual DbSet<Parametros> Parametros { get; set; }
@@ -87,8 +81,6 @@ namespace Api_Aldebaran_CobrosPedidos
         public virtual DbSet<ProveedorInfoAdicional> ProveedorInfoAdicional { get; set; }
         public virtual DbSet<PuntoVenta> PuntoVenta { get; set; }
         public virtual DbSet<RegionMundo> RegionMundo { get; set; }
-        public virtual DbSet<RetencionC> RetencionC { get; set; }
-        public virtual DbSet<RetencionV> RetencionV { get; set; }
         public virtual DbSet<Rubro> Rubro { get; set; }
         public virtual DbSet<RubroCaja> RubroCaja { get; set; }
         public virtual DbSet<Sector> Sector { get; set; }
@@ -96,143 +88,140 @@ namespace Api_Aldebaran_CobrosPedidos
         public virtual DbSet<SubModulo> SubModulo { get; set; }
         public virtual DbSet<Sucursal> Sucursal { get; set; }
         public virtual DbSet<sysdiagrams> sysdiagrams { get; set; }
-        public virtual DbSet<sysreplservers> sysreplservers { get; set; }
         public virtual DbSet<Tarjeta> Tarjeta { get; set; }
-        public virtual DbSet<TarjetaHabiente> TarjetaHabiente { get; set; }
-        public virtual DbSet<THDetalle> THDetalle { get; set; }
         public virtual DbSet<TipoDeducible> TipoDeducible { get; set; }
         public virtual DbSet<TipoIdentificacion> TipoIdentificacion { get; set; }
         public virtual DbSet<Unidad> Unidad { get; set; }
         public virtual DbSet<Usuario> Usuario { get; set; }
-        public virtual DbSet<UsuarioSucursal> UsuarioSucursal { get; set; }
-        public virtual DbSet<CBODetalle> CBODetalle { get; set; }
-        public virtual DbSet<Combo> Combo { get; set; }
-        public virtual DbSet<ComboImagen> ComboImagen { get; set; }
-        public virtual DbSet<Costo> Costo { get; set; }
-        public virtual DbSet<CostoPlatillo> CostoPlatillo { get; set; }
-        public virtual DbSet<Credito> Credito { get; set; }
-        public virtual DbSet<CreditoDetalle> CreditoDetalle { get; set; }
-        public virtual DbSet<Guarnicion> Guarnicion { get; set; }
-        public virtual DbSet<Ingredientes> Ingredientes { get; set; }
-        public virtual DbSet<Institucion> Institucion { get; set; }
-        public virtual DbSet<InstitucionBono> InstitucionBono { get; set; }
-        public virtual DbSet<Mesa> Mesa { get; set; }
-        public virtual DbSet<OrdenPDetalle> OrdenPDetalle { get; set; }
-        public virtual DbSet<OrdenPreparacion> OrdenPreparacion { get; set; }
-        public virtual DbSet<Parametros1> Parametros1 { get; set; }
-        public virtual DbSet<Pedido> Pedido { get; set; }
-        public virtual DbSet<PedidoDetalle> PedidoDetalle { get; set; }
-        public virtual DbSet<Platillo> Platillo { get; set; }
-        public virtual DbSet<Sociedad> Sociedad { get; set; }
-        public virtual DbSet<Clase> Clase { get; set; }
-        public virtual DbSet<ClienteFlota> ClienteFlota { get; set; }
-        public virtual DbSet<Color> Color { get; set; }
-        public virtual DbSet<DetalleApertura> DetalleApertura { get; set; }
-        public virtual DbSet<DetDispensadorIslero> DetDispensadorIslero { get; set; }
-        public virtual DbSet<Dispensador> Dispensador { get; set; }
-        public virtual DbSet<Islero> Islero { get; set; }
-        public virtual DbSet<Marca1> Marca1 { get; set; }
-        public virtual DbSet<Modelo> Modelo { get; set; }
-        public virtual DbSet<Vehiculo> Vehiculo { get; set; }
-        public virtual DbSet<LogBD> LogBD { get; set; }
-        public virtual DbSet<MensajeApp> MensajeApp { get; set; }
         public virtual DbSet<AperturaCajaDet> AperturaCajaDet { get; set; }
         public virtual DbSet<AperturaCajaDetRubros> AperturaCajaDetRubros { get; set; }
         public virtual DbSet<Auditoria> Auditoria { get; set; }
         public virtual DbSet<CierreCaja> CierreCaja { get; set; }
         public virtual DbSet<DCDetalle> DCDetalle { get; set; }
-        public virtual DbSet<DTHDetalle> DTHDetalle { get; set; }
         public virtual DbSet<DVDetalle> DVDetalle { get; set; }
-        public virtual DbSet<FacturaDocumentoDigital> FacturaDocumentoDigital { get; set; }
         public virtual DbSet<FCDetalle> FCDetalle { get; set; }
+        public virtual DbSet<FVDetalle> FVDetalle { get; set; }
         public virtual DbSet<Inventario> Inventario { get; set; }
         public virtual DbSet<MovInvDet> MovInvDet { get; set; }
-        public virtual DbSet<MSpeer_conflictdetectionconfigresponse> MSpeer_conflictdetectionconfigresponse { get; set; }
-        public virtual DbSet<MSpeer_originatorid_history> MSpeer_originatorid_history { get; set; }
-        public virtual DbSet<MSpeer_request> MSpeer_request { get; set; }
-        public virtual DbSet<MSpeer_response> MSpeer_response { get; set; }
-        public virtual DbSet<MSpeer_topologyrequest> MSpeer_topologyrequest { get; set; }
-        public virtual DbSet<MSpeer_topologyresponse> MSpeer_topologyresponse { get; set; }
-        public virtual DbSet<MSpub_identity_range> MSpub_identity_range { get; set; }
         public virtual DbSet<Permisos> Permisos { get; set; }
         public virtual DbSet<ProformaVtaDet> ProformaVtaDet { get; set; }
-        public virtual DbSet<RetencionCDet> RetencionCDet { get; set; }
-        public virtual DbSet<RetencionDocumentoDigital> RetencionDocumentoDigital { get; set; }
-        public virtual DbSet<RetencionVDet> RetencionVDet { get; set; }
         public virtual DbSet<RolPagos> RolPagos { get; set; }
         public virtual DbSet<RolPagosIndividual> RolPagosIndividual { get; set; }
-        public virtual DbSet<sysarticlecolumns> sysarticlecolumns { get; set; }
-        public virtual DbSet<sysarticles> sysarticles { get; set; }
-        public virtual DbSet<sysarticleupdates> sysarticleupdates { get; set; }
-        public virtual DbSet<syspublications> syspublications { get; set; }
-        public virtual DbSet<sysschemaarticles> sysschemaarticles { get; set; }
-        public virtual DbSet<syssubscriptions> syssubscriptions { get; set; }
-        public virtual DbSet<systranschemas> systranschemas { get; set; }
-        public virtual DbSet<DetUsuarioDespacho> DetUsuarioDespacho { get; set; }
-        public virtual DbSet<UsuarioDespacho> UsuarioDespacho { get; set; }
-        public virtual DbSet<sysextendedarticlesview> sysextendedarticlesview { get; set; }
         public virtual DbSet<vAperturaCajaCab> vAperturaCajaCab { get; set; }
         public virtual DbSet<vAperturaCajaDet> vAperturaCajaDet { get; set; }
         public virtual DbSet<vAperturaCajaDetRubro> vAperturaCajaDetRubro { get; set; }
         public virtual DbSet<vCierreCaja> vCierreCaja { get; set; }
-        public virtual DbSet<vCliente> vCliente { get; set; }
-        public virtual DbSet<vClienteCtas> vClienteCtas { get; set; }
-        public virtual DbSet<vClienteFull> vClienteFull { get; set; }
         public virtual DbSet<vCobros> vCobros { get; set; }
         public virtual DbSet<vCompra> vCompra { get; set; }
         public virtual DbSet<vCompraCab> vCompraCab { get; set; }
         public virtual DbSet<vCompraCabFull> vCompraCabFull { get; set; }
-        public virtual DbSet<vDistGeografica> vDistGeografica { get; set; }
-        public virtual DbSet<vDistGeograficaFull> vDistGeograficaFull { get; set; }
         public virtual DbSet<vFlujoCaja> vFlujoCaja { get; set; }
-        public virtual DbSet<vMinAndMax> vMinAndMax { get; set; }
         public virtual DbSet<vNCCompras> vNCCompras { get; set; }
         public virtual DbSet<vNCComprasCab> vNCComprasCab { get; set; }
         public virtual DbSet<vNCVentas> vNCVentas { get; set; }
+        public virtual DbSet<vNCVentasCab> vNCVentasCab { get; set; }
         public virtual DbSet<vPagos> vPagos { get; set; }
         public virtual DbSet<vProformaVta> vProformaVta { get; set; }
         public virtual DbSet<vProformaVtaCab> vProformaVtaCab { get; set; }
-        public virtual DbSet<vProveedor> vProveedor { get; set; }
-        public virtual DbSet<vProveedorFull> vProveedorFull { get; set; }
-        public virtual DbSet<vRetencionCompra> vRetencionCompra { get; set; }
-        public virtual DbSet<vRetencionVenta> vRetencionVenta { get; set; }
         public virtual DbSet<vRolPagos> vRolPagos { get; set; }
         public virtual DbSet<vRolPagosIndividual> vRolPagosIndividual { get; set; }
         public virtual DbSet<vStock> vStock { get; set; }
-        public virtual DbSet<vTarjetaHabiente> vTarjetaHabiente { get; set; }
         public virtual DbSet<vTransaccion> vTransaccion { get; set; }
         public virtual DbSet<vTransaccionEgreso> vTransaccionEgreso { get; set; }
         public virtual DbSet<vTransaccionIngreso> vTransaccionIngreso { get; set; }
         public virtual DbSet<vVenta> vVenta { get; set; }
         public virtual DbSet<vVentaCab> vVentaCab { get; set; }
         public virtual DbSet<vVentaCabFull> vVentaCabFull { get; set; }
-        public virtual DbSet<vVentaFFE> vVentaFFE { get; set; }
-        public virtual DbSet<vVentaTH> vVentaTH { get; set; }
-        public virtual DbSet<vRetencionDE> vRetencionDE { get; set; }
-        public virtual DbSet<vPedido> vPedido { get; set; }
-        public virtual DbSet<vDetDispensadeorIslero> vDetDispensadeorIslero { get; set; }
-        public virtual DbSet<vDetDispensadorIslero> vDetDispensadorIslero { get; set; }
-        public virtual DbSet<vDispensadores> vDispensadores { get; set; }
-        public virtual DbSet<vIsleros> vIsleros { get; set; }
     
-        [DbFunction("AldebaranPlusEntities", "split")]
-        public virtual IQueryable<split_Result> split(string delimited, string delimiter)
+        public virtual ObjectResult<Sel_AllSucursal_Result> Sel_AllSucursal()
         {
-            var delimitedParameter = delimited != null ?
-                new ObjectParameter("delimited", delimited) :
-                new ObjectParameter("delimited", typeof(string));
-    
-            var delimiterParameter = delimiter != null ?
-                new ObjectParameter("delimiter", delimiter) :
-                new ObjectParameter("delimiter", typeof(string));
-    
-            return ((IObjectContextAdapter)this).ObjectContext.CreateQuery<split_Result>("[AldebaranPlusEntities].[split](@delimited, @delimiter)", delimitedParameter, delimiterParameter);
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<Sel_AllSucursal_Result>("Sel_AllSucursal");
         }
     
-        [DbFunction("AldebaranPlusEntities", "secuencia2")]
-        public virtual IQueryable<secuencia2_Result> secuencia2()
+        public virtual ObjectResult<Sel_FacCV_Result> Sel_FacCV(string accion, string fechaIni, string fechaFin, Nullable<int> iDSU)
         {
-            return ((IObjectContextAdapter)this).ObjectContext.CreateQuery<secuencia2_Result>("[AldebaranPlusEntities].[secuencia2]()");
+            var accionParameter = accion != null ?
+                new ObjectParameter("Accion", accion) :
+                new ObjectParameter("Accion", typeof(string));
+    
+            var fechaIniParameter = fechaIni != null ?
+                new ObjectParameter("FechaIni", fechaIni) :
+                new ObjectParameter("FechaIni", typeof(string));
+    
+            var fechaFinParameter = fechaFin != null ?
+                new ObjectParameter("FechaFin", fechaFin) :
+                new ObjectParameter("FechaFin", typeof(string));
+    
+            var iDSUParameter = iDSU.HasValue ?
+                new ObjectParameter("IDSU", iDSU) :
+                new ObjectParameter("IDSU", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<Sel_FacCV_Result>("Sel_FacCV", accionParameter, fechaIniParameter, fechaFinParameter, iDSUParameter);
+        }
+    
+        public virtual ObjectResult<Sel_ProdSotckBajo_Result> Sel_ProdSotckBajo(string aCCION, Nullable<int> iDSU)
+        {
+            var aCCIONParameter = aCCION != null ?
+                new ObjectParameter("ACCION", aCCION) :
+                new ObjectParameter("ACCION", typeof(string));
+    
+            var iDSUParameter = iDSU.HasValue ?
+                new ObjectParameter("IDSU", iDSU) :
+                new ObjectParameter("IDSU", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<Sel_ProdSotckBajo_Result>("Sel_ProdSotckBajo", aCCIONParameter, iDSUParameter);
+        }
+    
+        public virtual ObjectResult<Sel_ResProdSotckBajo_Result> Sel_ResProdSotckBajo(string aCCION, Nullable<int> iDSU)
+        {
+            var aCCIONParameter = aCCION != null ?
+                new ObjectParameter("ACCION", aCCION) :
+                new ObjectParameter("ACCION", typeof(string));
+    
+            var iDSUParameter = iDSU.HasValue ?
+                new ObjectParameter("IDSU", iDSU) :
+                new ObjectParameter("IDSU", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<Sel_ResProdSotckBajo_Result>("Sel_ResProdSotckBajo", aCCIONParameter, iDSUParameter);
+        }
+    
+        public virtual ObjectResult<Sel_SumFacCV_Anos_Result> Sel_SumFacCV_Anos(string accion, Nullable<bool> isAnoActual, Nullable<int> iDSU)
+        {
+            var accionParameter = accion != null ?
+                new ObjectParameter("Accion", accion) :
+                new ObjectParameter("Accion", typeof(string));
+    
+            var isAnoActualParameter = isAnoActual.HasValue ?
+                new ObjectParameter("isAnoActual", isAnoActual) :
+                new ObjectParameter("isAnoActual", typeof(bool));
+    
+            var iDSUParameter = iDSU.HasValue ?
+                new ObjectParameter("IDSU", iDSU) :
+                new ObjectParameter("IDSU", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<Sel_SumFacCV_Anos_Result>("Sel_SumFacCV_Anos", accionParameter, isAnoActualParameter, iDSUParameter);
+        }
+    
+        public virtual ObjectResult<Sel_UsuarioCajas_Result> Sel_UsuarioCajas(Nullable<int> iDSU, Nullable<int> iDPT)
+        {
+            var iDSUParameter = iDSU.HasValue ?
+                new ObjectParameter("IDSU", iDSU) :
+                new ObjectParameter("IDSU", typeof(int));
+    
+            var iDPTParameter = iDPT.HasValue ?
+                new ObjectParameter("IDPT", iDPT) :
+                new ObjectParameter("IDPT", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<Sel_UsuarioCajas_Result>("Sel_UsuarioCajas", iDSUParameter, iDPTParameter);
+        }
+    
+        public virtual ObjectResult<Sel_ValCajaPV_Result> Sel_ValCajaPV(Nullable<int> iDSU)
+        {
+            var iDSUParameter = iDSU.HasValue ?
+                new ObjectParameter("IDSU", iDSU) :
+                new ObjectParameter("IDSU", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<Sel_ValCajaPV_Result>("Sel_ValCajaPV", iDSUParameter);
         }
     
         public virtual ObjectResult<Nullable<int>> Create_LinkedServer(string tipo, string servidor, string @base, string usuario, string clave, ObjectParameter existente)
@@ -521,23 +510,6 @@ namespace Api_Aldebaran_CobrosPedidos
             return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<Nullable<int>>("Del_TipoIdentificacion", iDParameter);
         }
     
-        public virtual ObjectResult<string> Ins_AnularTHabiente(string accion, Nullable<int> iD, string jsonData)
-        {
-            var accionParameter = accion != null ?
-                new ObjectParameter("Accion", accion) :
-                new ObjectParameter("Accion", typeof(string));
-    
-            var iDParameter = iD.HasValue ?
-                new ObjectParameter("ID", iD) :
-                new ObjectParameter("ID", typeof(int));
-    
-            var jsonDataParameter = jsonData != null ?
-                new ObjectParameter("JsonData", jsonData) :
-                new ObjectParameter("JsonData", typeof(string));
-    
-            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<string>("Ins_AnularTHabiente", accionParameter, iDParameter, jsonDataParameter);
-        }
-    
         public virtual int Ins_AperturaCaja(Nullable<int> iDPtoVenta, Nullable<int> iDUsuario, Nullable<decimal> montoEfectivo, Nullable<decimal> montoOtros, string observaciones, ObjectParameter iDAperturaAnt, ObjectParameter fechaAnt, ObjectParameter montoAnt)
         {
             var iDPtoVentaParameter = iDPtoVenta.HasValue ?
@@ -698,96 +670,6 @@ namespace Api_Aldebaran_CobrosPedidos
                 new ObjectParameter("Estado", typeof(bool));
     
             return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("Ins_Cliente", iDCategoriaParameter, iDCiudadParameter, iDTipoIdentificacionParameter, identificacionParameter, nombreParameter, direccionParameter, telefonoParameter, celularParameter, emailParameter, sujetoRetencionParameter, tipoContribuyenteParameter, tipoEntidadParameter, tipoParameter, estadoParameter, iDDuplicado);
-        }
-    
-        public virtual ObjectResult<Nullable<int>> Ins_ClienteCtaPrepago(string accion, Nullable<int> iDCTA, Nullable<int> iDCT, Nullable<System.DateTime> fechaInicio, Nullable<System.DateTime> fechaFin, string estado, Nullable<decimal> cupo, Nullable<decimal> valor, string detalle, string usuario)
-        {
-            var accionParameter = accion != null ?
-                new ObjectParameter("Accion", accion) :
-                new ObjectParameter("Accion", typeof(string));
-    
-            var iDCTAParameter = iDCTA.HasValue ?
-                new ObjectParameter("IDCTA", iDCTA) :
-                new ObjectParameter("IDCTA", typeof(int));
-    
-            var iDCTParameter = iDCT.HasValue ?
-                new ObjectParameter("IDCT", iDCT) :
-                new ObjectParameter("IDCT", typeof(int));
-    
-            var fechaInicioParameter = fechaInicio.HasValue ?
-                new ObjectParameter("FechaInicio", fechaInicio) :
-                new ObjectParameter("FechaInicio", typeof(System.DateTime));
-    
-            var fechaFinParameter = fechaFin.HasValue ?
-                new ObjectParameter("FechaFin", fechaFin) :
-                new ObjectParameter("FechaFin", typeof(System.DateTime));
-    
-            var estadoParameter = estado != null ?
-                new ObjectParameter("Estado", estado) :
-                new ObjectParameter("Estado", typeof(string));
-    
-            var cupoParameter = cupo.HasValue ?
-                new ObjectParameter("Cupo", cupo) :
-                new ObjectParameter("Cupo", typeof(decimal));
-    
-            var valorParameter = valor.HasValue ?
-                new ObjectParameter("Valor", valor) :
-                new ObjectParameter("Valor", typeof(decimal));
-    
-            var detalleParameter = detalle != null ?
-                new ObjectParameter("Detalle", detalle) :
-                new ObjectParameter("Detalle", typeof(string));
-    
-            var usuarioParameter = usuario != null ?
-                new ObjectParameter("Usuario", usuario) :
-                new ObjectParameter("Usuario", typeof(string));
-    
-            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<Nullable<int>>("Ins_ClienteCtaPrepago", accionParameter, iDCTAParameter, iDCTParameter, fechaInicioParameter, fechaFinParameter, estadoParameter, cupoParameter, valorParameter, detalleParameter, usuarioParameter);
-        }
-    
-        public virtual ObjectResult<Nullable<int>> Ins_ClienteDetCtaPrepago(string accion, Nullable<int> iDCTA, string tipo, string concepto, Nullable<decimal> bono, Nullable<decimal> valor, Nullable<decimal> saldo, string usuario, Nullable<System.DateTime> fecha, string detalle)
-        {
-            var accionParameter = accion != null ?
-                new ObjectParameter("Accion", accion) :
-                new ObjectParameter("Accion", typeof(string));
-    
-            var iDCTAParameter = iDCTA.HasValue ?
-                new ObjectParameter("IDCTA", iDCTA) :
-                new ObjectParameter("IDCTA", typeof(int));
-    
-            var tipoParameter = tipo != null ?
-                new ObjectParameter("Tipo", tipo) :
-                new ObjectParameter("Tipo", typeof(string));
-    
-            var conceptoParameter = concepto != null ?
-                new ObjectParameter("Concepto", concepto) :
-                new ObjectParameter("Concepto", typeof(string));
-    
-            var bonoParameter = bono.HasValue ?
-                new ObjectParameter("Bono", bono) :
-                new ObjectParameter("Bono", typeof(decimal));
-    
-            var valorParameter = valor.HasValue ?
-                new ObjectParameter("Valor", valor) :
-                new ObjectParameter("Valor", typeof(decimal));
-    
-            var saldoParameter = saldo.HasValue ?
-                new ObjectParameter("Saldo", saldo) :
-                new ObjectParameter("Saldo", typeof(decimal));
-    
-            var usuarioParameter = usuario != null ?
-                new ObjectParameter("Usuario", usuario) :
-                new ObjectParameter("Usuario", typeof(string));
-    
-            var fechaParameter = fecha.HasValue ?
-                new ObjectParameter("Fecha", fecha) :
-                new ObjectParameter("Fecha", typeof(System.DateTime));
-    
-            var detalleParameter = detalle != null ?
-                new ObjectParameter("Detalle", detalle) :
-                new ObjectParameter("Detalle", typeof(string));
-    
-            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<Nullable<int>>("Ins_ClienteDetCtaPrepago", accionParameter, iDCTAParameter, tipoParameter, conceptoParameter, bonoParameter, valorParameter, saldoParameter, usuarioParameter, fechaParameter, detalleParameter);
         }
     
         public virtual ObjectResult<Nullable<int>> Ins_Continente(string nombre, Nullable<bool> estado)
@@ -1783,7 +1665,7 @@ namespace Api_Aldebaran_CobrosPedidos
             return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<Nullable<int>>("Ins_Producto", iDFBParameter, iDCTParameter, iDGPParameter, iDSGParameter, iDPREParameter, iDMDParameter, iDUnidadParameter, codigoParameter, nombreParameter, costoParameter, pVPParameter, pVMParameter, descuentoParameter, iVAParameter, comisionParameter, pCPParameter, tipoParameter, estadoParameter, imagenParameter);
         }
     
-        public virtual int Ins_ProductoNew(Nullable<int> iDUsuario, Nullable<int> iDFabricante, Nullable<int> iDCategoria, Nullable<int> iDGrupo, Nullable<int> iDSubGrupo, Nullable<int> iDPresentacion, Nullable<int> iDMarca, Nullable<int> iDUnidad, Nullable<int> iDDeducible, Nullable<int> iDIVA, Nullable<int> iDIRBP, Nullable<int> iDICE, Nullable<int> iDRetencionIVA, Nullable<int> iDRetencionIR, string codigo, string codigoExterno, string nombre, Nullable<decimal> costo, Nullable<decimal> pCP, Nullable<decimal> pVP, Nullable<decimal> pVM, string tipo, Nullable<bool> iVA, Nullable<bool> iRBP, Nullable<bool> iCE, Nullable<bool> serie, Nullable<int> clasificacion, Nullable<bool> combo, Nullable<decimal> minimo, Nullable<decimal> maximo, string observaciones, Nullable<bool> estado, byte[] imagen, ObjectParameter iDDuplicado)
+        public virtual int Ins_ProductoNew(Nullable<int> iDUsuario, Nullable<int> iDFabricante, Nullable<int> iDCategoria, Nullable<int> iDGrupo, Nullable<int> iDSubGrupo, Nullable<int> iDPresentacion, Nullable<int> iDMarca, Nullable<int> iDUnidad, Nullable<int> iDDeducible, Nullable<int> iDIVA, Nullable<int> iDIRBP, Nullable<int> iDICE, Nullable<int> iDRetencionIVA, Nullable<int> iDRetencionIR, string codigo, string codigoExterno, string nombre, Nullable<decimal> costo, Nullable<decimal> pCP, Nullable<decimal> pVP, Nullable<decimal> pVM, string tipo, Nullable<bool> iVA, Nullable<bool> iRBP, Nullable<bool> iCE, Nullable<bool> serie, Nullable<bool> combo, Nullable<decimal> minimo, Nullable<decimal> maximo, string observaciones, Nullable<bool> estado, byte[] imagen, ObjectParameter iDDuplicado)
         {
             var iDUsuarioParameter = iDUsuario.HasValue ?
                 new ObjectParameter("IDUsuario", iDUsuario) :
@@ -1889,10 +1771,6 @@ namespace Api_Aldebaran_CobrosPedidos
                 new ObjectParameter("Serie", serie) :
                 new ObjectParameter("Serie", typeof(bool));
     
-            var clasificacionParameter = clasificacion.HasValue ?
-                new ObjectParameter("Clasificacion", clasificacion) :
-                new ObjectParameter("Clasificacion", typeof(int));
-    
             var comboParameter = combo.HasValue ?
                 new ObjectParameter("Combo", combo) :
                 new ObjectParameter("Combo", typeof(bool));
@@ -1917,7 +1795,7 @@ namespace Api_Aldebaran_CobrosPedidos
                 new ObjectParameter("Imagen", imagen) :
                 new ObjectParameter("Imagen", typeof(byte[]));
     
-            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("Ins_ProductoNew", iDUsuarioParameter, iDFabricanteParameter, iDCategoriaParameter, iDGrupoParameter, iDSubGrupoParameter, iDPresentacionParameter, iDMarcaParameter, iDUnidadParameter, iDDeducibleParameter, iDIVAParameter, iDIRBPParameter, iDICEParameter, iDRetencionIVAParameter, iDRetencionIRParameter, codigoParameter, codigoExternoParameter, nombreParameter, costoParameter, pCPParameter, pVPParameter, pVMParameter, tipoParameter, iVAParameter, iRBPParameter, iCEParameter, serieParameter, clasificacionParameter, comboParameter, minimoParameter, maximoParameter, observacionesParameter, estadoParameter, imagenParameter, iDDuplicado);
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("Ins_ProductoNew", iDUsuarioParameter, iDFabricanteParameter, iDCategoriaParameter, iDGrupoParameter, iDSubGrupoParameter, iDPresentacionParameter, iDMarcaParameter, iDUnidadParameter, iDDeducibleParameter, iDIVAParameter, iDIRBPParameter, iDICEParameter, iDRetencionIVAParameter, iDRetencionIRParameter, codigoParameter, codigoExternoParameter, nombreParameter, costoParameter, pCPParameter, pVPParameter, pVMParameter, tipoParameter, iVAParameter, iRBPParameter, iCEParameter, serieParameter, comboParameter, minimoParameter, maximoParameter, observacionesParameter, estadoParameter, imagenParameter, iDDuplicado);
         }
     
         public virtual int Ins_ProformaVta(Nullable<int> iDCliente, Nullable<int> iDSucursal, Nullable<int> iDPtoVta, Nullable<int> iDUsuario, Nullable<System.DateTime> fecha, string formaPago, Nullable<decimal> subtotalIVA, Nullable<decimal> subtotalIVA0, Nullable<decimal> subtotal, Nullable<decimal> porcentajeDesc, Nullable<decimal> descuento, Nullable<decimal> subtotalIVADesc, Nullable<decimal> subtotalIVA0Desc, Nullable<decimal> iVA, Nullable<decimal> total, string estado, ObjectParameter numeroOut, ObjectParameter mensajeOut)
@@ -2071,71 +1949,6 @@ namespace Api_Aldebaran_CobrosPedidos
             return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<Nullable<int>>("Ins_RegionMundo", iDContinenteParameter, nombreParameter, estadoParameter);
         }
     
-        public virtual int Ins_RetencionCV(Nullable<bool> venta, Nullable<int> iDUS, Nullable<int> iDSU, Nullable<int> iDPT, Nullable<int> iDF, string numeroRetencion, string ejercicioFiscal, Nullable<bool> estado, Nullable<bool> asumida, string concepto, string tipo, Nullable<System.DateTime> fecha, string usuarioUpd, Nullable<System.DateTime> fechaActualizacion, Nullable<decimal> valorRetencion)
-        {
-            var ventaParameter = venta.HasValue ?
-                new ObjectParameter("Venta", venta) :
-                new ObjectParameter("Venta", typeof(bool));
-    
-            var iDUSParameter = iDUS.HasValue ?
-                new ObjectParameter("IDUS", iDUS) :
-                new ObjectParameter("IDUS", typeof(int));
-    
-            var iDSUParameter = iDSU.HasValue ?
-                new ObjectParameter("IDSU", iDSU) :
-                new ObjectParameter("IDSU", typeof(int));
-    
-            var iDPTParameter = iDPT.HasValue ?
-                new ObjectParameter("IDPT", iDPT) :
-                new ObjectParameter("IDPT", typeof(int));
-    
-            var iDFParameter = iDF.HasValue ?
-                new ObjectParameter("IDF", iDF) :
-                new ObjectParameter("IDF", typeof(int));
-    
-            var numeroRetencionParameter = numeroRetencion != null ?
-                new ObjectParameter("NumeroRetencion", numeroRetencion) :
-                new ObjectParameter("NumeroRetencion", typeof(string));
-    
-            var ejercicioFiscalParameter = ejercicioFiscal != null ?
-                new ObjectParameter("EjercicioFiscal", ejercicioFiscal) :
-                new ObjectParameter("EjercicioFiscal", typeof(string));
-    
-            var estadoParameter = estado.HasValue ?
-                new ObjectParameter("Estado", estado) :
-                new ObjectParameter("Estado", typeof(bool));
-    
-            var asumidaParameter = asumida.HasValue ?
-                new ObjectParameter("Asumida", asumida) :
-                new ObjectParameter("Asumida", typeof(bool));
-    
-            var conceptoParameter = concepto != null ?
-                new ObjectParameter("Concepto", concepto) :
-                new ObjectParameter("Concepto", typeof(string));
-    
-            var tipoParameter = tipo != null ?
-                new ObjectParameter("Tipo", tipo) :
-                new ObjectParameter("Tipo", typeof(string));
-    
-            var fechaParameter = fecha.HasValue ?
-                new ObjectParameter("Fecha", fecha) :
-                new ObjectParameter("Fecha", typeof(System.DateTime));
-    
-            var usuarioUpdParameter = usuarioUpd != null ?
-                new ObjectParameter("UsuarioUpd", usuarioUpd) :
-                new ObjectParameter("UsuarioUpd", typeof(string));
-    
-            var fechaActualizacionParameter = fechaActualizacion.HasValue ?
-                new ObjectParameter("FechaActualizacion", fechaActualizacion) :
-                new ObjectParameter("FechaActualizacion", typeof(System.DateTime));
-    
-            var valorRetencionParameter = valorRetencion.HasValue ?
-                new ObjectParameter("ValorRetencion", valorRetencion) :
-                new ObjectParameter("ValorRetencion", typeof(decimal));
-    
-            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("Ins_RetencionCV", ventaParameter, iDUSParameter, iDSUParameter, iDPTParameter, iDFParameter, numeroRetencionParameter, ejercicioFiscalParameter, estadoParameter, asumidaParameter, conceptoParameter, tipoParameter, fechaParameter, usuarioUpdParameter, fechaActualizacionParameter, valorRetencionParameter);
-        }
-    
         public virtual ObjectResult<Nullable<int>> Ins_RubroRolEmpleado(Nullable<int> iDEmpleado, Nullable<int> iDRubro, Nullable<System.DateTime> fecha, string tipo, Nullable<decimal> valor)
         {
             var iDEmpleadoParameter = iDEmpleado.HasValue ?
@@ -2236,79 +2049,6 @@ namespace Api_Aldebaran_CobrosPedidos
             return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<Nullable<int>>("Ins_Sucursal", iDCiudadParameter, nombreParameter, direccionParameter, telefonoParameter, emailParameter, serieParameter, administradorParameter, estadoParameter, iDDuplicado);
         }
     
-        public virtual int Ins_TarjetaHabiente(Nullable<int> iDCT, Nullable<int> iDVH, Nullable<int> iDSU, Nullable<int> iDPT, Nullable<int> iDUS, Nullable<System.DateTime> fecha, string numero, string formaPago, Nullable<decimal> porcentajeComision, Nullable<decimal> comision, Nullable<decimal> subtotalIVA, Nullable<decimal> subtotalIVA0, Nullable<decimal> subtotal, Nullable<decimal> iVA, Nullable<decimal> total, Nullable<decimal> saldo, string estado, ObjectParameter numeroOut, ObjectParameter mensajeOut)
-        {
-            var iDCTParameter = iDCT.HasValue ?
-                new ObjectParameter("IDCT", iDCT) :
-                new ObjectParameter("IDCT", typeof(int));
-    
-            var iDVHParameter = iDVH.HasValue ?
-                new ObjectParameter("IDVH", iDVH) :
-                new ObjectParameter("IDVH", typeof(int));
-    
-            var iDSUParameter = iDSU.HasValue ?
-                new ObjectParameter("IDSU", iDSU) :
-                new ObjectParameter("IDSU", typeof(int));
-    
-            var iDPTParameter = iDPT.HasValue ?
-                new ObjectParameter("IDPT", iDPT) :
-                new ObjectParameter("IDPT", typeof(int));
-    
-            var iDUSParameter = iDUS.HasValue ?
-                new ObjectParameter("IDUS", iDUS) :
-                new ObjectParameter("IDUS", typeof(int));
-    
-            var fechaParameter = fecha.HasValue ?
-                new ObjectParameter("Fecha", fecha) :
-                new ObjectParameter("Fecha", typeof(System.DateTime));
-    
-            var numeroParameter = numero != null ?
-                new ObjectParameter("Numero", numero) :
-                new ObjectParameter("Numero", typeof(string));
-    
-            var formaPagoParameter = formaPago != null ?
-                new ObjectParameter("FormaPago", formaPago) :
-                new ObjectParameter("FormaPago", typeof(string));
-    
-            var porcentajeComisionParameter = porcentajeComision.HasValue ?
-                new ObjectParameter("PorcentajeComision", porcentajeComision) :
-                new ObjectParameter("PorcentajeComision", typeof(decimal));
-    
-            var comisionParameter = comision.HasValue ?
-                new ObjectParameter("Comision", comision) :
-                new ObjectParameter("Comision", typeof(decimal));
-    
-            var subtotalIVAParameter = subtotalIVA.HasValue ?
-                new ObjectParameter("SubtotalIVA", subtotalIVA) :
-                new ObjectParameter("SubtotalIVA", typeof(decimal));
-    
-            var subtotalIVA0Parameter = subtotalIVA0.HasValue ?
-                new ObjectParameter("SubtotalIVA0", subtotalIVA0) :
-                new ObjectParameter("SubtotalIVA0", typeof(decimal));
-    
-            var subtotalParameter = subtotal.HasValue ?
-                new ObjectParameter("Subtotal", subtotal) :
-                new ObjectParameter("Subtotal", typeof(decimal));
-    
-            var iVAParameter = iVA.HasValue ?
-                new ObjectParameter("IVA", iVA) :
-                new ObjectParameter("IVA", typeof(decimal));
-    
-            var totalParameter = total.HasValue ?
-                new ObjectParameter("Total", total) :
-                new ObjectParameter("Total", typeof(decimal));
-    
-            var saldoParameter = saldo.HasValue ?
-                new ObjectParameter("Saldo", saldo) :
-                new ObjectParameter("Saldo", typeof(decimal));
-    
-            var estadoParameter = estado != null ?
-                new ObjectParameter("Estado", estado) :
-                new ObjectParameter("Estado", typeof(string));
-    
-            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("Ins_TarjetaHabiente", iDCTParameter, iDVHParameter, iDSUParameter, iDPTParameter, iDUSParameter, fechaParameter, numeroParameter, formaPagoParameter, porcentajeComisionParameter, comisionParameter, subtotalIVAParameter, subtotalIVA0Parameter, subtotalParameter, iVAParameter, totalParameter, saldoParameter, estadoParameter, numeroOut, mensajeOut);
-        }
-    
         public virtual ObjectResult<Nullable<int>> Ins_TipoDeducible(string nombre, Nullable<bool> estado)
         {
             var nombreParameter = nombre != null ?
@@ -2355,19 +2095,6 @@ namespace Api_Aldebaran_CobrosPedidos
                 new ObjectParameter("ID", typeof(int));
     
             return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<Rpt_AperturaCajaUsuario_Result>("Rpt_AperturaCajaUsuario", accionParameter, iDParameter);
-        }
-    
-        public virtual ObjectResult<Rpt_CierreCajaJ_Result> Rpt_CierreCajaJ(string accion, Nullable<int> iD)
-        {
-            var accionParameter = accion != null ?
-                new ObjectParameter("Accion", accion) :
-                new ObjectParameter("Accion", typeof(string));
-    
-            var iDParameter = iD.HasValue ?
-                new ObjectParameter("ID", iD) :
-                new ObjectParameter("ID", typeof(int));
-    
-            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<Rpt_CierreCajaJ_Result>("Rpt_CierreCajaJ", accionParameter, iDParameter);
         }
     
         public virtual ObjectResult<Rpt_CierreCajaUsuario_Result> Rpt_CierreCajaUsuario(string accion, Nullable<int> iD)
@@ -2533,48 +2260,6 @@ namespace Api_Aldebaran_CobrosPedidos
             return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<Rpt_Ventas_Result>("Rpt_Ventas", accionParameter, fechaInicioParameter, fechaFinParameter);
         }
     
-        public virtual ObjectResult<Nullable<int>> Rpt_VentasTop(Nullable<int> top, string orden, Nullable<System.DateTime> desde, Nullable<System.DateTime> hasta)
-        {
-            var topParameter = top.HasValue ?
-                new ObjectParameter("Top", top) :
-                new ObjectParameter("Top", typeof(int));
-    
-            var ordenParameter = orden != null ?
-                new ObjectParameter("Orden", orden) :
-                new ObjectParameter("Orden", typeof(string));
-    
-            var desdeParameter = desde.HasValue ?
-                new ObjectParameter("Desde", desde) :
-                new ObjectParameter("Desde", typeof(System.DateTime));
-    
-            var hastaParameter = hasta.HasValue ?
-                new ObjectParameter("Hasta", hasta) :
-                new ObjectParameter("Hasta", typeof(System.DateTime));
-    
-            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<Nullable<int>>("Rpt_VentasTop", topParameter, ordenParameter, desdeParameter, hastaParameter);
-        }
-    
-        public virtual ObjectResult<Rpt_VentasxUsuario_Result> Rpt_VentasxUsuario(Nullable<int> iDUS, string accion, Nullable<System.DateTime> fechaInicio, Nullable<System.DateTime> fechaFin)
-        {
-            var iDUSParameter = iDUS.HasValue ?
-                new ObjectParameter("IDUS", iDUS) :
-                new ObjectParameter("IDUS", typeof(int));
-    
-            var accionParameter = accion != null ?
-                new ObjectParameter("Accion", accion) :
-                new ObjectParameter("Accion", typeof(string));
-    
-            var fechaInicioParameter = fechaInicio.HasValue ?
-                new ObjectParameter("FechaInicio", fechaInicio) :
-                new ObjectParameter("FechaInicio", typeof(System.DateTime));
-    
-            var fechaFinParameter = fechaFin.HasValue ?
-                new ObjectParameter("FechaFin", fechaFin) :
-                new ObjectParameter("FechaFin", typeof(System.DateTime));
-    
-            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<Rpt_VentasxUsuario_Result>("Rpt_VentasxUsuario", iDUSParameter, accionParameter, fechaInicioParameter, fechaFinParameter);
-        }
-    
         public virtual ObjectResult<Sel_AperturaCaja_Result> Sel_AperturaCaja(string accion, Nullable<int> iD, Nullable<int> iDPtoVenta, Nullable<int> iDUsuario)
         {
             var accionParameter = accion != null ?
@@ -2693,31 +2378,6 @@ namespace Api_Aldebaran_CobrosPedidos
             return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<Sel_Cliente_Result>("Sel_Cliente", accionParameter, iDParameter, tipoIdentificacionParameter, identificacionParameter, textoParameter);
         }
     
-        public virtual ObjectResult<Sel_ClienteCtas_Result> Sel_ClienteCtas(string accion, Nullable<int> iD, Nullable<int> tipoIdentificacion, string identificacion, string texto)
-        {
-            var accionParameter = accion != null ?
-                new ObjectParameter("Accion", accion) :
-                new ObjectParameter("Accion", typeof(string));
-    
-            var iDParameter = iD.HasValue ?
-                new ObjectParameter("ID", iD) :
-                new ObjectParameter("ID", typeof(int));
-    
-            var tipoIdentificacionParameter = tipoIdentificacion.HasValue ?
-                new ObjectParameter("TipoIdentificacion", tipoIdentificacion) :
-                new ObjectParameter("TipoIdentificacion", typeof(int));
-    
-            var identificacionParameter = identificacion != null ?
-                new ObjectParameter("Identificacion", identificacion) :
-                new ObjectParameter("Identificacion", typeof(string));
-    
-            var textoParameter = texto != null ?
-                new ObjectParameter("Texto", texto) :
-                new ObjectParameter("Texto", typeof(string));
-    
-            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<Sel_ClienteCtas_Result>("Sel_ClienteCtas", accionParameter, iDParameter, tipoIdentificacionParameter, identificacionParameter, textoParameter);
-        }
-    
         public virtual ObjectResult<Sel_ClienteEmail_Result> Sel_ClienteEmail(string accion, Nullable<int> iDCliente)
         {
             var accionParameter = accion != null ?
@@ -2759,59 +2419,6 @@ namespace Api_Aldebaran_CobrosPedidos
                 new ObjectParameter("Texto", typeof(string));
     
             return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<Sel_Continente_Result>("Sel_Continente", accionParameter, iDParameter, textoParameter);
-        }
-    
-        public virtual ObjectResult<string> Sel_DatosTHabiente(string accion, Nullable<bool> tipoJson, Nullable<int> iD, Nullable<int> iDSU, Nullable<int> iDPT, Nullable<int> iDCT, Nullable<System.DateTime> fechDesde, Nullable<System.DateTime> fechHasta, string tipo, Nullable<bool> devolucion, string usuario, string estacion)
-        {
-            var accionParameter = accion != null ?
-                new ObjectParameter("Accion", accion) :
-                new ObjectParameter("Accion", typeof(string));
-    
-            var tipoJsonParameter = tipoJson.HasValue ?
-                new ObjectParameter("TipoJson", tipoJson) :
-                new ObjectParameter("TipoJson", typeof(bool));
-    
-            var iDParameter = iD.HasValue ?
-                new ObjectParameter("ID", iD) :
-                new ObjectParameter("ID", typeof(int));
-    
-            var iDSUParameter = iDSU.HasValue ?
-                new ObjectParameter("IDSU", iDSU) :
-                new ObjectParameter("IDSU", typeof(int));
-    
-            var iDPTParameter = iDPT.HasValue ?
-                new ObjectParameter("IDPT", iDPT) :
-                new ObjectParameter("IDPT", typeof(int));
-    
-            var iDCTParameter = iDCT.HasValue ?
-                new ObjectParameter("IDCT", iDCT) :
-                new ObjectParameter("IDCT", typeof(int));
-    
-            var fechDesdeParameter = fechDesde.HasValue ?
-                new ObjectParameter("FechDesde", fechDesde) :
-                new ObjectParameter("FechDesde", typeof(System.DateTime));
-    
-            var fechHastaParameter = fechHasta.HasValue ?
-                new ObjectParameter("FechHasta", fechHasta) :
-                new ObjectParameter("FechHasta", typeof(System.DateTime));
-    
-            var tipoParameter = tipo != null ?
-                new ObjectParameter("Tipo", tipo) :
-                new ObjectParameter("Tipo", typeof(string));
-    
-            var devolucionParameter = devolucion.HasValue ?
-                new ObjectParameter("Devolucion", devolucion) :
-                new ObjectParameter("Devolucion", typeof(bool));
-    
-            var usuarioParameter = usuario != null ?
-                new ObjectParameter("Usuario", usuario) :
-                new ObjectParameter("Usuario", typeof(string));
-    
-            var estacionParameter = estacion != null ?
-                new ObjectParameter("Estacion", estacion) :
-                new ObjectParameter("Estacion", typeof(string));
-    
-            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<string>("Sel_DatosTHabiente", accionParameter, tipoJsonParameter, iDParameter, iDSUParameter, iDPTParameter, iDCTParameter, fechDesdeParameter, fechHastaParameter, tipoParameter, devolucionParameter, usuarioParameter, estacionParameter);
         }
     
         public virtual ObjectResult<Sel_Denominacion_Result> Sel_Denominacion(string accion, Nullable<int> iD, string texto)
@@ -2867,27 +2474,6 @@ namespace Api_Aldebaran_CobrosPedidos
                 new ObjectParameter("SRI", typeof(bool));
     
             return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<Sel_Documento_Result>("Sel_Documento", accionParameter, iDParameter, textoParameter, sRIParameter);
-        }
-    
-        public virtual ObjectResult<string> Sel_Empleado(string accion, Nullable<int> iD, string identificacion, string texto)
-        {
-            var accionParameter = accion != null ?
-                new ObjectParameter("Accion", accion) :
-                new ObjectParameter("Accion", typeof(string));
-    
-            var iDParameter = iD.HasValue ?
-                new ObjectParameter("ID", iD) :
-                new ObjectParameter("ID", typeof(int));
-    
-            var identificacionParameter = identificacion != null ?
-                new ObjectParameter("Identificacion", identificacion) :
-                new ObjectParameter("Identificacion", typeof(string));
-    
-            var textoParameter = texto != null ?
-                new ObjectParameter("Texto", texto) :
-                new ObjectParameter("Texto", typeof(string));
-    
-            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<string>("Sel_Empleado", accionParameter, iDParameter, identificacionParameter, textoParameter);
         }
     
         public virtual ObjectResult<Sel_Empresa_Result> Sel_Empresa(string accion, Nullable<int> iD, string rUC, string texto)
@@ -3093,23 +2679,6 @@ namespace Api_Aldebaran_CobrosPedidos
             return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<Sel_Medida_Result>("Sel_Medida", accionParameter, iDParameter, textoParameter);
         }
     
-        public virtual ObjectResult<Sel_MinMax_Result> Sel_MinMax(string accion, Nullable<int> iDSU, Nullable<int> iDTIPO)
-        {
-            var accionParameter = accion != null ?
-                new ObjectParameter("Accion", accion) :
-                new ObjectParameter("Accion", typeof(string));
-    
-            var iDSUParameter = iDSU.HasValue ?
-                new ObjectParameter("IDSU", iDSU) :
-                new ObjectParameter("IDSU", typeof(int));
-    
-            var iDTIPOParameter = iDTIPO.HasValue ?
-                new ObjectParameter("IDTIPO", iDTIPO) :
-                new ObjectParameter("IDTIPO", typeof(int));
-    
-            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<Sel_MinMax_Result>("Sel_MinMax", accionParameter, iDSUParameter, iDTIPOParameter);
-        }
-    
         public virtual ObjectResult<Sel_Modulo_Result> Sel_Modulo(string accion, Nullable<int> iD, string texto)
         {
             var accionParameter = accion != null ?
@@ -3296,7 +2865,7 @@ namespace Api_Aldebaran_CobrosPedidos
             return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<Sel_Presentacion_Result>("Sel_Presentacion", accionParameter, iDParameter, textoParameter);
         }
     
-        public virtual ObjectResult<Sel_Producto_Result> Sel_Producto(string tipo, string texto, Nullable<int> sucursal, Nullable<int> iD, string codigo, Nullable<bool> itemStock, string iDClasificacion)
+        public virtual ObjectResult<Sel_Producto_Result> Sel_Producto(string tipo, string texto, Nullable<int> sucursal, Nullable<int> iD, string codigo, Nullable<bool> itemStock)
         {
             var tipoParameter = tipo != null ?
                 new ObjectParameter("Tipo", tipo) :
@@ -3322,11 +2891,7 @@ namespace Api_Aldebaran_CobrosPedidos
                 new ObjectParameter("ItemStock", itemStock) :
                 new ObjectParameter("ItemStock", typeof(bool));
     
-            var iDClasificacionParameter = iDClasificacion != null ?
-                new ObjectParameter("IDClasificacion", iDClasificacion) :
-                new ObjectParameter("IDClasificacion", typeof(string));
-    
-            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<Sel_Producto_Result>("Sel_Producto", tipoParameter, textoParameter, sucursalParameter, iDParameter, codigoParameter, itemStockParameter, iDClasificacionParameter);
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<Sel_Producto_Result>("Sel_Producto", tipoParameter, textoParameter, sucursalParameter, iDParameter, codigoParameter, itemStockParameter);
         }
     
         public virtual ObjectResult<Sel_ProductoInfoAdicional_Result> Sel_ProductoInfoAdicional(string accion, Nullable<int> iDItem)
@@ -3342,7 +2907,7 @@ namespace Api_Aldebaran_CobrosPedidos
             return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<Sel_ProductoInfoAdicional_Result>("Sel_ProductoInfoAdicional", accionParameter, iDItemParameter);
         }
     
-        public virtual ObjectResult<Sel_ProductoNew_Result> Sel_ProductoNew(string accion, Nullable<int> iD, Nullable<int> iDSU, string codigo, string texto, string iDClasificacion)
+        public virtual ObjectResult<Sel_ProductoNew_Result> Sel_ProductoNew(string accion, Nullable<int> iD, string codigo, string texto)
         {
             var accionParameter = accion != null ?
                 new ObjectParameter("Accion", accion) :
@@ -3352,10 +2917,6 @@ namespace Api_Aldebaran_CobrosPedidos
                 new ObjectParameter("ID", iD) :
                 new ObjectParameter("ID", typeof(int));
     
-            var iDSUParameter = iDSU.HasValue ?
-                new ObjectParameter("IDSU", iDSU) :
-                new ObjectParameter("IDSU", typeof(int));
-    
             var codigoParameter = codigo != null ?
                 new ObjectParameter("Codigo", codigo) :
                 new ObjectParameter("Codigo", typeof(string));
@@ -3364,11 +2925,7 @@ namespace Api_Aldebaran_CobrosPedidos
                 new ObjectParameter("Texto", texto) :
                 new ObjectParameter("Texto", typeof(string));
     
-            var iDClasificacionParameter = iDClasificacion != null ?
-                new ObjectParameter("IDClasificacion", iDClasificacion) :
-                new ObjectParameter("IDClasificacion", typeof(string));
-    
-            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<Sel_ProductoNew_Result>("Sel_ProductoNew", accionParameter, iDParameter, iDSUParameter, codigoParameter, textoParameter, iDClasificacionParameter);
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<Sel_ProductoNew_Result>("Sel_ProductoNew", accionParameter, iDParameter, codigoParameter, textoParameter);
         }
     
         public virtual ObjectResult<Sel_Proveedor_Result> Sel_Proveedor(string accion, Nullable<int> iD, string identificacion, string texto)
@@ -3471,15 +3028,6 @@ namespace Api_Aldebaran_CobrosPedidos
                 new ObjectParameter("Accion", typeof(string));
     
             return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<Sel_RegularizarCostos_Result>("Sel_RegularizarCostos", accionParameter);
-        }
-    
-        public virtual ObjectResult<Sel_Retenciones_Result> Sel_Retenciones(string tipo)
-        {
-            var tipoParameter = tipo != null ?
-                new ObjectParameter("Tipo", tipo) :
-                new ObjectParameter("Tipo", typeof(string));
-    
-            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<Sel_Retenciones_Result>("Sel_Retenciones", tipoParameter);
         }
     
         public virtual ObjectResult<Sel_Rubro_Result> Sel_Rubro(string accion, Nullable<int> iD, string texto)
@@ -3672,7 +3220,7 @@ namespace Api_Aldebaran_CobrosPedidos
             return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<Sel_Unidad_Result>("Sel_Unidad", accionParameter, iDParameter, textoParameter);
         }
     
-        public virtual ObjectResult<Sel_Usuario_Result> Sel_Usuario(string accion, Nullable<int> iD, string jSON, string texto)
+        public virtual ObjectResult<Sel_Usuario_Result> Sel_Usuario(string accion, Nullable<int> iD, string texto)
         {
             var accionParameter = accion != null ?
                 new ObjectParameter("Accion", accion) :
@@ -3681,37 +3229,12 @@ namespace Api_Aldebaran_CobrosPedidos
             var iDParameter = iD.HasValue ?
                 new ObjectParameter("ID", iD) :
                 new ObjectParameter("ID", typeof(int));
-    
-            var jSONParameter = jSON != null ?
-                new ObjectParameter("JSON", jSON) :
-                new ObjectParameter("JSON", typeof(string));
     
             var textoParameter = texto != null ?
                 new ObjectParameter("Texto", texto) :
                 new ObjectParameter("Texto", typeof(string));
     
-            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<Sel_Usuario_Result>("Sel_Usuario", accionParameter, iDParameter, jSONParameter, textoParameter);
-        }
-    
-        public virtual ObjectResult<string> Sel_VentasCompras(string accion, string tRANSACCION, Nullable<int> iD, string nUMERO)
-        {
-            var accionParameter = accion != null ?
-                new ObjectParameter("Accion", accion) :
-                new ObjectParameter("Accion", typeof(string));
-    
-            var tRANSACCIONParameter = tRANSACCION != null ?
-                new ObjectParameter("TRANSACCION", tRANSACCION) :
-                new ObjectParameter("TRANSACCION", typeof(string));
-    
-            var iDParameter = iD.HasValue ?
-                new ObjectParameter("ID", iD) :
-                new ObjectParameter("ID", typeof(int));
-    
-            var nUMEROParameter = nUMERO != null ?
-                new ObjectParameter("NUMERO", nUMERO) :
-                new ObjectParameter("NUMERO", typeof(string));
-    
-            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<string>("Sel_VentasCompras", accionParameter, tRANSACCIONParameter, iDParameter, nUMEROParameter);
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<Sel_Usuario_Result>("Sel_Usuario", accionParameter, iDParameter, textoParameter);
         }
     
         public virtual int sp_alterdiagram(string diagramname, Nullable<int> owner_id, Nullable<int> version, byte[] definition)
@@ -3767,35 +3290,6 @@ namespace Api_Aldebaran_CobrosPedidos
                 new ObjectParameter("owner_id", typeof(int));
     
             return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("sp_dropdiagram", diagramnameParameter, owner_idParameter);
-        }
-    
-        public virtual int sp_EmployeeSelect(string employeeName, string department, string designation, Nullable<System.DateTime> startDate, Nullable<System.DateTime> endDate, Nullable<decimal> salary)
-        {
-            var employeeNameParameter = employeeName != null ?
-                new ObjectParameter("EmployeeName", employeeName) :
-                new ObjectParameter("EmployeeName", typeof(string));
-    
-            var departmentParameter = department != null ?
-                new ObjectParameter("Department", department) :
-                new ObjectParameter("Department", typeof(string));
-    
-            var designationParameter = designation != null ?
-                new ObjectParameter("Designation", designation) :
-                new ObjectParameter("Designation", typeof(string));
-    
-            var startDateParameter = startDate.HasValue ?
-                new ObjectParameter("StartDate", startDate) :
-                new ObjectParameter("StartDate", typeof(System.DateTime));
-    
-            var endDateParameter = endDate.HasValue ?
-                new ObjectParameter("EndDate", endDate) :
-                new ObjectParameter("EndDate", typeof(System.DateTime));
-    
-            var salaryParameter = salary.HasValue ?
-                new ObjectParameter("Salary", salary) :
-                new ObjectParameter("Salary", typeof(decimal));
-    
-            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("sp_EmployeeSelect", employeeNameParameter, departmentParameter, designationParameter, startDateParameter, endDateParameter, salaryParameter);
         }
     
         public virtual ObjectResult<Nullable<int>> Sp_GenerarRolPagos(Nullable<int> año, Nullable<int> mes)
@@ -4700,7 +4194,7 @@ namespace Api_Aldebaran_CobrosPedidos
             return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<Nullable<int>>("Upd_Producto", iDPDParameter, iDFBParameter, iDCTParameter, iDGPParameter, iDSGParameter, iDPREParameter, iDMDParameter, iDUnidadParameter, codigoParameter, nombreParameter, costoParameter, pVPParameter, pVMParameter, descuentoParameter, iVAParameter, comisionParameter, pCPParameter, tipoParameter, estadoParameter, imagenParameter);
         }
     
-        public virtual int Upd_ProductoNew(string accion, Nullable<int> iD, Nullable<int> iDUsuario, Nullable<int> iDFabricante, Nullable<int> iDCategoria, Nullable<int> iDGrupo, Nullable<int> iDSubGrupo, Nullable<int> iDPresentacion, Nullable<int> iDMarca, Nullable<int> iDUnidad, Nullable<int> iDDeducible, Nullable<int> iDIVA, Nullable<int> iDIRBP, Nullable<int> iDICE, Nullable<int> iDRetencionIVA, Nullable<int> iDRetencionIR, string codigo, string codigoExterno, string nombre, Nullable<decimal> costo, Nullable<decimal> pCP, Nullable<decimal> pVP, Nullable<decimal> pVM, Nullable<int> tipo, Nullable<bool> iVA, Nullable<bool> iRBP, Nullable<bool> iCE, Nullable<bool> serie, Nullable<int> clasificacion, Nullable<bool> combo, Nullable<decimal> minimo, Nullable<decimal> maximo, string observaciones, Nullable<bool> estado, byte[] imagen, ObjectParameter iDDuplicado)
+        public virtual int Upd_ProductoNew(string accion, Nullable<int> iD, Nullable<int> iDUsuario, Nullable<int> iDFabricante, Nullable<int> iDCategoria, Nullable<int> iDGrupo, Nullable<int> iDSubGrupo, Nullable<int> iDPresentacion, Nullable<int> iDMarca, Nullable<int> iDUnidad, Nullable<int> iDDeducible, Nullable<int> iDIVA, Nullable<int> iDIRBP, Nullable<int> iDICE, Nullable<int> iDRetencionIVA, Nullable<int> iDRetencionIR, string codigo, string codigoExterno, string nombre, Nullable<decimal> costo, Nullable<decimal> pCP, Nullable<decimal> pVP, Nullable<decimal> pVM, string tipo, Nullable<bool> iVA, Nullable<bool> iRBP, Nullable<bool> iCE, Nullable<bool> serie, Nullable<bool> combo, Nullable<decimal> minimo, Nullable<decimal> maximo, string observaciones, Nullable<bool> estado, byte[] imagen, ObjectParameter iDDuplicado)
         {
             var accionParameter = accion != null ?
                 new ObjectParameter("Accion", accion) :
@@ -4794,9 +4288,9 @@ namespace Api_Aldebaran_CobrosPedidos
                 new ObjectParameter("PVM", pVM) :
                 new ObjectParameter("PVM", typeof(decimal));
     
-            var tipoParameter = tipo.HasValue ?
+            var tipoParameter = tipo != null ?
                 new ObjectParameter("Tipo", tipo) :
-                new ObjectParameter("Tipo", typeof(int));
+                new ObjectParameter("Tipo", typeof(string));
     
             var iVAParameter = iVA.HasValue ?
                 new ObjectParameter("IVA", iVA) :
@@ -4813,10 +4307,6 @@ namespace Api_Aldebaran_CobrosPedidos
             var serieParameter = serie.HasValue ?
                 new ObjectParameter("Serie", serie) :
                 new ObjectParameter("Serie", typeof(bool));
-    
-            var clasificacionParameter = clasificacion.HasValue ?
-                new ObjectParameter("Clasificacion", clasificacion) :
-                new ObjectParameter("Clasificacion", typeof(int));
     
             var comboParameter = combo.HasValue ?
                 new ObjectParameter("Combo", combo) :
@@ -4842,7 +4332,7 @@ namespace Api_Aldebaran_CobrosPedidos
                 new ObjectParameter("Imagen", imagen) :
                 new ObjectParameter("Imagen", typeof(byte[]));
     
-            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("Upd_ProductoNew", accionParameter, iDParameter, iDUsuarioParameter, iDFabricanteParameter, iDCategoriaParameter, iDGrupoParameter, iDSubGrupoParameter, iDPresentacionParameter, iDMarcaParameter, iDUnidadParameter, iDDeducibleParameter, iDIVAParameter, iDIRBPParameter, iDICEParameter, iDRetencionIVAParameter, iDRetencionIRParameter, codigoParameter, codigoExternoParameter, nombreParameter, costoParameter, pCPParameter, pVPParameter, pVMParameter, tipoParameter, iVAParameter, iRBPParameter, iCEParameter, serieParameter, clasificacionParameter, comboParameter, minimoParameter, maximoParameter, observacionesParameter, estadoParameter, imagenParameter, iDDuplicado);
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("Upd_ProductoNew", accionParameter, iDParameter, iDUsuarioParameter, iDFabricanteParameter, iDCategoriaParameter, iDGrupoParameter, iDSubGrupoParameter, iDPresentacionParameter, iDMarcaParameter, iDUnidadParameter, iDDeducibleParameter, iDIVAParameter, iDIRBPParameter, iDICEParameter, iDRetencionIVAParameter, iDRetencionIRParameter, codigoParameter, codigoExternoParameter, nombreParameter, costoParameter, pCPParameter, pVPParameter, pVMParameter, tipoParameter, iVAParameter, iRBPParameter, iCEParameter, serieParameter, comboParameter, minimoParameter, maximoParameter, observacionesParameter, estadoParameter, imagenParameter, iDDuplicado);
         }
     
         public virtual int Upd_Proveedor(string accion, Nullable<int> iD, Nullable<int> iDCategoria, Nullable<int> iDCiudad, Nullable<int> iDTipoIdentificacion, string identificacion, string nombre, string direccion, string telefono, string celular, string email, Nullable<bool> sujetoRetencion, string tipoContribuyente, string tipoEntidad, string tipoEmisor, string autorizacionSRI, Nullable<bool> estado, ObjectParameter iDDuplicado)
@@ -4941,75 +4431,6 @@ namespace Api_Aldebaran_CobrosPedidos
                 new ObjectParameter("Estado", typeof(bool));
     
             return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<Nullable<int>>("Upd_RegionMundo", accionParameter, iDParameter, iDContinenteParameter, nombreParameter, estadoParameter);
-        }
-    
-        public virtual int Upd_RetencionCV(Nullable<bool> venta, Nullable<int> iDR, Nullable<int> iDUS, Nullable<int> iDSU, Nullable<int> iDPT, Nullable<int> iDF, string numeroRetencion, string ejercicioFiscal, Nullable<bool> estado, Nullable<bool> asumida, string concepto, string tipo, Nullable<System.DateTime> fecha, string usuarioUpd, Nullable<System.DateTime> fechaActualizacion, Nullable<decimal> valorRetencion)
-        {
-            var ventaParameter = venta.HasValue ?
-                new ObjectParameter("Venta", venta) :
-                new ObjectParameter("Venta", typeof(bool));
-    
-            var iDRParameter = iDR.HasValue ?
-                new ObjectParameter("IDR", iDR) :
-                new ObjectParameter("IDR", typeof(int));
-    
-            var iDUSParameter = iDUS.HasValue ?
-                new ObjectParameter("IDUS", iDUS) :
-                new ObjectParameter("IDUS", typeof(int));
-    
-            var iDSUParameter = iDSU.HasValue ?
-                new ObjectParameter("IDSU", iDSU) :
-                new ObjectParameter("IDSU", typeof(int));
-    
-            var iDPTParameter = iDPT.HasValue ?
-                new ObjectParameter("IDPT", iDPT) :
-                new ObjectParameter("IDPT", typeof(int));
-    
-            var iDFParameter = iDF.HasValue ?
-                new ObjectParameter("IDF", iDF) :
-                new ObjectParameter("IDF", typeof(int));
-    
-            var numeroRetencionParameter = numeroRetencion != null ?
-                new ObjectParameter("NumeroRetencion", numeroRetencion) :
-                new ObjectParameter("NumeroRetencion", typeof(string));
-    
-            var ejercicioFiscalParameter = ejercicioFiscal != null ?
-                new ObjectParameter("EjercicioFiscal", ejercicioFiscal) :
-                new ObjectParameter("EjercicioFiscal", typeof(string));
-    
-            var estadoParameter = estado.HasValue ?
-                new ObjectParameter("Estado", estado) :
-                new ObjectParameter("Estado", typeof(bool));
-    
-            var asumidaParameter = asumida.HasValue ?
-                new ObjectParameter("Asumida", asumida) :
-                new ObjectParameter("Asumida", typeof(bool));
-    
-            var conceptoParameter = concepto != null ?
-                new ObjectParameter("Concepto", concepto) :
-                new ObjectParameter("Concepto", typeof(string));
-    
-            var tipoParameter = tipo != null ?
-                new ObjectParameter("Tipo", tipo) :
-                new ObjectParameter("Tipo", typeof(string));
-    
-            var fechaParameter = fecha.HasValue ?
-                new ObjectParameter("Fecha", fecha) :
-                new ObjectParameter("Fecha", typeof(System.DateTime));
-    
-            var usuarioUpdParameter = usuarioUpd != null ?
-                new ObjectParameter("UsuarioUpd", usuarioUpd) :
-                new ObjectParameter("UsuarioUpd", typeof(string));
-    
-            var fechaActualizacionParameter = fechaActualizacion.HasValue ?
-                new ObjectParameter("FechaActualizacion", fechaActualizacion) :
-                new ObjectParameter("FechaActualizacion", typeof(System.DateTime));
-    
-            var valorRetencionParameter = valorRetencion.HasValue ?
-                new ObjectParameter("ValorRetencion", valorRetencion) :
-                new ObjectParameter("ValorRetencion", typeof(decimal));
-    
-            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("Upd_RetencionCV", ventaParameter, iDRParameter, iDUSParameter, iDSUParameter, iDPTParameter, iDFParameter, numeroRetencionParameter, ejercicioFiscalParameter, estadoParameter, asumidaParameter, conceptoParameter, tipoParameter, fechaParameter, usuarioUpdParameter, fechaActualizacionParameter, valorRetencionParameter);
         }
     
         public virtual ObjectResult<Nullable<int>> Upd_Sector(string accion, Nullable<int> iD, Nullable<int> iDCiudad, string nombre, Nullable<bool> estado)
@@ -5162,2303 +4583,7 @@ namespace Api_Aldebaran_CobrosPedidos
             return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<Nullable<int>>("Upd_TipoIdentificacion", accionParameter, iDParameter, codigoSRIParameter, nombreParameter, estadoParameter);
         }
     
-        public virtual ObjectResult<Nullable<int>> Ins_FElectronica(string jsonData, string servidor, string baseDatos, Nullable<int> iDAmbiente, Nullable<int> iDTipoDocumento, string usuario, string estacion, ObjectParameter fProblemas)
-        {
-            var jsonDataParameter = jsonData != null ?
-                new ObjectParameter("JsonData", jsonData) :
-                new ObjectParameter("JsonData", typeof(string));
-    
-            var servidorParameter = servidor != null ?
-                new ObjectParameter("Servidor", servidor) :
-                new ObjectParameter("Servidor", typeof(string));
-    
-            var baseDatosParameter = baseDatos != null ?
-                new ObjectParameter("BaseDatos", baseDatos) :
-                new ObjectParameter("BaseDatos", typeof(string));
-    
-            var iDAmbienteParameter = iDAmbiente.HasValue ?
-                new ObjectParameter("IDAmbiente", iDAmbiente) :
-                new ObjectParameter("IDAmbiente", typeof(int));
-    
-            var iDTipoDocumentoParameter = iDTipoDocumento.HasValue ?
-                new ObjectParameter("IDTipoDocumento", iDTipoDocumento) :
-                new ObjectParameter("IDTipoDocumento", typeof(int));
-    
-            var usuarioParameter = usuario != null ?
-                new ObjectParameter("Usuario", usuario) :
-                new ObjectParameter("Usuario", typeof(string));
-    
-            var estacionParameter = estacion != null ?
-                new ObjectParameter("Estacion", estacion) :
-                new ObjectParameter("Estacion", typeof(string));
-    
-            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<Nullable<int>>("Ins_FElectronica", jsonDataParameter, servidorParameter, baseDatosParameter, iDAmbienteParameter, iDTipoDocumentoParameter, usuarioParameter, estacionParameter, fProblemas);
-        }
-    
-        public virtual int Ins_ProcessFElectronica(Nullable<int> iDFV, Nullable<int> iDCTO, string identificacion, string servidor, string baseDatos, Nullable<int> iDAmbiente, Nullable<int> iDTipoDocumento, string usuario, string estacion, ObjectParameter estado)
-        {
-            var iDFVParameter = iDFV.HasValue ?
-                new ObjectParameter("IDFV", iDFV) :
-                new ObjectParameter("IDFV", typeof(int));
-    
-            var iDCTOParameter = iDCTO.HasValue ?
-                new ObjectParameter("IDCTO", iDCTO) :
-                new ObjectParameter("IDCTO", typeof(int));
-    
-            var identificacionParameter = identificacion != null ?
-                new ObjectParameter("Identificacion", identificacion) :
-                new ObjectParameter("Identificacion", typeof(string));
-    
-            var servidorParameter = servidor != null ?
-                new ObjectParameter("Servidor", servidor) :
-                new ObjectParameter("Servidor", typeof(string));
-    
-            var baseDatosParameter = baseDatos != null ?
-                new ObjectParameter("BaseDatos", baseDatos) :
-                new ObjectParameter("BaseDatos", typeof(string));
-    
-            var iDAmbienteParameter = iDAmbiente.HasValue ?
-                new ObjectParameter("IDAmbiente", iDAmbiente) :
-                new ObjectParameter("IDAmbiente", typeof(int));
-    
-            var iDTipoDocumentoParameter = iDTipoDocumento.HasValue ?
-                new ObjectParameter("IDTipoDocumento", iDTipoDocumento) :
-                new ObjectParameter("IDTipoDocumento", typeof(int));
-    
-            var usuarioParameter = usuario != null ?
-                new ObjectParameter("Usuario", usuario) :
-                new ObjectParameter("Usuario", typeof(string));
-    
-            var estacionParameter = estacion != null ?
-                new ObjectParameter("Estacion", estacion) :
-                new ObjectParameter("Estacion", typeof(string));
-    
-            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("Ins_ProcessFElectronica", iDFVParameter, iDCTOParameter, identificacionParameter, servidorParameter, baseDatosParameter, iDAmbienteParameter, iDTipoDocumentoParameter, usuarioParameter, estacionParameter, estado);
-        }
-    
-        public virtual int Ins_ProcessRElectronica(Nullable<int> iDR, Nullable<int> iDCTO, string identificacion, string servidor, string baseDatos, Nullable<int> iDAmbiente, Nullable<int> iDTipoDocumento, string usuario, string estacion, ObjectParameter estado)
-        {
-            var iDRParameter = iDR.HasValue ?
-                new ObjectParameter("IDR", iDR) :
-                new ObjectParameter("IDR", typeof(int));
-    
-            var iDCTOParameter = iDCTO.HasValue ?
-                new ObjectParameter("IDCTO", iDCTO) :
-                new ObjectParameter("IDCTO", typeof(int));
-    
-            var identificacionParameter = identificacion != null ?
-                new ObjectParameter("Identificacion", identificacion) :
-                new ObjectParameter("Identificacion", typeof(string));
-    
-            var servidorParameter = servidor != null ?
-                new ObjectParameter("Servidor", servidor) :
-                new ObjectParameter("Servidor", typeof(string));
-    
-            var baseDatosParameter = baseDatos != null ?
-                new ObjectParameter("BaseDatos", baseDatos) :
-                new ObjectParameter("BaseDatos", typeof(string));
-    
-            var iDAmbienteParameter = iDAmbiente.HasValue ?
-                new ObjectParameter("IDAmbiente", iDAmbiente) :
-                new ObjectParameter("IDAmbiente", typeof(int));
-    
-            var iDTipoDocumentoParameter = iDTipoDocumento.HasValue ?
-                new ObjectParameter("IDTipoDocumento", iDTipoDocumento) :
-                new ObjectParameter("IDTipoDocumento", typeof(int));
-    
-            var usuarioParameter = usuario != null ?
-                new ObjectParameter("Usuario", usuario) :
-                new ObjectParameter("Usuario", typeof(string));
-    
-            var estacionParameter = estacion != null ?
-                new ObjectParameter("Estacion", estacion) :
-                new ObjectParameter("Estacion", typeof(string));
-    
-            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("Ins_ProcessRElectronica", iDRParameter, iDCTOParameter, identificacionParameter, servidorParameter, baseDatosParameter, iDAmbienteParameter, iDTipoDocumentoParameter, usuarioParameter, estacionParameter, estado);
-        }
-    
-        public virtual ObjectResult<Nullable<int>> Ins_RElectronica(string jsonData, string servidor, string baseDatos, Nullable<int> iDAmbiente, Nullable<int> iDTipoDocumento, string usuario, string estacion, ObjectParameter fProblemas)
-        {
-            var jsonDataParameter = jsonData != null ?
-                new ObjectParameter("JsonData", jsonData) :
-                new ObjectParameter("JsonData", typeof(string));
-    
-            var servidorParameter = servidor != null ?
-                new ObjectParameter("Servidor", servidor) :
-                new ObjectParameter("Servidor", typeof(string));
-    
-            var baseDatosParameter = baseDatos != null ?
-                new ObjectParameter("BaseDatos", baseDatos) :
-                new ObjectParameter("BaseDatos", typeof(string));
-    
-            var iDAmbienteParameter = iDAmbiente.HasValue ?
-                new ObjectParameter("IDAmbiente", iDAmbiente) :
-                new ObjectParameter("IDAmbiente", typeof(int));
-    
-            var iDTipoDocumentoParameter = iDTipoDocumento.HasValue ?
-                new ObjectParameter("IDTipoDocumento", iDTipoDocumento) :
-                new ObjectParameter("IDTipoDocumento", typeof(int));
-    
-            var usuarioParameter = usuario != null ?
-                new ObjectParameter("Usuario", usuario) :
-                new ObjectParameter("Usuario", typeof(string));
-    
-            var estacionParameter = estacion != null ?
-                new ObjectParameter("Estacion", estacion) :
-                new ObjectParameter("Estacion", typeof(string));
-    
-            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<Nullable<int>>("Ins_RElectronica", jsonDataParameter, servidorParameter, baseDatosParameter, iDAmbienteParameter, iDTipoDocumentoParameter, usuarioParameter, estacionParameter, fProblemas);
-        }
-    
-        public virtual ObjectResult<Rpt_Sel_FElectronica_Result> Rpt_Sel_FElectronica(string accion, Nullable<bool> enviadas, Nullable<int> iDSU, Nullable<int> iDPT, Nullable<System.DateTime> fechDesde, Nullable<System.DateTime> fechHasta)
-        {
-            var accionParameter = accion != null ?
-                new ObjectParameter("Accion", accion) :
-                new ObjectParameter("Accion", typeof(string));
-    
-            var enviadasParameter = enviadas.HasValue ?
-                new ObjectParameter("Enviadas", enviadas) :
-                new ObjectParameter("Enviadas", typeof(bool));
-    
-            var iDSUParameter = iDSU.HasValue ?
-                new ObjectParameter("IDSU", iDSU) :
-                new ObjectParameter("IDSU", typeof(int));
-    
-            var iDPTParameter = iDPT.HasValue ?
-                new ObjectParameter("IDPT", iDPT) :
-                new ObjectParameter("IDPT", typeof(int));
-    
-            var fechDesdeParameter = fechDesde.HasValue ?
-                new ObjectParameter("FechDesde", fechDesde) :
-                new ObjectParameter("FechDesde", typeof(System.DateTime));
-    
-            var fechHastaParameter = fechHasta.HasValue ?
-                new ObjectParameter("FechHasta", fechHasta) :
-                new ObjectParameter("FechHasta", typeof(System.DateTime));
-    
-            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<Rpt_Sel_FElectronica_Result>("Rpt_Sel_FElectronica", accionParameter, enviadasParameter, iDSUParameter, iDPTParameter, fechDesdeParameter, fechHastaParameter);
-        }
-    
-        public virtual ObjectResult<Rpt_Sel_RElectronica_Result> Rpt_Sel_RElectronica(string accion, Nullable<bool> enviadas, Nullable<int> iDSU, Nullable<int> iDPT, Nullable<System.DateTime> fechDesde, Nullable<System.DateTime> fechHasta)
-        {
-            var accionParameter = accion != null ?
-                new ObjectParameter("Accion", accion) :
-                new ObjectParameter("Accion", typeof(string));
-    
-            var enviadasParameter = enviadas.HasValue ?
-                new ObjectParameter("Enviadas", enviadas) :
-                new ObjectParameter("Enviadas", typeof(bool));
-    
-            var iDSUParameter = iDSU.HasValue ?
-                new ObjectParameter("IDSU", iDSU) :
-                new ObjectParameter("IDSU", typeof(int));
-    
-            var iDPTParameter = iDPT.HasValue ?
-                new ObjectParameter("IDPT", iDPT) :
-                new ObjectParameter("IDPT", typeof(int));
-    
-            var fechDesdeParameter = fechDesde.HasValue ?
-                new ObjectParameter("FechDesde", fechDesde) :
-                new ObjectParameter("FechDesde", typeof(System.DateTime));
-    
-            var fechHastaParameter = fechHasta.HasValue ?
-                new ObjectParameter("FechHasta", fechHasta) :
-                new ObjectParameter("FechHasta", typeof(System.DateTime));
-    
-            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<Rpt_Sel_RElectronica_Result>("Rpt_Sel_RElectronica", accionParameter, enviadasParameter, iDSUParameter, iDPTParameter, fechDesdeParameter, fechHastaParameter);
-        }
-    
-        public virtual ObjectResult<string> Sel_FElectronica(string accion, Nullable<bool> tipoJson, string usuario, string estacion, Nullable<int> iDSU, Nullable<int> iDPT, Nullable<int> iDCT, Nullable<System.DateTime> fechDesde, Nullable<System.DateTime> fechHasta)
-        {
-            var accionParameter = accion != null ?
-                new ObjectParameter("Accion", accion) :
-                new ObjectParameter("Accion", typeof(string));
-    
-            var tipoJsonParameter = tipoJson.HasValue ?
-                new ObjectParameter("TipoJson", tipoJson) :
-                new ObjectParameter("TipoJson", typeof(bool));
-    
-            var usuarioParameter = usuario != null ?
-                new ObjectParameter("Usuario", usuario) :
-                new ObjectParameter("Usuario", typeof(string));
-    
-            var estacionParameter = estacion != null ?
-                new ObjectParameter("Estacion", estacion) :
-                new ObjectParameter("Estacion", typeof(string));
-    
-            var iDSUParameter = iDSU.HasValue ?
-                new ObjectParameter("IDSU", iDSU) :
-                new ObjectParameter("IDSU", typeof(int));
-    
-            var iDPTParameter = iDPT.HasValue ?
-                new ObjectParameter("IDPT", iDPT) :
-                new ObjectParameter("IDPT", typeof(int));
-    
-            var iDCTParameter = iDCT.HasValue ?
-                new ObjectParameter("IDCT", iDCT) :
-                new ObjectParameter("IDCT", typeof(int));
-    
-            var fechDesdeParameter = fechDesde.HasValue ?
-                new ObjectParameter("FechDesde", fechDesde) :
-                new ObjectParameter("FechDesde", typeof(System.DateTime));
-    
-            var fechHastaParameter = fechHasta.HasValue ?
-                new ObjectParameter("FechHasta", fechHasta) :
-                new ObjectParameter("FechHasta", typeof(System.DateTime));
-    
-            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<string>("Sel_FElectronica", accionParameter, tipoJsonParameter, usuarioParameter, estacionParameter, iDSUParameter, iDPTParameter, iDCTParameter, fechDesdeParameter, fechHastaParameter);
-        }
-    
-        public virtual ObjectResult<string> Sel_RElectronica(string accion, Nullable<bool> tipoJson, string usuario, string estacion, Nullable<int> iDSU, Nullable<int> iDPT, Nullable<int> iDPV, Nullable<System.DateTime> fechDesde, Nullable<System.DateTime> fechHasta)
-        {
-            var accionParameter = accion != null ?
-                new ObjectParameter("Accion", accion) :
-                new ObjectParameter("Accion", typeof(string));
-    
-            var tipoJsonParameter = tipoJson.HasValue ?
-                new ObjectParameter("TipoJson", tipoJson) :
-                new ObjectParameter("TipoJson", typeof(bool));
-    
-            var usuarioParameter = usuario != null ?
-                new ObjectParameter("Usuario", usuario) :
-                new ObjectParameter("Usuario", typeof(string));
-    
-            var estacionParameter = estacion != null ?
-                new ObjectParameter("Estacion", estacion) :
-                new ObjectParameter("Estacion", typeof(string));
-    
-            var iDSUParameter = iDSU.HasValue ?
-                new ObjectParameter("IDSU", iDSU) :
-                new ObjectParameter("IDSU", typeof(int));
-    
-            var iDPTParameter = iDPT.HasValue ?
-                new ObjectParameter("IDPT", iDPT) :
-                new ObjectParameter("IDPT", typeof(int));
-    
-            var iDPVParameter = iDPV.HasValue ?
-                new ObjectParameter("IDPV", iDPV) :
-                new ObjectParameter("IDPV", typeof(int));
-    
-            var fechDesdeParameter = fechDesde.HasValue ?
-                new ObjectParameter("FechDesde", fechDesde) :
-                new ObjectParameter("FechDesde", typeof(System.DateTime));
-    
-            var fechHastaParameter = fechHasta.HasValue ?
-                new ObjectParameter("FechHasta", fechHasta) :
-                new ObjectParameter("FechHasta", typeof(System.DateTime));
-    
-            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<string>("Sel_RElectronica", accionParameter, tipoJsonParameter, usuarioParameter, estacionParameter, iDSUParameter, iDPTParameter, iDPVParameter, fechDesdeParameter, fechHastaParameter);
-        }
-    
-        public virtual int Del_Combo(Nullable<int> iD, string usuario, string estacion)
-        {
-            var iDParameter = iD.HasValue ?
-                new ObjectParameter("ID", iD) :
-                new ObjectParameter("ID", typeof(int));
-    
-            var usuarioParameter = usuario != null ?
-                new ObjectParameter("Usuario", usuario) :
-                new ObjectParameter("Usuario", typeof(string));
-    
-            var estacionParameter = estacion != null ?
-                new ObjectParameter("Estacion", estacion) :
-                new ObjectParameter("Estacion", typeof(string));
-    
-            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("Del_Combo", iDParameter, usuarioParameter, estacionParameter);
-        }
-    
-        public virtual ObjectResult<string> Del_Guarnicion(Nullable<int> iD, string usuario, string estacion)
-        {
-            var iDParameter = iD.HasValue ?
-                new ObjectParameter("ID", iD) :
-                new ObjectParameter("ID", typeof(int));
-    
-            var usuarioParameter = usuario != null ?
-                new ObjectParameter("Usuario", usuario) :
-                new ObjectParameter("Usuario", typeof(string));
-    
-            var estacionParameter = estacion != null ?
-                new ObjectParameter("Estacion", estacion) :
-                new ObjectParameter("Estacion", typeof(string));
-    
-            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<string>("Del_Guarnicion", iDParameter, usuarioParameter, estacionParameter);
-        }
-    
-        public virtual ObjectResult<Nullable<int>> Del_Institucion(Nullable<int> iD)
-        {
-            var iDParameter = iD.HasValue ?
-                new ObjectParameter("ID", iD) :
-                new ObjectParameter("ID", typeof(int));
-    
-            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<Nullable<int>>("Del_Institucion", iDParameter);
-        }
-    
-        public virtual ObjectResult<string> Del_Mesa(Nullable<int> iD, string usuario, string estacion)
-        {
-            var iDParameter = iD.HasValue ?
-                new ObjectParameter("ID", iD) :
-                new ObjectParameter("ID", typeof(int));
-    
-            var usuarioParameter = usuario != null ?
-                new ObjectParameter("Usuario", usuario) :
-                new ObjectParameter("Usuario", typeof(string));
-    
-            var estacionParameter = estacion != null ?
-                new ObjectParameter("Estacion", estacion) :
-                new ObjectParameter("Estacion", typeof(string));
-    
-            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<string>("Del_Mesa", iDParameter, usuarioParameter, estacionParameter);
-        }
-    
-        public virtual ObjectResult<string> Del_OrdenPreparacion(Nullable<int> iD, Nullable<int> iDSU, string usuario, string estacion, ObjectParameter mensajeOut)
-        {
-            var iDParameter = iD.HasValue ?
-                new ObjectParameter("ID", iD) :
-                new ObjectParameter("ID", typeof(int));
-    
-            var iDSUParameter = iDSU.HasValue ?
-                new ObjectParameter("IDSU", iDSU) :
-                new ObjectParameter("IDSU", typeof(int));
-    
-            var usuarioParameter = usuario != null ?
-                new ObjectParameter("Usuario", usuario) :
-                new ObjectParameter("Usuario", typeof(string));
-    
-            var estacionParameter = estacion != null ?
-                new ObjectParameter("Estacion", estacion) :
-                new ObjectParameter("Estacion", typeof(string));
-    
-            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<string>("Del_OrdenPreparacion", iDParameter, iDSUParameter, usuarioParameter, estacionParameter, mensajeOut);
-        }
-    
-        public virtual ObjectResult<string> Ins_AnularVenta(string accion, Nullable<int> iD, string jsonData)
-        {
-            var accionParameter = accion != null ?
-                new ObjectParameter("Accion", accion) :
-                new ObjectParameter("Accion", typeof(string));
-    
-            var iDParameter = iD.HasValue ?
-                new ObjectParameter("ID", iD) :
-                new ObjectParameter("ID", typeof(int));
-    
-            var jsonDataParameter = jsonData != null ?
-                new ObjectParameter("JsonData", jsonData) :
-                new ObjectParameter("JsonData", typeof(string));
-    
-            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<string>("Ins_AnularVenta", accionParameter, iDParameter, jsonDataParameter);
-        }
-    
-        public virtual ObjectResult<string> Ins_Combo(string jsonData)
-        {
-            var jsonDataParameter = jsonData != null ?
-                new ObjectParameter("JsonData", jsonData) :
-                new ObjectParameter("JsonData", typeof(string));
-    
-            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<string>("Ins_Combo", jsonDataParameter);
-        }
-    
-        public virtual ObjectResult<string> Ins_Costo(string jsonData)
-        {
-            var jsonDataParameter = jsonData != null ?
-                new ObjectParameter("JsonData", jsonData) :
-                new ObjectParameter("JsonData", typeof(string));
-    
-            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<string>("Ins_Costo", jsonDataParameter);
-        }
-    
-        public virtual ObjectResult<string> Ins_DevVenta(string jsonData, ObjectParameter numeroOut)
-        {
-            var jsonDataParameter = jsonData != null ?
-                new ObjectParameter("JsonData", jsonData) :
-                new ObjectParameter("JsonData", typeof(string));
-    
-            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<string>("Ins_DevVenta", jsonDataParameter, numeroOut);
-        }
-    
-        public virtual int Ins_FactPedido(Nullable<int> iDP, Nullable<int> iDIN, Nullable<int> iDCT, Nullable<int> iDSU, Nullable<int> iDPT, Nullable<int> iDUS, Nullable<int> iDEP, Nullable<System.DateTime> fecha, string tipo, string formaPago, Nullable<decimal> porcentajeComision, Nullable<decimal> comision, Nullable<decimal> subtotalIVA, Nullable<decimal> subtotalIVA0, Nullable<decimal> subtotal, Nullable<decimal> porcentajeDesc, Nullable<decimal> descuento, Nullable<decimal> subtotalIVADesc, Nullable<decimal> subtotalIVA0Desc, Nullable<decimal> iVA, Nullable<decimal> total, Nullable<decimal> saldo, Nullable<bool> cCredito, string estado, Nullable<decimal> efectivo, Nullable<decimal> cambio, Nullable<bool> impreso, ObjectParameter numeroOut, ObjectParameter mensajeOut)
-        {
-            var iDPParameter = iDP.HasValue ?
-                new ObjectParameter("IDP", iDP) :
-                new ObjectParameter("IDP", typeof(int));
-    
-            var iDINParameter = iDIN.HasValue ?
-                new ObjectParameter("IDIN", iDIN) :
-                new ObjectParameter("IDIN", typeof(int));
-    
-            var iDCTParameter = iDCT.HasValue ?
-                new ObjectParameter("IDCT", iDCT) :
-                new ObjectParameter("IDCT", typeof(int));
-    
-            var iDSUParameter = iDSU.HasValue ?
-                new ObjectParameter("IDSU", iDSU) :
-                new ObjectParameter("IDSU", typeof(int));
-    
-            var iDPTParameter = iDPT.HasValue ?
-                new ObjectParameter("IDPT", iDPT) :
-                new ObjectParameter("IDPT", typeof(int));
-    
-            var iDUSParameter = iDUS.HasValue ?
-                new ObjectParameter("IDUS", iDUS) :
-                new ObjectParameter("IDUS", typeof(int));
-    
-            var iDEPParameter = iDEP.HasValue ?
-                new ObjectParameter("IDEP", iDEP) :
-                new ObjectParameter("IDEP", typeof(int));
-    
-            var fechaParameter = fecha.HasValue ?
-                new ObjectParameter("Fecha", fecha) :
-                new ObjectParameter("Fecha", typeof(System.DateTime));
-    
-            var tipoParameter = tipo != null ?
-                new ObjectParameter("Tipo", tipo) :
-                new ObjectParameter("Tipo", typeof(string));
-    
-            var formaPagoParameter = formaPago != null ?
-                new ObjectParameter("FormaPago", formaPago) :
-                new ObjectParameter("FormaPago", typeof(string));
-    
-            var porcentajeComisionParameter = porcentajeComision.HasValue ?
-                new ObjectParameter("PorcentajeComision", porcentajeComision) :
-                new ObjectParameter("PorcentajeComision", typeof(decimal));
-    
-            var comisionParameter = comision.HasValue ?
-                new ObjectParameter("Comision", comision) :
-                new ObjectParameter("Comision", typeof(decimal));
-    
-            var subtotalIVAParameter = subtotalIVA.HasValue ?
-                new ObjectParameter("SubtotalIVA", subtotalIVA) :
-                new ObjectParameter("SubtotalIVA", typeof(decimal));
-    
-            var subtotalIVA0Parameter = subtotalIVA0.HasValue ?
-                new ObjectParameter("SubtotalIVA0", subtotalIVA0) :
-                new ObjectParameter("SubtotalIVA0", typeof(decimal));
-    
-            var subtotalParameter = subtotal.HasValue ?
-                new ObjectParameter("Subtotal", subtotal) :
-                new ObjectParameter("Subtotal", typeof(decimal));
-    
-            var porcentajeDescParameter = porcentajeDesc.HasValue ?
-                new ObjectParameter("PorcentajeDesc", porcentajeDesc) :
-                new ObjectParameter("PorcentajeDesc", typeof(decimal));
-    
-            var descuentoParameter = descuento.HasValue ?
-                new ObjectParameter("Descuento", descuento) :
-                new ObjectParameter("Descuento", typeof(decimal));
-    
-            var subtotalIVADescParameter = subtotalIVADesc.HasValue ?
-                new ObjectParameter("SubtotalIVADesc", subtotalIVADesc) :
-                new ObjectParameter("SubtotalIVADesc", typeof(decimal));
-    
-            var subtotalIVA0DescParameter = subtotalIVA0Desc.HasValue ?
-                new ObjectParameter("SubtotalIVA0Desc", subtotalIVA0Desc) :
-                new ObjectParameter("SubtotalIVA0Desc", typeof(decimal));
-    
-            var iVAParameter = iVA.HasValue ?
-                new ObjectParameter("IVA", iVA) :
-                new ObjectParameter("IVA", typeof(decimal));
-    
-            var totalParameter = total.HasValue ?
-                new ObjectParameter("Total", total) :
-                new ObjectParameter("Total", typeof(decimal));
-    
-            var saldoParameter = saldo.HasValue ?
-                new ObjectParameter("Saldo", saldo) :
-                new ObjectParameter("Saldo", typeof(decimal));
-    
-            var cCreditoParameter = cCredito.HasValue ?
-                new ObjectParameter("CCredito", cCredito) :
-                new ObjectParameter("CCredito", typeof(bool));
-    
-            var estadoParameter = estado != null ?
-                new ObjectParameter("Estado", estado) :
-                new ObjectParameter("Estado", typeof(string));
-    
-            var efectivoParameter = efectivo.HasValue ?
-                new ObjectParameter("Efectivo", efectivo) :
-                new ObjectParameter("Efectivo", typeof(decimal));
-    
-            var cambioParameter = cambio.HasValue ?
-                new ObjectParameter("Cambio", cambio) :
-                new ObjectParameter("Cambio", typeof(decimal));
-    
-            var impresoParameter = impreso.HasValue ?
-                new ObjectParameter("Impreso", impreso) :
-                new ObjectParameter("Impreso", typeof(bool));
-    
-            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("Ins_FactPedido", iDPParameter, iDINParameter, iDCTParameter, iDSUParameter, iDPTParameter, iDUSParameter, iDEPParameter, fechaParameter, tipoParameter, formaPagoParameter, porcentajeComisionParameter, comisionParameter, subtotalIVAParameter, subtotalIVA0Parameter, subtotalParameter, porcentajeDescParameter, descuentoParameter, subtotalIVADescParameter, subtotalIVA0DescParameter, iVAParameter, totalParameter, saldoParameter, cCreditoParameter, estadoParameter, efectivoParameter, cambioParameter, impresoParameter, numeroOut, mensajeOut);
-        }
-    
-        public virtual ObjectResult<string> Ins_Guarnicion(string jsonData)
-        {
-            var jsonDataParameter = jsonData != null ?
-                new ObjectParameter("JsonData", jsonData) :
-                new ObjectParameter("JsonData", typeof(string));
-    
-            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<string>("Ins_Guarnicion", jsonDataParameter);
-        }
-    
-        public virtual ObjectResult<Nullable<int>> Ins_Institucion(Nullable<int> iDCiudad, string rUC, string razonSocial, string nombreComercial, string direccion, string telefono, string celular, string email, string representNombre, string representIdentificacion, string representCelular, string representEmail, byte[] logo, Nullable<bool> emisorFE, Nullable<bool> estado, ObjectParameter iDDuplicado)
-        {
-            var iDCiudadParameter = iDCiudad.HasValue ?
-                new ObjectParameter("IDCiudad", iDCiudad) :
-                new ObjectParameter("IDCiudad", typeof(int));
-    
-            var rUCParameter = rUC != null ?
-                new ObjectParameter("RUC", rUC) :
-                new ObjectParameter("RUC", typeof(string));
-    
-            var razonSocialParameter = razonSocial != null ?
-                new ObjectParameter("RazonSocial", razonSocial) :
-                new ObjectParameter("RazonSocial", typeof(string));
-    
-            var nombreComercialParameter = nombreComercial != null ?
-                new ObjectParameter("NombreComercial", nombreComercial) :
-                new ObjectParameter("NombreComercial", typeof(string));
-    
-            var direccionParameter = direccion != null ?
-                new ObjectParameter("Direccion", direccion) :
-                new ObjectParameter("Direccion", typeof(string));
-    
-            var telefonoParameter = telefono != null ?
-                new ObjectParameter("Telefono", telefono) :
-                new ObjectParameter("Telefono", typeof(string));
-    
-            var celularParameter = celular != null ?
-                new ObjectParameter("Celular", celular) :
-                new ObjectParameter("Celular", typeof(string));
-    
-            var emailParameter = email != null ?
-                new ObjectParameter("Email", email) :
-                new ObjectParameter("Email", typeof(string));
-    
-            var representNombreParameter = representNombre != null ?
-                new ObjectParameter("RepresentNombre", representNombre) :
-                new ObjectParameter("RepresentNombre", typeof(string));
-    
-            var representIdentificacionParameter = representIdentificacion != null ?
-                new ObjectParameter("RepresentIdentificacion", representIdentificacion) :
-                new ObjectParameter("RepresentIdentificacion", typeof(string));
-    
-            var representCelularParameter = representCelular != null ?
-                new ObjectParameter("RepresentCelular", representCelular) :
-                new ObjectParameter("RepresentCelular", typeof(string));
-    
-            var representEmailParameter = representEmail != null ?
-                new ObjectParameter("RepresentEmail", representEmail) :
-                new ObjectParameter("RepresentEmail", typeof(string));
-    
-            var logoParameter = logo != null ?
-                new ObjectParameter("Logo", logo) :
-                new ObjectParameter("Logo", typeof(byte[]));
-    
-            var emisorFEParameter = emisorFE.HasValue ?
-                new ObjectParameter("EmisorFE", emisorFE) :
-                new ObjectParameter("EmisorFE", typeof(bool));
-    
-            var estadoParameter = estado.HasValue ?
-                new ObjectParameter("Estado", estado) :
-                new ObjectParameter("Estado", typeof(bool));
-    
-            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<Nullable<int>>("Ins_Institucion", iDCiudadParameter, rUCParameter, razonSocialParameter, nombreComercialParameter, direccionParameter, telefonoParameter, celularParameter, emailParameter, representNombreParameter, representIdentificacionParameter, representCelularParameter, representEmailParameter, logoParameter, emisorFEParameter, estadoParameter, iDDuplicado);
-        }
-    
-        public virtual ObjectResult<string> Ins_InstitucionBono(string jsonData)
-        {
-            var jsonDataParameter = jsonData != null ?
-                new ObjectParameter("JsonData", jsonData) :
-                new ObjectParameter("JsonData", typeof(string));
-    
-            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<string>("Ins_InstitucionBono", jsonDataParameter);
-        }
-    
-        public virtual int Ins_ListCredito(string jsonData)
-        {
-            var jsonDataParameter = jsonData != null ?
-                new ObjectParameter("JsonData", jsonData) :
-                new ObjectParameter("JsonData", typeof(string));
-    
-            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("Ins_ListCredito", jsonDataParameter);
-        }
-    
-        public virtual int Ins_ListSociedad(string jsonData)
-        {
-            var jsonDataParameter = jsonData != null ?
-                new ObjectParameter("JsonData", jsonData) :
-                new ObjectParameter("JsonData", typeof(string));
-    
-            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("Ins_ListSociedad", jsonDataParameter);
-        }
-    
-        public virtual ObjectResult<string> Ins_Mesa(string jsonData)
-        {
-            var jsonDataParameter = jsonData != null ?
-                new ObjectParameter("JsonData", jsonData) :
-                new ObjectParameter("JsonData", typeof(string));
-    
-            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<string>("Ins_Mesa", jsonDataParameter);
-        }
-    
-        public virtual ObjectResult<string> Ins_OrdenPreparacion(string jsonData, ObjectParameter mensajeOut)
-        {
-            var jsonDataParameter = jsonData != null ?
-                new ObjectParameter("JsonData", jsonData) :
-                new ObjectParameter("JsonData", typeof(string));
-    
-            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<string>("Ins_OrdenPreparacion", jsonDataParameter, mensajeOut);
-        }
-    
-        public virtual int Ins_Pedido(Nullable<int> iDMESA, Nullable<int> iDSU, Nullable<int> iDPT, Nullable<int> iDUS, Nullable<int> iDEP, Nullable<System.DateTime> fecha, Nullable<decimal> subtotalIVA, Nullable<decimal> subtotalIVA0, Nullable<decimal> subtotal, Nullable<decimal> iVA, Nullable<decimal> total, Nullable<decimal> saldo, string estado, string usuario, string estacion, Nullable<bool> impreso, ObjectParameter numeroOut, ObjectParameter mensajeOut)
-        {
-            var iDMESAParameter = iDMESA.HasValue ?
-                new ObjectParameter("IDMESA", iDMESA) :
-                new ObjectParameter("IDMESA", typeof(int));
-    
-            var iDSUParameter = iDSU.HasValue ?
-                new ObjectParameter("IDSU", iDSU) :
-                new ObjectParameter("IDSU", typeof(int));
-    
-            var iDPTParameter = iDPT.HasValue ?
-                new ObjectParameter("IDPT", iDPT) :
-                new ObjectParameter("IDPT", typeof(int));
-    
-            var iDUSParameter = iDUS.HasValue ?
-                new ObjectParameter("IDUS", iDUS) :
-                new ObjectParameter("IDUS", typeof(int));
-    
-            var iDEPParameter = iDEP.HasValue ?
-                new ObjectParameter("IDEP", iDEP) :
-                new ObjectParameter("IDEP", typeof(int));
-    
-            var fechaParameter = fecha.HasValue ?
-                new ObjectParameter("Fecha", fecha) :
-                new ObjectParameter("Fecha", typeof(System.DateTime));
-    
-            var subtotalIVAParameter = subtotalIVA.HasValue ?
-                new ObjectParameter("SubtotalIVA", subtotalIVA) :
-                new ObjectParameter("SubtotalIVA", typeof(decimal));
-    
-            var subtotalIVA0Parameter = subtotalIVA0.HasValue ?
-                new ObjectParameter("SubtotalIVA0", subtotalIVA0) :
-                new ObjectParameter("SubtotalIVA0", typeof(decimal));
-    
-            var subtotalParameter = subtotal.HasValue ?
-                new ObjectParameter("Subtotal", subtotal) :
-                new ObjectParameter("Subtotal", typeof(decimal));
-    
-            var iVAParameter = iVA.HasValue ?
-                new ObjectParameter("IVA", iVA) :
-                new ObjectParameter("IVA", typeof(decimal));
-    
-            var totalParameter = total.HasValue ?
-                new ObjectParameter("Total", total) :
-                new ObjectParameter("Total", typeof(decimal));
-    
-            var saldoParameter = saldo.HasValue ?
-                new ObjectParameter("Saldo", saldo) :
-                new ObjectParameter("Saldo", typeof(decimal));
-    
-            var estadoParameter = estado != null ?
-                new ObjectParameter("Estado", estado) :
-                new ObjectParameter("Estado", typeof(string));
-    
-            var usuarioParameter = usuario != null ?
-                new ObjectParameter("Usuario", usuario) :
-                new ObjectParameter("Usuario", typeof(string));
-    
-            var estacionParameter = estacion != null ?
-                new ObjectParameter("Estacion", estacion) :
-                new ObjectParameter("Estacion", typeof(string));
-    
-            var impresoParameter = impreso.HasValue ?
-                new ObjectParameter("Impreso", impreso) :
-                new ObjectParameter("Impreso", typeof(bool));
-    
-            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("Ins_Pedido", iDMESAParameter, iDSUParameter, iDPTParameter, iDUSParameter, iDEPParameter, fechaParameter, subtotalIVAParameter, subtotalIVA0Parameter, subtotalParameter, iVAParameter, totalParameter, saldoParameter, estadoParameter, usuarioParameter, estacionParameter, impresoParameter, numeroOut, mensajeOut);
-        }
-    
-        public virtual int Ins_Platillo(string jsonData)
-        {
-            var jsonDataParameter = jsonData != null ?
-                new ObjectParameter("JsonData", jsonData) :
-                new ObjectParameter("JsonData", typeof(string));
-    
-            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("Ins_Platillo", jsonDataParameter);
-        }
-    
-        public virtual ObjectResult<Rpt_OrdenPrepAracion_Result> Rpt_OrdenPrepAracion(string accion, Nullable<int> iD)
-        {
-            var accionParameter = accion != null ?
-                new ObjectParameter("Accion", accion) :
-                new ObjectParameter("Accion", typeof(string));
-    
-            var iDParameter = iD.HasValue ?
-                new ObjectParameter("ID", iD) :
-                new ObjectParameter("ID", typeof(int));
-    
-            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<Rpt_OrdenPrepAracion_Result>("Rpt_OrdenPrepAracion", accionParameter, iDParameter);
-        }
-    
-        public virtual ObjectResult<Rpt_OrdenPreperacion_Result> Rpt_OrdenPreperacion(string accion, Nullable<int> iD)
-        {
-            var accionParameter = accion != null ?
-                new ObjectParameter("Accion", accion) :
-                new ObjectParameter("Accion", typeof(string));
-    
-            var iDParameter = iD.HasValue ?
-                new ObjectParameter("ID", iD) :
-                new ObjectParameter("ID", typeof(int));
-    
-            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<Rpt_OrdenPreperacion_Result>("Rpt_OrdenPreperacion", accionParameter, iDParameter);
-        }
-    
-        public virtual ObjectResult<Rpt_Pedido_Result> Rpt_Pedido(string accion, Nullable<int> iD)
-        {
-            var accionParameter = accion != null ?
-                new ObjectParameter("Accion", accion) :
-                new ObjectParameter("Accion", typeof(string));
-    
-            var iDParameter = iD.HasValue ?
-                new ObjectParameter("ID", iD) :
-                new ObjectParameter("ID", typeof(int));
-    
-            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<Rpt_Pedido_Result>("Rpt_Pedido", accionParameter, iDParameter);
-        }
-    
-        public virtual ObjectResult<string> Sel_Combo(string accion, Nullable<bool> tipoJson, string usuario, string estacion, Nullable<int> iD, string texto, string estado, string codigo)
-        {
-            var accionParameter = accion != null ?
-                new ObjectParameter("Accion", accion) :
-                new ObjectParameter("Accion", typeof(string));
-    
-            var tipoJsonParameter = tipoJson.HasValue ?
-                new ObjectParameter("TipoJson", tipoJson) :
-                new ObjectParameter("TipoJson", typeof(bool));
-    
-            var usuarioParameter = usuario != null ?
-                new ObjectParameter("Usuario", usuario) :
-                new ObjectParameter("Usuario", typeof(string));
-    
-            var estacionParameter = estacion != null ?
-                new ObjectParameter("Estacion", estacion) :
-                new ObjectParameter("Estacion", typeof(string));
-    
-            var iDParameter = iD.HasValue ?
-                new ObjectParameter("ID", iD) :
-                new ObjectParameter("ID", typeof(int));
-    
-            var textoParameter = texto != null ?
-                new ObjectParameter("Texto", texto) :
-                new ObjectParameter("Texto", typeof(string));
-    
-            var estadoParameter = estado != null ?
-                new ObjectParameter("Estado", estado) :
-                new ObjectParameter("Estado", typeof(string));
-    
-            var codigoParameter = codigo != null ?
-                new ObjectParameter("Codigo", codigo) :
-                new ObjectParameter("Codigo", typeof(string));
-    
-            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<string>("Sel_Combo", accionParameter, tipoJsonParameter, usuarioParameter, estacionParameter, iDParameter, textoParameter, estadoParameter, codigoParameter);
-        }
-    
-        public virtual ObjectResult<string> Sel_ComboDetalle(string accion, Nullable<bool> tipoJson, string usuario, string estacion, Nullable<int> iD, string texto, string estado)
-        {
-            var accionParameter = accion != null ?
-                new ObjectParameter("Accion", accion) :
-                new ObjectParameter("Accion", typeof(string));
-    
-            var tipoJsonParameter = tipoJson.HasValue ?
-                new ObjectParameter("TipoJson", tipoJson) :
-                new ObjectParameter("TipoJson", typeof(bool));
-    
-            var usuarioParameter = usuario != null ?
-                new ObjectParameter("Usuario", usuario) :
-                new ObjectParameter("Usuario", typeof(string));
-    
-            var estacionParameter = estacion != null ?
-                new ObjectParameter("Estacion", estacion) :
-                new ObjectParameter("Estacion", typeof(string));
-    
-            var iDParameter = iD.HasValue ?
-                new ObjectParameter("ID", iD) :
-                new ObjectParameter("ID", typeof(int));
-    
-            var textoParameter = texto != null ?
-                new ObjectParameter("Texto", texto) :
-                new ObjectParameter("Texto", typeof(string));
-    
-            var estadoParameter = estado != null ?
-                new ObjectParameter("Estado", estado) :
-                new ObjectParameter("Estado", typeof(string));
-    
-            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<string>("Sel_ComboDetalle", accionParameter, tipoJsonParameter, usuarioParameter, estacionParameter, iDParameter, textoParameter, estadoParameter);
-        }
-    
-        public virtual ObjectResult<string> Sel_Costo(string accion, Nullable<bool> tipoJson, string usuario, string estacion, Nullable<int> iD, string texto, string estado)
-        {
-            var accionParameter = accion != null ?
-                new ObjectParameter("Accion", accion) :
-                new ObjectParameter("Accion", typeof(string));
-    
-            var tipoJsonParameter = tipoJson.HasValue ?
-                new ObjectParameter("TipoJson", tipoJson) :
-                new ObjectParameter("TipoJson", typeof(bool));
-    
-            var usuarioParameter = usuario != null ?
-                new ObjectParameter("Usuario", usuario) :
-                new ObjectParameter("Usuario", typeof(string));
-    
-            var estacionParameter = estacion != null ?
-                new ObjectParameter("Estacion", estacion) :
-                new ObjectParameter("Estacion", typeof(string));
-    
-            var iDParameter = iD.HasValue ?
-                new ObjectParameter("ID", iD) :
-                new ObjectParameter("ID", typeof(int));
-    
-            var textoParameter = texto != null ?
-                new ObjectParameter("Texto", texto) :
-                new ObjectParameter("Texto", typeof(string));
-    
-            var estadoParameter = estado != null ?
-                new ObjectParameter("Estado", estado) :
-                new ObjectParameter("Estado", typeof(string));
-    
-            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<string>("Sel_Costo", accionParameter, tipoJsonParameter, usuarioParameter, estacionParameter, iDParameter, textoParameter, estadoParameter);
-        }
-    
-        public virtual ObjectResult<string> Sel_Credito(string accion, Nullable<bool> tipoJson, Nullable<int> iDInstitucion, Nullable<int> iDCliente, string mes, string ano, string usuario, string estacion)
-        {
-            var accionParameter = accion != null ?
-                new ObjectParameter("Accion", accion) :
-                new ObjectParameter("Accion", typeof(string));
-    
-            var tipoJsonParameter = tipoJson.HasValue ?
-                new ObjectParameter("TipoJson", tipoJson) :
-                new ObjectParameter("TipoJson", typeof(bool));
-    
-            var iDInstitucionParameter = iDInstitucion.HasValue ?
-                new ObjectParameter("IDInstitucion", iDInstitucion) :
-                new ObjectParameter("IDInstitucion", typeof(int));
-    
-            var iDClienteParameter = iDCliente.HasValue ?
-                new ObjectParameter("IDCliente", iDCliente) :
-                new ObjectParameter("IDCliente", typeof(int));
-    
-            var mesParameter = mes != null ?
-                new ObjectParameter("Mes", mes) :
-                new ObjectParameter("Mes", typeof(string));
-    
-            var anoParameter = ano != null ?
-                new ObjectParameter("Ano", ano) :
-                new ObjectParameter("Ano", typeof(string));
-    
-            var usuarioParameter = usuario != null ?
-                new ObjectParameter("Usuario", usuario) :
-                new ObjectParameter("Usuario", typeof(string));
-    
-            var estacionParameter = estacion != null ?
-                new ObjectParameter("Estacion", estacion) :
-                new ObjectParameter("Estacion", typeof(string));
-    
-            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<string>("Sel_Credito", accionParameter, tipoJsonParameter, iDInstitucionParameter, iDClienteParameter, mesParameter, anoParameter, usuarioParameter, estacionParameter);
-        }
-    
-        public virtual ObjectResult<string> Sel_CreditoDetalle(string accion, Nullable<bool> tipoJson, string usuario, string estacion, Nullable<int> iDCredito)
-        {
-            var accionParameter = accion != null ?
-                new ObjectParameter("Accion", accion) :
-                new ObjectParameter("Accion", typeof(string));
-    
-            var tipoJsonParameter = tipoJson.HasValue ?
-                new ObjectParameter("TipoJson", tipoJson) :
-                new ObjectParameter("TipoJson", typeof(bool));
-    
-            var usuarioParameter = usuario != null ?
-                new ObjectParameter("Usuario", usuario) :
-                new ObjectParameter("Usuario", typeof(string));
-    
-            var estacionParameter = estacion != null ?
-                new ObjectParameter("Estacion", estacion) :
-                new ObjectParameter("Estacion", typeof(string));
-    
-            var iDCreditoParameter = iDCredito.HasValue ?
-                new ObjectParameter("IDCredito", iDCredito) :
-                new ObjectParameter("IDCredito", typeof(int));
-    
-            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<string>("Sel_CreditoDetalle", accionParameter, tipoJsonParameter, usuarioParameter, estacionParameter, iDCreditoParameter);
-        }
-    
-        public virtual ObjectResult<string> Sel_DatosVenta(string accion, Nullable<bool> tipoJson, Nullable<int> iD, string tipo, Nullable<bool> devolucion, string usuario, string estacion)
-        {
-            var accionParameter = accion != null ?
-                new ObjectParameter("Accion", accion) :
-                new ObjectParameter("Accion", typeof(string));
-    
-            var tipoJsonParameter = tipoJson.HasValue ?
-                new ObjectParameter("TipoJson", tipoJson) :
-                new ObjectParameter("TipoJson", typeof(bool));
-    
-            var iDParameter = iD.HasValue ?
-                new ObjectParameter("ID", iD) :
-                new ObjectParameter("ID", typeof(int));
-    
-            var tipoParameter = tipo != null ?
-                new ObjectParameter("Tipo", tipo) :
-                new ObjectParameter("Tipo", typeof(string));
-    
-            var devolucionParameter = devolucion.HasValue ?
-                new ObjectParameter("Devolucion", devolucion) :
-                new ObjectParameter("Devolucion", typeof(bool));
-    
-            var usuarioParameter = usuario != null ?
-                new ObjectParameter("Usuario", usuario) :
-                new ObjectParameter("Usuario", typeof(string));
-    
-            var estacionParameter = estacion != null ?
-                new ObjectParameter("Estacion", estacion) :
-                new ObjectParameter("Estacion", typeof(string));
-    
-            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<string>("Sel_DatosVenta", accionParameter, tipoJsonParameter, iDParameter, tipoParameter, devolucionParameter, usuarioParameter, estacionParameter);
-        }
-    
-        public virtual ObjectResult<string> Sel_Guarnicion(string accion, Nullable<bool> tipoJson, string usuario, string estacion, Nullable<int> iD, Nullable<int> iDSU, string texto, string estado)
-        {
-            var accionParameter = accion != null ?
-                new ObjectParameter("Accion", accion) :
-                new ObjectParameter("Accion", typeof(string));
-    
-            var tipoJsonParameter = tipoJson.HasValue ?
-                new ObjectParameter("TipoJson", tipoJson) :
-                new ObjectParameter("TipoJson", typeof(bool));
-    
-            var usuarioParameter = usuario != null ?
-                new ObjectParameter("Usuario", usuario) :
-                new ObjectParameter("Usuario", typeof(string));
-    
-            var estacionParameter = estacion != null ?
-                new ObjectParameter("Estacion", estacion) :
-                new ObjectParameter("Estacion", typeof(string));
-    
-            var iDParameter = iD.HasValue ?
-                new ObjectParameter("ID", iD) :
-                new ObjectParameter("ID", typeof(int));
-    
-            var iDSUParameter = iDSU.HasValue ?
-                new ObjectParameter("IDSU", iDSU) :
-                new ObjectParameter("IDSU", typeof(int));
-    
-            var textoParameter = texto != null ?
-                new ObjectParameter("Texto", texto) :
-                new ObjectParameter("Texto", typeof(string));
-    
-            var estadoParameter = estado != null ?
-                new ObjectParameter("Estado", estado) :
-                new ObjectParameter("Estado", typeof(string));
-    
-            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<string>("Sel_Guarnicion", accionParameter, tipoJsonParameter, usuarioParameter, estacionParameter, iDParameter, iDSUParameter, textoParameter, estadoParameter);
-        }
-    
-        public virtual ObjectResult<string> Sel_Ingredientes(string accion, Nullable<bool> tipoJson, string usuario, string estacion, Nullable<int> iD)
-        {
-            var accionParameter = accion != null ?
-                new ObjectParameter("Accion", accion) :
-                new ObjectParameter("Accion", typeof(string));
-    
-            var tipoJsonParameter = tipoJson.HasValue ?
-                new ObjectParameter("TipoJson", tipoJson) :
-                new ObjectParameter("TipoJson", typeof(bool));
-    
-            var usuarioParameter = usuario != null ?
-                new ObjectParameter("Usuario", usuario) :
-                new ObjectParameter("Usuario", typeof(string));
-    
-            var estacionParameter = estacion != null ?
-                new ObjectParameter("Estacion", estacion) :
-                new ObjectParameter("Estacion", typeof(string));
-    
-            var iDParameter = iD.HasValue ?
-                new ObjectParameter("ID", iD) :
-                new ObjectParameter("ID", typeof(int));
-    
-            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<string>("Sel_Ingredientes", accionParameter, tipoJsonParameter, usuarioParameter, estacionParameter, iDParameter);
-        }
-    
-        public virtual ObjectResult<Sel_Institucion_Result> Sel_Institucion(string accion, Nullable<int> iD, string rUC, string texto)
-        {
-            var accionParameter = accion != null ?
-                new ObjectParameter("Accion", accion) :
-                new ObjectParameter("Accion", typeof(string));
-    
-            var iDParameter = iD.HasValue ?
-                new ObjectParameter("ID", iD) :
-                new ObjectParameter("ID", typeof(int));
-    
-            var rUCParameter = rUC != null ?
-                new ObjectParameter("RUC", rUC) :
-                new ObjectParameter("RUC", typeof(string));
-    
-            var textoParameter = texto != null ?
-                new ObjectParameter("Texto", texto) :
-                new ObjectParameter("Texto", typeof(string));
-    
-            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<Sel_Institucion_Result>("Sel_Institucion", accionParameter, iDParameter, rUCParameter, textoParameter);
-        }
-    
-        public virtual ObjectResult<string> Sel_InstitucionBono(string accion, Nullable<bool> tipoJson, Nullable<int> iDInstitucion, Nullable<int> mes, string ano)
-        {
-            var accionParameter = accion != null ?
-                new ObjectParameter("Accion", accion) :
-                new ObjectParameter("Accion", typeof(string));
-    
-            var tipoJsonParameter = tipoJson.HasValue ?
-                new ObjectParameter("TipoJson", tipoJson) :
-                new ObjectParameter("TipoJson", typeof(bool));
-    
-            var iDInstitucionParameter = iDInstitucion.HasValue ?
-                new ObjectParameter("IDInstitucion", iDInstitucion) :
-                new ObjectParameter("IDInstitucion", typeof(int));
-    
-            var mesParameter = mes.HasValue ?
-                new ObjectParameter("Mes", mes) :
-                new ObjectParameter("Mes", typeof(int));
-    
-            var anoParameter = ano != null ?
-                new ObjectParameter("Ano", ano) :
-                new ObjectParameter("Ano", typeof(string));
-    
-            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<string>("Sel_InstitucionBono", accionParameter, tipoJsonParameter, iDInstitucionParameter, mesParameter, anoParameter);
-        }
-    
-        public virtual ObjectResult<string> Sel_ItemOrden(string accion, Nullable<bool> tipoJson, string usuario, string estacion, Nullable<int> iD, Nullable<int> iDSU, string iDClasificacion)
-        {
-            var accionParameter = accion != null ?
-                new ObjectParameter("Accion", accion) :
-                new ObjectParameter("Accion", typeof(string));
-    
-            var tipoJsonParameter = tipoJson.HasValue ?
-                new ObjectParameter("TipoJson", tipoJson) :
-                new ObjectParameter("TipoJson", typeof(bool));
-    
-            var usuarioParameter = usuario != null ?
-                new ObjectParameter("Usuario", usuario) :
-                new ObjectParameter("Usuario", typeof(string));
-    
-            var estacionParameter = estacion != null ?
-                new ObjectParameter("Estacion", estacion) :
-                new ObjectParameter("Estacion", typeof(string));
-    
-            var iDParameter = iD.HasValue ?
-                new ObjectParameter("ID", iD) :
-                new ObjectParameter("ID", typeof(int));
-    
-            var iDSUParameter = iDSU.HasValue ?
-                new ObjectParameter("IDSU", iDSU) :
-                new ObjectParameter("IDSU", typeof(int));
-    
-            var iDClasificacionParameter = iDClasificacion != null ?
-                new ObjectParameter("IDClasificacion", iDClasificacion) :
-                new ObjectParameter("IDClasificacion", typeof(string));
-    
-            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<string>("Sel_ItemOrden", accionParameter, tipoJsonParameter, usuarioParameter, estacionParameter, iDParameter, iDSUParameter, iDClasificacionParameter);
-        }
-    
-        public virtual ObjectResult<string> Sel_Mesa(string accion, Nullable<bool> tipoJson, string usuario, string estacion, Nullable<int> iD, Nullable<int> iDSU, string texto, string estado)
-        {
-            var accionParameter = accion != null ?
-                new ObjectParameter("Accion", accion) :
-                new ObjectParameter("Accion", typeof(string));
-    
-            var tipoJsonParameter = tipoJson.HasValue ?
-                new ObjectParameter("TipoJson", tipoJson) :
-                new ObjectParameter("TipoJson", typeof(bool));
-    
-            var usuarioParameter = usuario != null ?
-                new ObjectParameter("Usuario", usuario) :
-                new ObjectParameter("Usuario", typeof(string));
-    
-            var estacionParameter = estacion != null ?
-                new ObjectParameter("Estacion", estacion) :
-                new ObjectParameter("Estacion", typeof(string));
-    
-            var iDParameter = iD.HasValue ?
-                new ObjectParameter("ID", iD) :
-                new ObjectParameter("ID", typeof(int));
-    
-            var iDSUParameter = iDSU.HasValue ?
-                new ObjectParameter("IDSU", iDSU) :
-                new ObjectParameter("IDSU", typeof(int));
-    
-            var textoParameter = texto != null ?
-                new ObjectParameter("Texto", texto) :
-                new ObjectParameter("Texto", typeof(string));
-    
-            var estadoParameter = estado != null ?
-                new ObjectParameter("Estado", estado) :
-                new ObjectParameter("Estado", typeof(string));
-    
-            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<string>("Sel_Mesa", accionParameter, tipoJsonParameter, usuarioParameter, estacionParameter, iDParameter, iDSUParameter, textoParameter, estadoParameter);
-        }
-    
-        public virtual ObjectResult<string> Sel_OrdenPreparacion(string accion, Nullable<bool> tipoJson, string usuario, string estacion, Nullable<int> iD, string texto, string estado, string codigo)
-        {
-            var accionParameter = accion != null ?
-                new ObjectParameter("Accion", accion) :
-                new ObjectParameter("Accion", typeof(string));
-    
-            var tipoJsonParameter = tipoJson.HasValue ?
-                new ObjectParameter("TipoJson", tipoJson) :
-                new ObjectParameter("TipoJson", typeof(bool));
-    
-            var usuarioParameter = usuario != null ?
-                new ObjectParameter("Usuario", usuario) :
-                new ObjectParameter("Usuario", typeof(string));
-    
-            var estacionParameter = estacion != null ?
-                new ObjectParameter("Estacion", estacion) :
-                new ObjectParameter("Estacion", typeof(string));
-    
-            var iDParameter = iD.HasValue ?
-                new ObjectParameter("ID", iD) :
-                new ObjectParameter("ID", typeof(int));
-    
-            var textoParameter = texto != null ?
-                new ObjectParameter("Texto", texto) :
-                new ObjectParameter("Texto", typeof(string));
-    
-            var estadoParameter = estado != null ?
-                new ObjectParameter("Estado", estado) :
-                new ObjectParameter("Estado", typeof(string));
-    
-            var codigoParameter = codigo != null ?
-                new ObjectParameter("Codigo", codigo) :
-                new ObjectParameter("Codigo", typeof(string));
-    
-            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<string>("Sel_OrdenPreparacion", accionParameter, tipoJsonParameter, usuarioParameter, estacionParameter, iDParameter, textoParameter, estadoParameter, codigoParameter);
-        }
-    
-        public virtual ObjectResult<Sel_Parametro1_Result> Sel_Parametro1(string accion, Nullable<int> iD, string nombre)
-        {
-            var accionParameter = accion != null ?
-                new ObjectParameter("Accion", accion) :
-                new ObjectParameter("Accion", typeof(string));
-    
-            var iDParameter = iD.HasValue ?
-                new ObjectParameter("ID", iD) :
-                new ObjectParameter("ID", typeof(int));
-    
-            var nombreParameter = nombre != null ?
-                new ObjectParameter("Nombre", nombre) :
-                new ObjectParameter("Nombre", typeof(string));
-    
-            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<Sel_Parametro1_Result>("Sel_Parametro1", accionParameter, iDParameter, nombreParameter);
-        }
-    
-        public virtual ObjectResult<string> Sel_Parametros(string accion, Nullable<bool> tipoJson, string usuario, string estacion, Nullable<int> iD, string texto, string estado)
-        {
-            var accionParameter = accion != null ?
-                new ObjectParameter("Accion", accion) :
-                new ObjectParameter("Accion", typeof(string));
-    
-            var tipoJsonParameter = tipoJson.HasValue ?
-                new ObjectParameter("TipoJson", tipoJson) :
-                new ObjectParameter("TipoJson", typeof(bool));
-    
-            var usuarioParameter = usuario != null ?
-                new ObjectParameter("Usuario", usuario) :
-                new ObjectParameter("Usuario", typeof(string));
-    
-            var estacionParameter = estacion != null ?
-                new ObjectParameter("Estacion", estacion) :
-                new ObjectParameter("Estacion", typeof(string));
-    
-            var iDParameter = iD.HasValue ?
-                new ObjectParameter("ID", iD) :
-                new ObjectParameter("ID", typeof(int));
-    
-            var textoParameter = texto != null ?
-                new ObjectParameter("Texto", texto) :
-                new ObjectParameter("Texto", typeof(string));
-    
-            var estadoParameter = estado != null ?
-                new ObjectParameter("Estado", estado) :
-                new ObjectParameter("Estado", typeof(string));
-    
-            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<string>("Sel_Parametros", accionParameter, tipoJsonParameter, usuarioParameter, estacionParameter, iDParameter, textoParameter, estadoParameter);
-        }
-    
-        public virtual ObjectResult<string> Sel_Pedido(string accion, Nullable<bool> tipoJson, string usuario, string estacion, Nullable<int> iD)
-        {
-            var accionParameter = accion != null ?
-                new ObjectParameter("Accion", accion) :
-                new ObjectParameter("Accion", typeof(string));
-    
-            var tipoJsonParameter = tipoJson.HasValue ?
-                new ObjectParameter("TipoJson", tipoJson) :
-                new ObjectParameter("TipoJson", typeof(bool));
-    
-            var usuarioParameter = usuario != null ?
-                new ObjectParameter("Usuario", usuario) :
-                new ObjectParameter("Usuario", typeof(string));
-    
-            var estacionParameter = estacion != null ?
-                new ObjectParameter("Estacion", estacion) :
-                new ObjectParameter("Estacion", typeof(string));
-    
-            var iDParameter = iD.HasValue ?
-                new ObjectParameter("ID", iD) :
-                new ObjectParameter("ID", typeof(int));
-    
-            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<string>("Sel_Pedido", accionParameter, tipoJsonParameter, usuarioParameter, estacionParameter, iDParameter);
-        }
-    
-        public virtual ObjectResult<string> Sel_Platillo(string accion, Nullable<bool> tipoJson, string usuario, string estacion, Nullable<int> iD, string texto, string estado)
-        {
-            var accionParameter = accion != null ?
-                new ObjectParameter("Accion", accion) :
-                new ObjectParameter("Accion", typeof(string));
-    
-            var tipoJsonParameter = tipoJson.HasValue ?
-                new ObjectParameter("TipoJson", tipoJson) :
-                new ObjectParameter("TipoJson", typeof(bool));
-    
-            var usuarioParameter = usuario != null ?
-                new ObjectParameter("Usuario", usuario) :
-                new ObjectParameter("Usuario", typeof(string));
-    
-            var estacionParameter = estacion != null ?
-                new ObjectParameter("Estacion", estacion) :
-                new ObjectParameter("Estacion", typeof(string));
-    
-            var iDParameter = iD.HasValue ?
-                new ObjectParameter("ID", iD) :
-                new ObjectParameter("ID", typeof(int));
-    
-            var textoParameter = texto != null ?
-                new ObjectParameter("Texto", texto) :
-                new ObjectParameter("Texto", typeof(string));
-    
-            var estadoParameter = estado != null ?
-                new ObjectParameter("Estado", estado) :
-                new ObjectParameter("Estado", typeof(string));
-    
-            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<string>("Sel_Platillo", accionParameter, tipoJsonParameter, usuarioParameter, estacionParameter, iDParameter, textoParameter, estadoParameter);
-        }
-    
-        public virtual ObjectResult<string> Sel_Sociedad(string accion, Nullable<bool> tipoJson, Nullable<int> iD, string texto, Nullable<int> mes, Nullable<int> ano, string usuario, string estacion)
-        {
-            var accionParameter = accion != null ?
-                new ObjectParameter("Accion", accion) :
-                new ObjectParameter("Accion", typeof(string));
-    
-            var tipoJsonParameter = tipoJson.HasValue ?
-                new ObjectParameter("TipoJson", tipoJson) :
-                new ObjectParameter("TipoJson", typeof(bool));
-    
-            var iDParameter = iD.HasValue ?
-                new ObjectParameter("ID", iD) :
-                new ObjectParameter("ID", typeof(int));
-    
-            var textoParameter = texto != null ?
-                new ObjectParameter("Texto", texto) :
-                new ObjectParameter("Texto", typeof(string));
-    
-            var mesParameter = mes.HasValue ?
-                new ObjectParameter("Mes", mes) :
-                new ObjectParameter("Mes", typeof(int));
-    
-            var anoParameter = ano.HasValue ?
-                new ObjectParameter("Ano", ano) :
-                new ObjectParameter("Ano", typeof(int));
-    
-            var usuarioParameter = usuario != null ?
-                new ObjectParameter("Usuario", usuario) :
-                new ObjectParameter("Usuario", typeof(string));
-    
-            var estacionParameter = estacion != null ?
-                new ObjectParameter("Estacion", estacion) :
-                new ObjectParameter("Estacion", typeof(string));
-    
-            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<string>("Sel_Sociedad", accionParameter, tipoJsonParameter, iDParameter, textoParameter, mesParameter, anoParameter, usuarioParameter, estacionParameter);
-        }
-    
-        public virtual ObjectResult<Sel_UsuariosPVentas_Result> Sel_UsuariosPVentas(Nullable<int> iDSucursal, Nullable<int> iDPtoVenta)
-        {
-            var iDSucursalParameter = iDSucursal.HasValue ?
-                new ObjectParameter("IDSucursal", iDSucursal) :
-                new ObjectParameter("IDSucursal", typeof(int));
-    
-            var iDPtoVentaParameter = iDPtoVenta.HasValue ?
-                new ObjectParameter("IDPtoVenta", iDPtoVenta) :
-                new ObjectParameter("IDPtoVenta", typeof(int));
-    
-            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<Sel_UsuariosPVentas_Result>("Sel_UsuariosPVentas", iDSucursalParameter, iDPtoVentaParameter);
-        }
-    
-        public virtual ObjectResult<string> Upd_Combo(string accion, Nullable<int> iD, string jsonData)
-        {
-            var accionParameter = accion != null ?
-                new ObjectParameter("Accion", accion) :
-                new ObjectParameter("Accion", typeof(string));
-    
-            var iDParameter = iD.HasValue ?
-                new ObjectParameter("ID", iD) :
-                new ObjectParameter("ID", typeof(int));
-    
-            var jsonDataParameter = jsonData != null ?
-                new ObjectParameter("JsonData", jsonData) :
-                new ObjectParameter("JsonData", typeof(string));
-    
-            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<string>("Upd_Combo", accionParameter, iDParameter, jsonDataParameter);
-        }
-    
-        public virtual ObjectResult<string> Upd_Costo(string accion, Nullable<int> iD, string jsonData)
-        {
-            var accionParameter = accion != null ?
-                new ObjectParameter("Accion", accion) :
-                new ObjectParameter("Accion", typeof(string));
-    
-            var iDParameter = iD.HasValue ?
-                new ObjectParameter("ID", iD) :
-                new ObjectParameter("ID", typeof(int));
-    
-            var jsonDataParameter = jsonData != null ?
-                new ObjectParameter("JsonData", jsonData) :
-                new ObjectParameter("JsonData", typeof(string));
-    
-            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<string>("Upd_Costo", accionParameter, iDParameter, jsonDataParameter);
-        }
-    
-        public virtual ObjectResult<string> Upd_Guarnicion(string accion, Nullable<int> iD, string jsonData)
-        {
-            var accionParameter = accion != null ?
-                new ObjectParameter("Accion", accion) :
-                new ObjectParameter("Accion", typeof(string));
-    
-            var iDParameter = iD.HasValue ?
-                new ObjectParameter("ID", iD) :
-                new ObjectParameter("ID", typeof(int));
-    
-            var jsonDataParameter = jsonData != null ?
-                new ObjectParameter("JsonData", jsonData) :
-                new ObjectParameter("JsonData", typeof(string));
-    
-            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<string>("Upd_Guarnicion", accionParameter, iDParameter, jsonDataParameter);
-        }
-    
-        public virtual ObjectResult<Nullable<int>> Upd_Institucion(string accion, Nullable<int> iD, Nullable<int> iDCiudad, string rUC, string razonSocial, string nombreComercial, string direccion, string telefono, string celular, string email, string representNombre, string representIdentificacion, string representCelular, string representEmail, byte[] logo, Nullable<bool> estado, ObjectParameter iDDuplicado)
-        {
-            var accionParameter = accion != null ?
-                new ObjectParameter("Accion", accion) :
-                new ObjectParameter("Accion", typeof(string));
-    
-            var iDParameter = iD.HasValue ?
-                new ObjectParameter("ID", iD) :
-                new ObjectParameter("ID", typeof(int));
-    
-            var iDCiudadParameter = iDCiudad.HasValue ?
-                new ObjectParameter("IDCiudad", iDCiudad) :
-                new ObjectParameter("IDCiudad", typeof(int));
-    
-            var rUCParameter = rUC != null ?
-                new ObjectParameter("RUC", rUC) :
-                new ObjectParameter("RUC", typeof(string));
-    
-            var razonSocialParameter = razonSocial != null ?
-                new ObjectParameter("RazonSocial", razonSocial) :
-                new ObjectParameter("RazonSocial", typeof(string));
-    
-            var nombreComercialParameter = nombreComercial != null ?
-                new ObjectParameter("NombreComercial", nombreComercial) :
-                new ObjectParameter("NombreComercial", typeof(string));
-    
-            var direccionParameter = direccion != null ?
-                new ObjectParameter("Direccion", direccion) :
-                new ObjectParameter("Direccion", typeof(string));
-    
-            var telefonoParameter = telefono != null ?
-                new ObjectParameter("Telefono", telefono) :
-                new ObjectParameter("Telefono", typeof(string));
-    
-            var celularParameter = celular != null ?
-                new ObjectParameter("Celular", celular) :
-                new ObjectParameter("Celular", typeof(string));
-    
-            var emailParameter = email != null ?
-                new ObjectParameter("Email", email) :
-                new ObjectParameter("Email", typeof(string));
-    
-            var representNombreParameter = representNombre != null ?
-                new ObjectParameter("RepresentNombre", representNombre) :
-                new ObjectParameter("RepresentNombre", typeof(string));
-    
-            var representIdentificacionParameter = representIdentificacion != null ?
-                new ObjectParameter("RepresentIdentificacion", representIdentificacion) :
-                new ObjectParameter("RepresentIdentificacion", typeof(string));
-    
-            var representCelularParameter = representCelular != null ?
-                new ObjectParameter("RepresentCelular", representCelular) :
-                new ObjectParameter("RepresentCelular", typeof(string));
-    
-            var representEmailParameter = representEmail != null ?
-                new ObjectParameter("RepresentEmail", representEmail) :
-                new ObjectParameter("RepresentEmail", typeof(string));
-    
-            var logoParameter = logo != null ?
-                new ObjectParameter("Logo", logo) :
-                new ObjectParameter("Logo", typeof(byte[]));
-    
-            var estadoParameter = estado.HasValue ?
-                new ObjectParameter("Estado", estado) :
-                new ObjectParameter("Estado", typeof(bool));
-    
-            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<Nullable<int>>("Upd_Institucion", accionParameter, iDParameter, iDCiudadParameter, rUCParameter, razonSocialParameter, nombreComercialParameter, direccionParameter, telefonoParameter, celularParameter, emailParameter, representNombreParameter, representIdentificacionParameter, representCelularParameter, representEmailParameter, logoParameter, estadoParameter, iDDuplicado);
-        }
-    
-        public virtual ObjectResult<string> Upd_InstitucionBono(string accion, Nullable<int> iD, string jsonData)
-        {
-            var accionParameter = accion != null ?
-                new ObjectParameter("Accion", accion) :
-                new ObjectParameter("Accion", typeof(string));
-    
-            var iDParameter = iD.HasValue ?
-                new ObjectParameter("ID", iD) :
-                new ObjectParameter("ID", typeof(int));
-    
-            var jsonDataParameter = jsonData != null ?
-                new ObjectParameter("JsonData", jsonData) :
-                new ObjectParameter("JsonData", typeof(string));
-    
-            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<string>("Upd_InstitucionBono", accionParameter, iDParameter, jsonDataParameter);
-        }
-    
-        public virtual ObjectResult<string> Upd_Mesa(string accion, Nullable<int> iD, string jsonData)
-        {
-            var accionParameter = accion != null ?
-                new ObjectParameter("Accion", accion) :
-                new ObjectParameter("Accion", typeof(string));
-    
-            var iDParameter = iD.HasValue ?
-                new ObjectParameter("ID", iD) :
-                new ObjectParameter("ID", typeof(int));
-    
-            var jsonDataParameter = jsonData != null ?
-                new ObjectParameter("JsonData", jsonData) :
-                new ObjectParameter("JsonData", typeof(string));
-    
-            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<string>("Upd_Mesa", accionParameter, iDParameter, jsonDataParameter);
-        }
-    
-        public virtual ObjectResult<string> Upd_OrdenPreparacion(string accion, Nullable<int> iD, string jsonData, ObjectParameter mensajeOut)
-        {
-            var accionParameter = accion != null ?
-                new ObjectParameter("Accion", accion) :
-                new ObjectParameter("Accion", typeof(string));
-    
-            var iDParameter = iD.HasValue ?
-                new ObjectParameter("ID", iD) :
-                new ObjectParameter("ID", typeof(int));
-    
-            var jsonDataParameter = jsonData != null ?
-                new ObjectParameter("JsonData", jsonData) :
-                new ObjectParameter("JsonData", typeof(string));
-    
-            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<string>("Upd_OrdenPreparacion", accionParameter, iDParameter, jsonDataParameter, mensajeOut);
-        }
-    
-        public virtual ObjectResult<string> Upd_Parametros(string accion, Nullable<int> iD, string jsonData)
-        {
-            var accionParameter = accion != null ?
-                new ObjectParameter("Accion", accion) :
-                new ObjectParameter("Accion", typeof(string));
-    
-            var iDParameter = iD.HasValue ?
-                new ObjectParameter("ID", iD) :
-                new ObjectParameter("ID", typeof(int));
-    
-            var jsonDataParameter = jsonData != null ?
-                new ObjectParameter("JsonData", jsonData) :
-                new ObjectParameter("JsonData", typeof(string));
-    
-            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<string>("Upd_Parametros", accionParameter, iDParameter, jsonDataParameter);
-        }
-    
-        public virtual ObjectResult<string> Upd_Pedido(string accion, Nullable<int> iD, string jsonData, ObjectParameter mensajeOut)
-        {
-            var accionParameter = accion != null ?
-                new ObjectParameter("Accion", accion) :
-                new ObjectParameter("Accion", typeof(string));
-    
-            var iDParameter = iD.HasValue ?
-                new ObjectParameter("ID", iD) :
-                new ObjectParameter("ID", typeof(int));
-    
-            var jsonDataParameter = jsonData != null ?
-                new ObjectParameter("JsonData", jsonData) :
-                new ObjectParameter("JsonData", typeof(string));
-    
-            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<string>("Upd_Pedido", accionParameter, iDParameter, jsonDataParameter, mensajeOut);
-        }
-    
-        public virtual int Upd_Platillo(string accion, Nullable<int> iD, string jsonData)
-        {
-            var accionParameter = accion != null ?
-                new ObjectParameter("Accion", accion) :
-                new ObjectParameter("Accion", typeof(string));
-    
-            var iDParameter = iD.HasValue ?
-                new ObjectParameter("ID", iD) :
-                new ObjectParameter("ID", typeof(int));
-    
-            var jsonDataParameter = jsonData != null ?
-                new ObjectParameter("JsonData", jsonData) :
-                new ObjectParameter("JsonData", typeof(string));
-    
-            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("Upd_Platillo", accionParameter, iDParameter, jsonDataParameter);
-        }
-    
-        public virtual ObjectResult<string> Del_Clase(Nullable<int> iD, string usuario, string estacion)
-        {
-            var iDParameter = iD.HasValue ?
-                new ObjectParameter("ID", iD) :
-                new ObjectParameter("ID", typeof(int));
-    
-            var usuarioParameter = usuario != null ?
-                new ObjectParameter("Usuario", usuario) :
-                new ObjectParameter("Usuario", typeof(string));
-    
-            var estacionParameter = estacion != null ?
-                new ObjectParameter("Estacion", estacion) :
-                new ObjectParameter("Estacion", typeof(string));
-    
-            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<string>("Del_Clase", iDParameter, usuarioParameter, estacionParameter);
-        }
-    
-        public virtual ObjectResult<string> Del_Color(Nullable<int> iD, string usuario, string estacion)
-        {
-            var iDParameter = iD.HasValue ?
-                new ObjectParameter("ID", iD) :
-                new ObjectParameter("ID", typeof(int));
-    
-            var usuarioParameter = usuario != null ?
-                new ObjectParameter("Usuario", usuario) :
-                new ObjectParameter("Usuario", typeof(string));
-    
-            var estacionParameter = estacion != null ?
-                new ObjectParameter("Estacion", estacion) :
-                new ObjectParameter("Estacion", typeof(string));
-    
-            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<string>("Del_Color", iDParameter, usuarioParameter, estacionParameter);
-        }
-    
-        public virtual ObjectResult<string> Del_Marca1(Nullable<int> iD, string usuario, string estacion)
-        {
-            var iDParameter = iD.HasValue ?
-                new ObjectParameter("ID", iD) :
-                new ObjectParameter("ID", typeof(int));
-    
-            var usuarioParameter = usuario != null ?
-                new ObjectParameter("Usuario", usuario) :
-                new ObjectParameter("Usuario", typeof(string));
-    
-            var estacionParameter = estacion != null ?
-                new ObjectParameter("Estacion", estacion) :
-                new ObjectParameter("Estacion", typeof(string));
-    
-            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<string>("Del_Marca1", iDParameter, usuarioParameter, estacionParameter);
-        }
-    
-        public virtual ObjectResult<string> Del_Modelo(Nullable<int> iD, string usuario, string estacion)
-        {
-            var iDParameter = iD.HasValue ?
-                new ObjectParameter("ID", iD) :
-                new ObjectParameter("ID", typeof(int));
-    
-            var usuarioParameter = usuario != null ?
-                new ObjectParameter("Usuario", usuario) :
-                new ObjectParameter("Usuario", typeof(string));
-    
-            var estacionParameter = estacion != null ?
-                new ObjectParameter("Estacion", estacion) :
-                new ObjectParameter("Estacion", typeof(string));
-    
-            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<string>("Del_Modelo", iDParameter, usuarioParameter, estacionParameter);
-        }
-    
-        public virtual ObjectResult<string> Ins_Clase(string jsonData)
-        {
-            var jsonDataParameter = jsonData != null ?
-                new ObjectParameter("JsonData", jsonData) :
-                new ObjectParameter("JsonData", typeof(string));
-    
-            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<string>("Ins_Clase", jsonDataParameter);
-        }
-    
-        public virtual ObjectResult<string> Ins_ClienteFlota(string jsonData)
-        {
-            var jsonDataParameter = jsonData != null ?
-                new ObjectParameter("JsonData", jsonData) :
-                new ObjectParameter("JsonData", typeof(string));
-    
-            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<string>("Ins_ClienteFlota", jsonDataParameter);
-        }
-    
-        public virtual ObjectResult<string> Ins_Color(string jsonData)
-        {
-            var jsonDataParameter = jsonData != null ?
-                new ObjectParameter("JsonData", jsonData) :
-                new ObjectParameter("JsonData", typeof(string));
-    
-            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<string>("Ins_Color", jsonDataParameter);
-        }
-    
-        public virtual ObjectResult<string> Ins_Marca1(string jsonData)
-        {
-            var jsonDataParameter = jsonData != null ?
-                new ObjectParameter("JsonData", jsonData) :
-                new ObjectParameter("JsonData", typeof(string));
-    
-            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<string>("Ins_Marca1", jsonDataParameter);
-        }
-    
-        public virtual ObjectResult<string> Ins_Modelo(string jsonData)
-        {
-            var jsonDataParameter = jsonData != null ?
-                new ObjectParameter("JsonData", jsonData) :
-                new ObjectParameter("JsonData", typeof(string));
-    
-            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<string>("Ins_Modelo", jsonDataParameter);
-        }
-    
-        public virtual ObjectResult<string> Ins_UsuarioDespacho(string jsonData)
-        {
-            var jsonDataParameter = jsonData != null ?
-                new ObjectParameter("JsonData", jsonData) :
-                new ObjectParameter("JsonData", typeof(string));
-    
-            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<string>("Ins_UsuarioDespacho", jsonDataParameter);
-        }
-    
-        public virtual ObjectResult<string> Ins_Vehiculo(string jsonData)
-        {
-            var jsonDataParameter = jsonData != null ?
-                new ObjectParameter("JsonData", jsonData) :
-                new ObjectParameter("JsonData", typeof(string));
-    
-            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<string>("Ins_Vehiculo", jsonDataParameter);
-        }
-    
-        public virtual ObjectResult<Nullable<int>> Operaciones_DetDispIsl(string accion, Nullable<int> iDDDI, Nullable<int> iDISL, Nullable<int> iDDISP, Nullable<int> iDPD, string estado)
-        {
-            var accionParameter = accion != null ?
-                new ObjectParameter("Accion", accion) :
-                new ObjectParameter("Accion", typeof(string));
-    
-            var iDDDIParameter = iDDDI.HasValue ?
-                new ObjectParameter("IDDDI", iDDDI) :
-                new ObjectParameter("IDDDI", typeof(int));
-    
-            var iDISLParameter = iDISL.HasValue ?
-                new ObjectParameter("IDISL", iDISL) :
-                new ObjectParameter("IDISL", typeof(int));
-    
-            var iDDISPParameter = iDDISP.HasValue ?
-                new ObjectParameter("IDDISP", iDDISP) :
-                new ObjectParameter("IDDISP", typeof(int));
-    
-            var iDPDParameter = iDPD.HasValue ?
-                new ObjectParameter("IDPD", iDPD) :
-                new ObjectParameter("IDPD", typeof(int));
-    
-            var estadoParameter = estado != null ?
-                new ObjectParameter("Estado", estado) :
-                new ObjectParameter("Estado", typeof(string));
-    
-            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<Nullable<int>>("Operaciones_DetDispIsl", accionParameter, iDDDIParameter, iDISLParameter, iDDISPParameter, iDPDParameter, estadoParameter);
-        }
-    
-        public virtual ObjectResult<Nullable<int>> Operaciones_Dispensador(string accion, Nullable<int> iDDISP, string nombre, string estado, string detalle)
-        {
-            var accionParameter = accion != null ?
-                new ObjectParameter("Accion", accion) :
-                new ObjectParameter("Accion", typeof(string));
-    
-            var iDDISPParameter = iDDISP.HasValue ?
-                new ObjectParameter("IDDISP", iDDISP) :
-                new ObjectParameter("IDDISP", typeof(int));
-    
-            var nombreParameter = nombre != null ?
-                new ObjectParameter("Nombre", nombre) :
-                new ObjectParameter("Nombre", typeof(string));
-    
-            var estadoParameter = estado != null ?
-                new ObjectParameter("Estado", estado) :
-                new ObjectParameter("Estado", typeof(string));
-    
-            var detalleParameter = detalle != null ?
-                new ObjectParameter("Detalle", detalle) :
-                new ObjectParameter("Detalle", typeof(string));
-    
-            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<Nullable<int>>("Operaciones_Dispensador", accionParameter, iDDISPParameter, nombreParameter, estadoParameter, detalleParameter);
-        }
-    
-        public virtual ObjectResult<Nullable<int>> Operaciones_Islero(string accion, Nullable<int> iDISL, string nombre, string estado, string detalle)
-        {
-            var accionParameter = accion != null ?
-                new ObjectParameter("Accion", accion) :
-                new ObjectParameter("Accion", typeof(string));
-    
-            var iDISLParameter = iDISL.HasValue ?
-                new ObjectParameter("IDISL", iDISL) :
-                new ObjectParameter("IDISL", typeof(int));
-    
-            var nombreParameter = nombre != null ?
-                new ObjectParameter("Nombre", nombre) :
-                new ObjectParameter("Nombre", typeof(string));
-    
-            var estadoParameter = estado != null ?
-                new ObjectParameter("Estado", estado) :
-                new ObjectParameter("Estado", typeof(string));
-    
-            var detalleParameter = detalle != null ?
-                new ObjectParameter("Detalle", detalle) :
-                new ObjectParameter("Detalle", typeof(string));
-    
-            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<Nullable<int>>("Operaciones_Islero", accionParameter, iDISLParameter, nombreParameter, estadoParameter, detalleParameter);
-        }
-    
-        public virtual ObjectResult<string> Sel_Clase(string accion, Nullable<bool> tipoJson, string usuario, string estacion, Nullable<int> iD, string texto, string estado)
-        {
-            var accionParameter = accion != null ?
-                new ObjectParameter("Accion", accion) :
-                new ObjectParameter("Accion", typeof(string));
-    
-            var tipoJsonParameter = tipoJson.HasValue ?
-                new ObjectParameter("TipoJson", tipoJson) :
-                new ObjectParameter("TipoJson", typeof(bool));
-    
-            var usuarioParameter = usuario != null ?
-                new ObjectParameter("Usuario", usuario) :
-                new ObjectParameter("Usuario", typeof(string));
-    
-            var estacionParameter = estacion != null ?
-                new ObjectParameter("Estacion", estacion) :
-                new ObjectParameter("Estacion", typeof(string));
-    
-            var iDParameter = iD.HasValue ?
-                new ObjectParameter("ID", iD) :
-                new ObjectParameter("ID", typeof(int));
-    
-            var textoParameter = texto != null ?
-                new ObjectParameter("Texto", texto) :
-                new ObjectParameter("Texto", typeof(string));
-    
-            var estadoParameter = estado != null ?
-                new ObjectParameter("Estado", estado) :
-                new ObjectParameter("Estado", typeof(string));
-    
-            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<string>("Sel_Clase", accionParameter, tipoJsonParameter, usuarioParameter, estacionParameter, iDParameter, textoParameter, estadoParameter);
-        }
-    
-        public virtual ObjectResult<string> Sel_ClienteFlota(string accion, Nullable<bool> tipoJson, string usuario, string estacion, Nullable<int> iD, string texto, string estado)
-        {
-            var accionParameter = accion != null ?
-                new ObjectParameter("Accion", accion) :
-                new ObjectParameter("Accion", typeof(string));
-    
-            var tipoJsonParameter = tipoJson.HasValue ?
-                new ObjectParameter("TipoJson", tipoJson) :
-                new ObjectParameter("TipoJson", typeof(bool));
-    
-            var usuarioParameter = usuario != null ?
-                new ObjectParameter("Usuario", usuario) :
-                new ObjectParameter("Usuario", typeof(string));
-    
-            var estacionParameter = estacion != null ?
-                new ObjectParameter("Estacion", estacion) :
-                new ObjectParameter("Estacion", typeof(string));
-    
-            var iDParameter = iD.HasValue ?
-                new ObjectParameter("ID", iD) :
-                new ObjectParameter("ID", typeof(int));
-    
-            var textoParameter = texto != null ?
-                new ObjectParameter("Texto", texto) :
-                new ObjectParameter("Texto", typeof(string));
-    
-            var estadoParameter = estado != null ?
-                new ObjectParameter("Estado", estado) :
-                new ObjectParameter("Estado", typeof(string));
-    
-            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<string>("Sel_ClienteFlota", accionParameter, tipoJsonParameter, usuarioParameter, estacionParameter, iDParameter, textoParameter, estadoParameter);
-        }
-    
-        public virtual ObjectResult<string> Sel_Color(string accion, Nullable<bool> tipoJson, string usuario, string estacion, Nullable<int> iD, string texto, string estado)
-        {
-            var accionParameter = accion != null ?
-                new ObjectParameter("Accion", accion) :
-                new ObjectParameter("Accion", typeof(string));
-    
-            var tipoJsonParameter = tipoJson.HasValue ?
-                new ObjectParameter("TipoJson", tipoJson) :
-                new ObjectParameter("TipoJson", typeof(bool));
-    
-            var usuarioParameter = usuario != null ?
-                new ObjectParameter("Usuario", usuario) :
-                new ObjectParameter("Usuario", typeof(string));
-    
-            var estacionParameter = estacion != null ?
-                new ObjectParameter("Estacion", estacion) :
-                new ObjectParameter("Estacion", typeof(string));
-    
-            var iDParameter = iD.HasValue ?
-                new ObjectParameter("ID", iD) :
-                new ObjectParameter("ID", typeof(int));
-    
-            var textoParameter = texto != null ?
-                new ObjectParameter("Texto", texto) :
-                new ObjectParameter("Texto", typeof(string));
-    
-            var estadoParameter = estado != null ?
-                new ObjectParameter("Estado", estado) :
-                new ObjectParameter("Estado", typeof(string));
-    
-            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<string>("Sel_Color", accionParameter, tipoJsonParameter, usuarioParameter, estacionParameter, iDParameter, textoParameter, estadoParameter);
-        }
-    
-        public virtual ObjectResult<Sel_DetDisIslero_Result> Sel_DetDisIslero(Nullable<int> iDISL)
-        {
-            var iDISLParameter = iDISL.HasValue ?
-                new ObjectParameter("IDISL", iDISL) :
-                new ObjectParameter("IDISL", typeof(int));
-    
-            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<Sel_DetDisIslero_Result>("Sel_DetDisIslero", iDISLParameter);
-        }
-    
-        public virtual ObjectResult<Sel_Dispensador_Result> Sel_Dispensador(string accion, Nullable<int> iD, Nullable<int> tipoIdentificacion, string identificacion, string texto)
-        {
-            var accionParameter = accion != null ?
-                new ObjectParameter("Accion", accion) :
-                new ObjectParameter("Accion", typeof(string));
-    
-            var iDParameter = iD.HasValue ?
-                new ObjectParameter("ID", iD) :
-                new ObjectParameter("ID", typeof(int));
-    
-            var tipoIdentificacionParameter = tipoIdentificacion.HasValue ?
-                new ObjectParameter("TipoIdentificacion", tipoIdentificacion) :
-                new ObjectParameter("TipoIdentificacion", typeof(int));
-    
-            var identificacionParameter = identificacion != null ?
-                new ObjectParameter("Identificacion", identificacion) :
-                new ObjectParameter("Identificacion", typeof(string));
-    
-            var textoParameter = texto != null ?
-                new ObjectParameter("Texto", texto) :
-                new ObjectParameter("Texto", typeof(string));
-    
-            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<Sel_Dispensador_Result>("Sel_Dispensador", accionParameter, iDParameter, tipoIdentificacionParameter, identificacionParameter, textoParameter);
-        }
-    
-        public virtual ObjectResult<string> Sel_FactTarjetaHabiente(string accion, Nullable<bool> tipoJson, string usuario, string estacion, Nullable<int> iDSU, Nullable<int> iDPT, Nullable<int> iDCT, Nullable<System.DateTime> fechDesde, Nullable<System.DateTime> fechHasta)
-        {
-            var accionParameter = accion != null ?
-                new ObjectParameter("Accion", accion) :
-                new ObjectParameter("Accion", typeof(string));
-    
-            var tipoJsonParameter = tipoJson.HasValue ?
-                new ObjectParameter("TipoJson", tipoJson) :
-                new ObjectParameter("TipoJson", typeof(bool));
-    
-            var usuarioParameter = usuario != null ?
-                new ObjectParameter("Usuario", usuario) :
-                new ObjectParameter("Usuario", typeof(string));
-    
-            var estacionParameter = estacion != null ?
-                new ObjectParameter("Estacion", estacion) :
-                new ObjectParameter("Estacion", typeof(string));
-    
-            var iDSUParameter = iDSU.HasValue ?
-                new ObjectParameter("IDSU", iDSU) :
-                new ObjectParameter("IDSU", typeof(int));
-    
-            var iDPTParameter = iDPT.HasValue ?
-                new ObjectParameter("IDPT", iDPT) :
-                new ObjectParameter("IDPT", typeof(int));
-    
-            var iDCTParameter = iDCT.HasValue ?
-                new ObjectParameter("IDCT", iDCT) :
-                new ObjectParameter("IDCT", typeof(int));
-    
-            var fechDesdeParameter = fechDesde.HasValue ?
-                new ObjectParameter("FechDesde", fechDesde) :
-                new ObjectParameter("FechDesde", typeof(System.DateTime));
-    
-            var fechHastaParameter = fechHasta.HasValue ?
-                new ObjectParameter("FechHasta", fechHasta) :
-                new ObjectParameter("FechHasta", typeof(System.DateTime));
-    
-            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<string>("Sel_FactTarjetaHabiente", accionParameter, tipoJsonParameter, usuarioParameter, estacionParameter, iDSUParameter, iDPTParameter, iDCTParameter, fechDesdeParameter, fechHastaParameter);
-        }
-    
-        public virtual ObjectResult<Sel_Islero_Result> Sel_Islero(string accion, Nullable<int> iD, Nullable<int> iDUsuario, Nullable<int> tipoIdentificacion, string identificacion, string texto)
-        {
-            var accionParameter = accion != null ?
-                new ObjectParameter("Accion", accion) :
-                new ObjectParameter("Accion", typeof(string));
-    
-            var iDParameter = iD.HasValue ?
-                new ObjectParameter("ID", iD) :
-                new ObjectParameter("ID", typeof(int));
-    
-            var iDUsuarioParameter = iDUsuario.HasValue ?
-                new ObjectParameter("IDUsuario", iDUsuario) :
-                new ObjectParameter("IDUsuario", typeof(int));
-    
-            var tipoIdentificacionParameter = tipoIdentificacion.HasValue ?
-                new ObjectParameter("TipoIdentificacion", tipoIdentificacion) :
-                new ObjectParameter("TipoIdentificacion", typeof(int));
-    
-            var identificacionParameter = identificacion != null ?
-                new ObjectParameter("Identificacion", identificacion) :
-                new ObjectParameter("Identificacion", typeof(string));
-    
-            var textoParameter = texto != null ?
-                new ObjectParameter("Texto", texto) :
-                new ObjectParameter("Texto", typeof(string));
-    
-            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<Sel_Islero_Result>("Sel_Islero", accionParameter, iDParameter, iDUsuarioParameter, tipoIdentificacionParameter, identificacionParameter, textoParameter);
-        }
-    
-        public virtual ObjectResult<string> Sel_Marca1(string accion, Nullable<bool> tipoJson, string usuario, string estacion, Nullable<int> iD, string texto, string estado)
-        {
-            var accionParameter = accion != null ?
-                new ObjectParameter("Accion", accion) :
-                new ObjectParameter("Accion", typeof(string));
-    
-            var tipoJsonParameter = tipoJson.HasValue ?
-                new ObjectParameter("TipoJson", tipoJson) :
-                new ObjectParameter("TipoJson", typeof(bool));
-    
-            var usuarioParameter = usuario != null ?
-                new ObjectParameter("Usuario", usuario) :
-                new ObjectParameter("Usuario", typeof(string));
-    
-            var estacionParameter = estacion != null ?
-                new ObjectParameter("Estacion", estacion) :
-                new ObjectParameter("Estacion", typeof(string));
-    
-            var iDParameter = iD.HasValue ?
-                new ObjectParameter("ID", iD) :
-                new ObjectParameter("ID", typeof(int));
-    
-            var textoParameter = texto != null ?
-                new ObjectParameter("Texto", texto) :
-                new ObjectParameter("Texto", typeof(string));
-    
-            var estadoParameter = estado != null ?
-                new ObjectParameter("Estado", estado) :
-                new ObjectParameter("Estado", typeof(string));
-    
-            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<string>("Sel_Marca1", accionParameter, tipoJsonParameter, usuarioParameter, estacionParameter, iDParameter, textoParameter, estadoParameter);
-        }
-    
-        public virtual ObjectResult<string> Sel_Modelo(string accion, Nullable<bool> tipoJson, string usuario, string estacion, Nullable<int> iD, string texto, string estado)
-        {
-            var accionParameter = accion != null ?
-                new ObjectParameter("Accion", accion) :
-                new ObjectParameter("Accion", typeof(string));
-    
-            var tipoJsonParameter = tipoJson.HasValue ?
-                new ObjectParameter("TipoJson", tipoJson) :
-                new ObjectParameter("TipoJson", typeof(bool));
-    
-            var usuarioParameter = usuario != null ?
-                new ObjectParameter("Usuario", usuario) :
-                new ObjectParameter("Usuario", typeof(string));
-    
-            var estacionParameter = estacion != null ?
-                new ObjectParameter("Estacion", estacion) :
-                new ObjectParameter("Estacion", typeof(string));
-    
-            var iDParameter = iD.HasValue ?
-                new ObjectParameter("ID", iD) :
-                new ObjectParameter("ID", typeof(int));
-    
-            var textoParameter = texto != null ?
-                new ObjectParameter("Texto", texto) :
-                new ObjectParameter("Texto", typeof(string));
-    
-            var estadoParameter = estado != null ?
-                new ObjectParameter("Estado", estado) :
-                new ObjectParameter("Estado", typeof(string));
-    
-            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<string>("Sel_Modelo", accionParameter, tipoJsonParameter, usuarioParameter, estacionParameter, iDParameter, textoParameter, estadoParameter);
-        }
-    
-        public virtual ObjectResult<string> Sel_UsuarioDespacho(string accion, Nullable<bool> tipoJson, Nullable<int> iD, string usuario, string estacion, string estado)
-        {
-            var accionParameter = accion != null ?
-                new ObjectParameter("Accion", accion) :
-                new ObjectParameter("Accion", typeof(string));
-    
-            var tipoJsonParameter = tipoJson.HasValue ?
-                new ObjectParameter("TipoJson", tipoJson) :
-                new ObjectParameter("TipoJson", typeof(bool));
-    
-            var iDParameter = iD.HasValue ?
-                new ObjectParameter("ID", iD) :
-                new ObjectParameter("ID", typeof(int));
-    
-            var usuarioParameter = usuario != null ?
-                new ObjectParameter("Usuario", usuario) :
-                new ObjectParameter("Usuario", typeof(string));
-    
-            var estacionParameter = estacion != null ?
-                new ObjectParameter("Estacion", estacion) :
-                new ObjectParameter("Estacion", typeof(string));
-    
-            var estadoParameter = estado != null ?
-                new ObjectParameter("Estado", estado) :
-                new ObjectParameter("Estado", typeof(string));
-    
-            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<string>("Sel_UsuarioDespacho", accionParameter, tipoJsonParameter, iDParameter, usuarioParameter, estacionParameter, estadoParameter);
-        }
-    
-        public virtual ObjectResult<string> Sel_Vehiculo(string accion, Nullable<bool> tipoJson, string usuario, string estacion, Nullable<int> iD, string texto, string estado)
-        {
-            var accionParameter = accion != null ?
-                new ObjectParameter("Accion", accion) :
-                new ObjectParameter("Accion", typeof(string));
-    
-            var tipoJsonParameter = tipoJson.HasValue ?
-                new ObjectParameter("TipoJson", tipoJson) :
-                new ObjectParameter("TipoJson", typeof(bool));
-    
-            var usuarioParameter = usuario != null ?
-                new ObjectParameter("Usuario", usuario) :
-                new ObjectParameter("Usuario", typeof(string));
-    
-            var estacionParameter = estacion != null ?
-                new ObjectParameter("Estacion", estacion) :
-                new ObjectParameter("Estacion", typeof(string));
-    
-            var iDParameter = iD.HasValue ?
-                new ObjectParameter("ID", iD) :
-                new ObjectParameter("ID", typeof(int));
-    
-            var textoParameter = texto != null ?
-                new ObjectParameter("Texto", texto) :
-                new ObjectParameter("Texto", typeof(string));
-    
-            var estadoParameter = estado != null ?
-                new ObjectParameter("Estado", estado) :
-                new ObjectParameter("Estado", typeof(string));
-    
-            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<string>("Sel_Vehiculo", accionParameter, tipoJsonParameter, usuarioParameter, estacionParameter, iDParameter, textoParameter, estadoParameter);
-        }
-    
-        public virtual ObjectResult<string> Upd_Clase(string accion, Nullable<int> iD, string jsonData)
-        {
-            var accionParameter = accion != null ?
-                new ObjectParameter("Accion", accion) :
-                new ObjectParameter("Accion", typeof(string));
-    
-            var iDParameter = iD.HasValue ?
-                new ObjectParameter("ID", iD) :
-                new ObjectParameter("ID", typeof(int));
-    
-            var jsonDataParameter = jsonData != null ?
-                new ObjectParameter("JsonData", jsonData) :
-                new ObjectParameter("JsonData", typeof(string));
-    
-            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<string>("Upd_Clase", accionParameter, iDParameter, jsonDataParameter);
-        }
-    
-        public virtual ObjectResult<string> Upd_ClienteFlota(string accion, Nullable<int> iD, string jsonData)
-        {
-            var accionParameter = accion != null ?
-                new ObjectParameter("Accion", accion) :
-                new ObjectParameter("Accion", typeof(string));
-    
-            var iDParameter = iD.HasValue ?
-                new ObjectParameter("ID", iD) :
-                new ObjectParameter("ID", typeof(int));
-    
-            var jsonDataParameter = jsonData != null ?
-                new ObjectParameter("JsonData", jsonData) :
-                new ObjectParameter("JsonData", typeof(string));
-    
-            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<string>("Upd_ClienteFlota", accionParameter, iDParameter, jsonDataParameter);
-        }
-    
-        public virtual ObjectResult<string> Upd_Color(string accion, Nullable<int> iD, string jsonData)
-        {
-            var accionParameter = accion != null ?
-                new ObjectParameter("Accion", accion) :
-                new ObjectParameter("Accion", typeof(string));
-    
-            var iDParameter = iD.HasValue ?
-                new ObjectParameter("ID", iD) :
-                new ObjectParameter("ID", typeof(int));
-    
-            var jsonDataParameter = jsonData != null ?
-                new ObjectParameter("JsonData", jsonData) :
-                new ObjectParameter("JsonData", typeof(string));
-    
-            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<string>("Upd_Color", accionParameter, iDParameter, jsonDataParameter);
-        }
-    
-        public virtual ObjectResult<string> Upd_Marca1(string accion, Nullable<int> iD, string jsonData)
-        {
-            var accionParameter = accion != null ?
-                new ObjectParameter("Accion", accion) :
-                new ObjectParameter("Accion", typeof(string));
-    
-            var iDParameter = iD.HasValue ?
-                new ObjectParameter("ID", iD) :
-                new ObjectParameter("ID", typeof(int));
-    
-            var jsonDataParameter = jsonData != null ?
-                new ObjectParameter("JsonData", jsonData) :
-                new ObjectParameter("JsonData", typeof(string));
-    
-            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<string>("Upd_Marca1", accionParameter, iDParameter, jsonDataParameter);
-        }
-    
-        public virtual ObjectResult<string> Upd_Modelo(string accion, Nullable<int> iD, string jsonData)
-        {
-            var accionParameter = accion != null ?
-                new ObjectParameter("Accion", accion) :
-                new ObjectParameter("Accion", typeof(string));
-    
-            var iDParameter = iD.HasValue ?
-                new ObjectParameter("ID", iD) :
-                new ObjectParameter("ID", typeof(int));
-    
-            var jsonDataParameter = jsonData != null ?
-                new ObjectParameter("JsonData", jsonData) :
-                new ObjectParameter("JsonData", typeof(string));
-    
-            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<string>("Upd_Modelo", accionParameter, iDParameter, jsonDataParameter);
-        }
-    
-        public virtual ObjectResult<string> Upd_Vehiculo(string accion, Nullable<int> iD, string jsonData)
-        {
-            var accionParameter = accion != null ?
-                new ObjectParameter("Accion", accion) :
-                new ObjectParameter("Accion", typeof(string));
-    
-            var iDParameter = iD.HasValue ?
-                new ObjectParameter("ID", iD) :
-                new ObjectParameter("ID", typeof(int));
-    
-            var jsonDataParameter = jsonData != null ?
-                new ObjectParameter("JsonData", jsonData) :
-                new ObjectParameter("JsonData", typeof(string));
-    
-            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<string>("Upd_Vehiculo", accionParameter, iDParameter, jsonDataParameter);
-        }
-    
-        public virtual ObjectResult<Nullable<int>> Ins_Pedido1(string jsonData, ObjectParameter mensajeOut)
-        {
-            var jsonDataParameter = jsonData != null ?
-                new ObjectParameter("JsonData", jsonData) :
-                new ObjectParameter("JsonData", typeof(string));
-    
-            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<Nullable<int>>("Ins_Pedido1", jsonDataParameter, mensajeOut);
-        }
-    
-        public virtual ObjectResult<string> Sel_Mesa1(Nullable<bool> isMesero, Nullable<int> idSucursal)
-        {
-            var isMeseroParameter = isMesero.HasValue ?
-                new ObjectParameter("isMesero", isMesero) :
-                new ObjectParameter("isMesero", typeof(bool));
-    
-            var idSucursalParameter = idSucursal.HasValue ?
-                new ObjectParameter("idSucursal", idSucursal) :
-                new ObjectParameter("idSucursal", typeof(int));
-    
-            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<string>("Sel_Mesa1", isMeseroParameter, idSucursalParameter);
-        }
-    
-        public virtual ObjectResult<string> Sel_Mesa_Mesero(Nullable<int> iD_SUCURSAL, Nullable<int> iD_MESERO)
-        {
-            var iD_SUCURSALParameter = iD_SUCURSAL.HasValue ?
-                new ObjectParameter("ID_SUCURSAL", iD_SUCURSAL) :
-                new ObjectParameter("ID_SUCURSAL", typeof(int));
-    
-            var iD_MESEROParameter = iD_MESERO.HasValue ?
-                new ObjectParameter("ID_MESERO", iD_MESERO) :
-                new ObjectParameter("ID_MESERO", typeof(int));
-    
-            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<string>("Sel_Mesa_Mesero", iD_SUCURSALParameter, iD_MESEROParameter);
-        }
-    
-        public virtual ObjectResult<Sel_Mesero_Result> Sel_Mesero(string isMesero)
-        {
-            var isMeseroParameter = isMesero != null ?
-                new ObjectParameter("isMesero", isMesero) :
-                new ObjectParameter("isMesero", typeof(string));
-    
-            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<Sel_Mesero_Result>("Sel_Mesero", isMeseroParameter);
-        }
-    
-        public virtual ObjectResult<string> Sel_Platillos(Nullable<int> iD_Sucursal)
-        {
-            var iD_SucursalParameter = iD_Sucursal.HasValue ?
-                new ObjectParameter("ID_Sucursal", iD_Sucursal) :
-                new ObjectParameter("ID_Sucursal", typeof(int));
-    
-            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<string>("Sel_Platillos", iD_SucursalParameter);
-        }
-    
-        public virtual ObjectResult<string> Sel_PlatillosId(Nullable<int> iD, Nullable<int> iDSU)
-        {
-            var iDParameter = iD.HasValue ?
-                new ObjectParameter("ID", iD) :
-                new ObjectParameter("ID", typeof(int));
-    
-            var iDSUParameter = iDSU.HasValue ?
-                new ObjectParameter("IDSU", iDSU) :
-                new ObjectParameter("IDSU", typeof(int));
-    
-            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<string>("Sel_PlatillosId", iDParameter, iDSUParameter);
-        }
-    
-        public virtual ObjectResult<Sel_Producto1_Result> Sel_Producto1()
-        {
-            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<Sel_Producto1_Result>("Sel_Producto1");
-        }
-    
-        public virtual ObjectResult<string> Sel_Sucursal1()
-        {
-            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<string>("Sel_Sucursal1");
-        }
-    
-        public virtual ObjectResult<Sel_UsuariosPVentas1_Result> Sel_UsuariosPVentas1(Nullable<int> iDSucursal, Nullable<int> iDPtoVenta)
-        {
-            var iDSucursalParameter = iDSucursal.HasValue ?
-                new ObjectParameter("IDSucursal", iDSucursal) :
-                new ObjectParameter("IDSucursal", typeof(int));
-    
-            var iDPtoVentaParameter = iDPtoVenta.HasValue ?
-                new ObjectParameter("IDPtoVenta", iDPtoVenta) :
-                new ObjectParameter("IDPtoVenta", typeof(int));
-    
-            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<Sel_UsuariosPVentas1_Result>("Sel_UsuariosPVentas1", iDSucursalParameter, iDPtoVentaParameter);
-        }
-    
-        public virtual ObjectResult<string> Upd_Pedido1(string jsonData, ObjectParameter mensajeOut)
-        {
-            var jsonDataParameter = jsonData != null ?
-                new ObjectParameter("JsonData", jsonData) :
-                new ObjectParameter("JsonData", typeof(string));
-    
-            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<string>("Upd_Pedido1", jsonDataParameter, mensajeOut);
-        }
-    
-        public virtual int Actualizar(string nameServer, string baseDatos, string tabla, Nullable<int> filtroFecha, string fechaInicio)
+        public virtual ObjectResult<string> Actualizar(string nameServer, string baseDatos, string tabla, Nullable<int> filtroFecha, string fechaInicio)
         {
             var nameServerParameter = nameServer != null ?
                 new ObjectParameter("NameServer", nameServer) :
@@ -7480,10 +4605,10 @@ namespace Api_Aldebaran_CobrosPedidos
                 new ObjectParameter("FechaInicio", fechaInicio) :
                 new ObjectParameter("FechaInicio", typeof(string));
     
-            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("Actualizar", nameServerParameter, baseDatosParameter, tablaParameter, filtroFechaParameter, fechaInicioParameter);
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<string>("Actualizar", nameServerParameter, baseDatosParameter, tablaParameter, filtroFechaParameter, fechaInicioParameter);
         }
     
-        public virtual int CRUD(string nameServer, string baseDatos, string tabla)
+        public virtual int Eliminar(string nameServer, string baseDatos, string tabla)
         {
             var nameServerParameter = nameServer != null ?
                 new ObjectParameter("NameServer", nameServer) :
@@ -7497,28 +4622,7 @@ namespace Api_Aldebaran_CobrosPedidos
                 new ObjectParameter("Tabla", tabla) :
                 new ObjectParameter("Tabla", typeof(string));
     
-            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("CRUD", nameServerParameter, baseDatosParameter, tablaParameter);
-        }
-    
-        public virtual int Eliminar(string nameServerLocal, string nameServer, string baseDatos, string tabla)
-        {
-            var nameServerLocalParameter = nameServerLocal != null ?
-                new ObjectParameter("NameServerLocal", nameServerLocal) :
-                new ObjectParameter("NameServerLocal", typeof(string));
-    
-            var nameServerParameter = nameServer != null ?
-                new ObjectParameter("NameServer", nameServer) :
-                new ObjectParameter("NameServer", typeof(string));
-    
-            var baseDatosParameter = baseDatos != null ?
-                new ObjectParameter("BaseDatos", baseDatos) :
-                new ObjectParameter("BaseDatos", typeof(string));
-    
-            var tablaParameter = tabla != null ?
-                new ObjectParameter("Tabla", tabla) :
-                new ObjectParameter("Tabla", typeof(string));
-    
-            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("Eliminar", nameServerLocalParameter, nameServerParameter, baseDatosParameter, tablaParameter);
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("Eliminar", nameServerParameter, baseDatosParameter, tablaParameter);
         }
     
         public virtual int Insertar(string nameServerLocal, string nameServer, string baseDatos, string tabla, Nullable<int> filtroFecha, string fechaInicio)

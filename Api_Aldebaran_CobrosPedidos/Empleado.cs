@@ -20,7 +20,6 @@ namespace Api_Aldebaran_CobrosPedidos
             this.CtasCobrar = new HashSet<CtasCobrar>();
             this.EmpleadoRubro = new HashSet<EmpleadoRubro>();
             this.FactVenta = new HashSet<FactVenta>();
-            this.Pedido = new HashSet<Pedido>();
             this.RolPagos = new HashSet<RolPagos>();
             this.RolPagosIndividual = new HashSet<RolPagosIndividual>();
             this.Tarjeta = new HashSet<Tarjeta>();
@@ -44,8 +43,6 @@ namespace Api_Aldebaran_CobrosPedidos
         public virtual ICollection<EmpleadoRubro> EmpleadoRubro { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<FactVenta> FactVenta { get; set; }
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<Pedido> Pedido { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<RolPagos> RolPagos { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]

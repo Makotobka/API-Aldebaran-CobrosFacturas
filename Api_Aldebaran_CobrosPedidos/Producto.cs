@@ -17,24 +17,17 @@ namespace Api_Aldebaran_CobrosPedidos
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
         public Producto()
         {
-            this.FVDetalle = new HashSet<FVDetalle>();
             this.Kardex = new HashSet<Kardex>();
             this.DCDetalle = new HashSet<DCDetalle>();
-            this.DetDispensadorIslero = new HashSet<DetDispensadorIslero>();
-            this.DTHDetalle = new HashSet<DTHDetalle>();
             this.DVDetalle = new HashSet<DVDetalle>();
             this.FCDetalle = new HashSet<FCDetalle>();
-            this.Ingredientes = new HashSet<Ingredientes>();
-            this.Ingredientes1 = new HashSet<Ingredientes>();
+            this.FVDetalle = new HashSet<FVDetalle>();
             this.Inventario = new HashSet<Inventario>();
             this.MovInvDet = new HashSet<MovInvDet>();
-            this.OrdenPDetalle = new HashSet<OrdenPDetalle>();
-            this.PedidoDetalle = new HashSet<PedidoDetalle>();
             this.ProductoImagen = new HashSet<ProductoImagen>();
             this.ProductoInfoAdicional = new HashSet<ProductoInfoAdicional>();
             this.ProductoUnidad = new HashSet<ProductoUnidad>();
             this.ProformaVtaDet = new HashSet<ProformaVtaDet>();
-            this.THDetalle = new HashSet<THDetalle>();
         }
     
         public int IDPD { get; set; }
@@ -58,16 +51,14 @@ namespace Api_Aldebaran_CobrosPedidos
         public decimal PVP { get; set; }
         public decimal PVM { get; set; }
         public Nullable<decimal> Descuento { get; set; }
-        public Nullable<decimal> Subsidio { get; set; }
         public decimal Comision { get; set; }
         public decimal PCP { get; set; }
-        public Nullable<int> Tipo { get; set; }
+        public string Tipo { get; set; }
         public bool IVA { get; set; }
         public Nullable<bool> IRBP { get; set; }
         public Nullable<bool> ICE { get; set; }
         public Nullable<bool> Serie { get; set; }
         public Nullable<bool> Combo { get; set; }
-        public Nullable<int> Clasificacion { get; set; }
         public Nullable<decimal> Minimo { get; set; }
         public Nullable<decimal> Maximo { get; set; }
         public string Observaciones { get; set; }
@@ -75,8 +66,6 @@ namespace Api_Aldebaran_CobrosPedidos
     
         public virtual Categoria Categoria { get; set; }
         public virtual Fabricante Fabricante { get; set; }
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<FVDetalle> FVDetalle { get; set; }
         public virtual Grupo Grupo { get; set; }
         public virtual ImpuestoRetencion ImpuestoRetencion { get; set; }
         public virtual ImpuestoRetencion ImpuestoRetencion1 { get; set; }
@@ -90,25 +79,15 @@ namespace Api_Aldebaran_CobrosPedidos
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<DCDetalle> DCDetalle { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<DetDispensadorIslero> DetDispensadorIslero { get; set; }
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<DTHDetalle> DTHDetalle { get; set; }
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<DVDetalle> DVDetalle { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<FCDetalle> FCDetalle { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<Ingredientes> Ingredientes { get; set; }
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<Ingredientes> Ingredientes1 { get; set; }
+        public virtual ICollection<FVDetalle> FVDetalle { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Inventario> Inventario { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<MovInvDet> MovInvDet { get; set; }
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<OrdenPDetalle> OrdenPDetalle { get; set; }
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<PedidoDetalle> PedidoDetalle { get; set; }
         public virtual SubGrupo SubGrupo { get; set; }
         public virtual TipoDeducible TipoDeducible { get; set; }
         public virtual Unidad Unidad { get; set; }
@@ -120,7 +99,5 @@ namespace Api_Aldebaran_CobrosPedidos
         public virtual ICollection<ProductoUnidad> ProductoUnidad { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<ProformaVtaDet> ProformaVtaDet { get; set; }
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<THDetalle> THDetalle { get; set; }
     }
 }
