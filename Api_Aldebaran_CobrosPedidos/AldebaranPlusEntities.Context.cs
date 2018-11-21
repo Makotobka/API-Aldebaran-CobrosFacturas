@@ -15,10 +15,10 @@ namespace Api_Aldebaran_CobrosPedidos
     using System.Data.Entity.Core.Objects;
     using System.Linq;
     
-    public partial class AldebaranPlusEntities : DbContext
+    public partial class AldebaranPlus_JavierJrEntities : DbContext
     {
-        public AldebaranPlusEntities()
-            : base("name=AldebaranPlusEntities")
+        public AldebaranPlus_JavierJrEntities()
+            : base("name=AldebaranPlus_JavierJrEntities")
         {
         }
     
@@ -123,6 +123,7 @@ namespace Api_Aldebaran_CobrosPedidos
         public virtual DbSet<vPagos> vPagos { get; set; }
         public virtual DbSet<vProformaVta> vProformaVta { get; set; }
         public virtual DbSet<vProformaVtaCab> vProformaVtaCab { get; set; }
+        public virtual DbSet<vRegistroCobrosFacturas> vRegistroCobrosFacturas { get; set; }
         public virtual DbSet<vRolPagos> vRolPagos { get; set; }
         public virtual DbSet<vRolPagosIndividual> vRolPagosIndividual { get; set; }
         public virtual DbSet<vStock> vStock { get; set; }

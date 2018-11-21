@@ -10,15 +10,15 @@ namespace Api_Aldebaran_CobrosPedidos.Controllers
 {
     public class CtsCobrarController : ApiController
     {
-        AldebaranPlusEntities db = new AldebaranPlusEntities();
+        AldebaranPlus_JavierJrEntities db = new AldebaranPlus_JavierJrEntities();
 
         [HttpGet]
         //[Route("F/getMesCV/{Acc}/{IDSU}/{AnoAct}")]
-        [Route("CTS/getCtsPagarFactura")]
-        public IQueryable<CtasCobrar> getCtsFactura()
+        [Route("CTS/getCtsPagarFactura/{IDFV}")]
+        public IQueryable<CtasCobrar> getCtsFactura(int IDFV)
         {
             db.Configuration.LazyLoadingEnabled = false;
-            var lista = db.CtasCobrar.Where(x=>x.IDCC>12000);
+            var lista = db.CtasCobrar.Where(x=>x.IDFV> IDFV).Where(x=>x.Saldo>0);
             return lista;
         }
 

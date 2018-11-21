@@ -7,36 +7,36 @@ using System.Web.Http;
 
 namespace Api_Aldebaran_CobrosPedidos.Controllers
 {
-    public class FacturasController : ApiController
+    public class UsuariosController : ApiController
     {
         AldebaranPlus_JavierJrEntities db = new AldebaranPlus_JavierJrEntities();
 
         [HttpGet]
-        [Route("F/getFacturasCredito")]
-        public IQueryable<vVentaCab> getFacturasCredito()
+        [Route("U/getusuarios")]
+        public IQueryable<Usuario> getUsuarios()
         {
-            db.Configuration.LazyLoadingEnabled = false;            
-            var lista = db.vVentaCab.Where(x => x.FORMAPAGO == "CREDITO" && x.Saldo>0);
+            db.Configuration.LazyLoadingEnabled = false;
+            var lista = db.Usuario;
             return lista;
         }
 
-        // GET: api/Facturas/5
+        // GET: api/Usuarios/5
         public string Get(int id)
         {
             return "value";
         }
 
-        // POST: api/Facturas
+        // POST: api/Usuarios
         public void Post([FromBody]string value)
         {
         }
 
-        // PUT: api/Facturas/5
+        // PUT: api/Usuarios/5
         public void Put(int id, [FromBody]string value)
         {
         }
 
-        // DELETE: api/Facturas/5
+        // DELETE: api/Usuarios/5
         public void Delete(int id)
         {
         }

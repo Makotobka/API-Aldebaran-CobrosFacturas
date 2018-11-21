@@ -1,0 +1,21 @@
+USE [AldebaranPlus_JavierJr]
+GO
+
+/****** Object:  View [dbo].[vRolPagos]    Script Date: 21/11/2018 10:45:03 ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+CREATE VIEW [dbo].[vRegistroCobrosFacturas]
+AS
+SELECT        dbo.CtasCobrar.IDCC, dbo.CtasCobrar.IDSU, dbo.CtasCobrar.IDFV, dbo.CtasCobrar.Fecha, CASE CtasCobrar.TIPO WHEN 'E' THEN 'ENTRADA' WHEN 'C' THEN 'CUOTA' ELSE 'OTRO' END AS TIPO, 
+                         dbo.CtasCobrar.FormaPago, dbo.CtasCobrar.Valor, dbo.CtasCobrar.Saldo, ISNULL(dbo.CtasCobrar.PorcentajeComision, 0) AS PorcentajeComision, ISNULL(dbo.CtasCobrar.Comision, 0) AS Comision, dbo.CtasCobrar.Estado, 
+                         ISNULL(dbo.Empleado.IDEP, 0) AS IDEP, UPPER(ISNULL(dbo.Empleado.Apellidos + ' ' + dbo.Empleado.Nombres, '')) AS RECAUDADOR
+FROM            dbo.CtasCobrar LEFT OUTER JOIN
+                         dbo.Empleado ON dbo.CtasCobrar.IDEP = dbo.Empleado.IDEP AND dbo.Empleado.Estado = 'True'
+WHERE        dbo.CtasCobrar.Estado = 'True'
+
+GO
+
