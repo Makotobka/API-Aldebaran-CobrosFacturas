@@ -14,11 +14,11 @@ namespace Api_Aldebaran_CobrosPedidos.Controllers
 
         [HttpGet]
         //[Route("F/getMesCV/{Acc}/{IDSU}/{AnoAct}")]
-        [Route("CTS/getCtsPagarFactura/{IDFV}")]
-        public IQueryable<CtasCobrar> getCtsFactura(int IDFV)
+        [Route("CTS/getCtsPagarFactura")]
+        public IQueryable<CtasCobrar> getCtsFactura()
         {
             db.Configuration.LazyLoadingEnabled = false;
-            var lista = db.CtasCobrar.Where(x=> x.IDFV == IDFV);
+            var lista = db.CtasCobrar.Where(x=>x.IDCC>12000);
             return lista;
         }
 

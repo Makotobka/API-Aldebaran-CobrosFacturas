@@ -15,7 +15,14 @@ namespace Api_Aldebaran_CobrosPedidos.Controllers
         [Route("F/getFacturasCredito")]
         public IQueryable<vVentaCab> getFacturasCredito()
         {
+            try{
+                var listas = db.vVentaCab.Where(x => x.FORMAPAGO == "CREDITO" && x.Saldo > 0).ToArray();
+            }catch(Exception ex)
+            {
+                string sdfds = "";
+            }
             db.Configuration.LazyLoadingEnabled = false;
+            
             var lista = db.vVentaCab.Where(x => x.FORMAPAGO == "CREDITO" && x.Saldo>0);
             return lista;
         }
