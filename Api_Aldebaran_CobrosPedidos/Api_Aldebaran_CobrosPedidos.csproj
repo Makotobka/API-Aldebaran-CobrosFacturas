@@ -157,29 +157,14 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AldebaranPlusEntities.Context.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>AldebaranPlusEntities.Context.tt</DependentUpon>
-    </Compile>
-    <Compile Include="AldebaranPlusEntities.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>AldebaranPlusEntities.tt</DependentUpon>
-    </Compile>
-    <Compile Include="AldebaranPlusEntities.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>AldebaranPlusEntities.edmx</DependentUpon>
-    </Compile>
     <Compile Include="AperturaCaja.cs">
-      <DependentUpon>AldebaranPlusEntities.tt</DependentUpon>
+      <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
     <Compile Include="AperturaCajaDet.cs">
-      <DependentUpon>AldebaranPlusEntities.tt</DependentUpon>
+      <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
     <Compile Include="AperturaCajaDetRubros.cs">
-      <DependentUpon>AldebaranPlusEntities.tt</DependentUpon>
+      <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
@@ -214,43 +199,43 @@
     <Compile Include="Areas\HelpPage\SampleGeneration\TextSample.cs" />
     <Compile Include="Areas\HelpPage\XmlDocumentationProvider.cs" />
     <Compile Include="Auditoria.cs">
-      <DependentUpon>AldebaranPlusEntities.tt</DependentUpon>
+      <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
     <Compile Include="Cargo.cs">
-      <DependentUpon>AldebaranPlusEntities.tt</DependentUpon>
+      <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
     <Compile Include="Catalogo.cs">
-      <DependentUpon>AldebaranPlusEntities.tt</DependentUpon>
+      <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
     <Compile Include="CatalogoDet.cs">
-      <DependentUpon>AldebaranPlusEntities.tt</DependentUpon>
+      <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
     <Compile Include="Categoria.cs">
-      <DependentUpon>AldebaranPlusEntities.tt</DependentUpon>
+      <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
     <Compile Include="CategoriaCliente.cs">
-      <DependentUpon>AldebaranPlusEntities.tt</DependentUpon>
+      <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
     <Compile Include="CategoriaProveedor.cs">
-      <DependentUpon>AldebaranPlusEntities.tt</DependentUpon>
+      <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
     <Compile Include="CierreCaja.cs">
-      <DependentUpon>AldebaranPlusEntities.tt</DependentUpon>
+      <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
     <Compile Include="Ciudad.cs">
-      <DependentUpon>AldebaranPlusEntities.tt</DependentUpon>
+      <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
     <Compile Include="Cliente.cs">
-      <DependentUpon>AldebaranPlusEntities.tt</DependentUpon>
+      <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
     <Compile Include="ClienteEmail.cs">
-      <DependentUpon>AldebaranPlusEntities.tt</DependentUpon>
+      <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
     <Compile Include="ClienteInfoAdicional.cs">
-      <DependentUpon>AldebaranPlusEntities.tt</DependentUpon>
+      <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
     <Compile Include="Continente.cs">
-      <DependentUpon>AldebaranPlusEntities.tt</DependentUpon>
+      <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
     <Compile Include="Controllers\CtsCobrarController.cs" />
     <Compile Include="Controllers\FacturasController.cs" />
@@ -258,507 +243,509 @@
     <Compile Include="Controllers\UsuariosController.cs" />
     <Compile Include="Controllers\ValuesController.cs" />
     <Compile Include="CtasCobrar.cs">
-      <DependentUpon>AldebaranPlusEntities.tt</DependentUpon>
+      <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
     <Compile Include="CtasPagar.cs">
-      <DependentUpon>AldebaranPlusEntities.tt</DependentUpon>
+      <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
     <Compile Include="DCDetalle.cs">
-      <DependentUpon>AldebaranPlusEntities.tt</DependentUpon>
+      <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
     <Compile Include="Denominacion.cs">
-      <DependentUpon>AldebaranPlusEntities.tt</DependentUpon>
+      <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
     <Compile Include="DesgloceRubro.cs">
-      <DependentUpon>AldebaranPlusEntities.tt</DependentUpon>
+      <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
     <Compile Include="DevCompra.cs">
-      <DependentUpon>AldebaranPlusEntities.tt</DependentUpon>
+      <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
     <Compile Include="DevVenta.cs">
-      <DependentUpon>AldebaranPlusEntities.tt</DependentUpon>
+      <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
     <Compile Include="Documento.cs">
-      <DependentUpon>AldebaranPlusEntities.tt</DependentUpon>
+      <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
     <Compile Include="DVDetalle.cs">
-      <DependentUpon>AldebaranPlusEntities.tt</DependentUpon>
+      <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
     <Compile Include="Empleado.cs">
-      <DependentUpon>AldebaranPlusEntities.tt</DependentUpon>
+      <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
     <Compile Include="EmpleadoRubro.cs">
-      <DependentUpon>AldebaranPlusEntities.tt</DependentUpon>
+      <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
     <Compile Include="Empresa.cs">
-      <DependentUpon>AldebaranPlusEntities.tt</DependentUpon>
+      <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
     <Compile Include="Estacion.cs">
-      <DependentUpon>AldebaranPlusEntities.tt</DependentUpon>
+      <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
     <Compile Include="Fabricante.cs">
-      <DependentUpon>AldebaranPlusEntities.tt</DependentUpon>
+      <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
     <Compile Include="FactCompra.cs">
-      <DependentUpon>AldebaranPlusEntities.tt</DependentUpon>
+      <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
     <Compile Include="FactVenta.cs">
-      <DependentUpon>AldebaranPlusEntities.tt</DependentUpon>
+      <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
     <Compile Include="FCDetalle.cs">
-      <DependentUpon>AldebaranPlusEntities.tt</DependentUpon>
+      <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
     <Compile Include="FlujoDinero.cs">
-      <DependentUpon>AldebaranPlusEntities.tt</DependentUpon>
+      <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
     <Compile Include="FormaPago.cs">
-      <DependentUpon>AldebaranPlusEntities.tt</DependentUpon>
+      <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
     <Compile Include="FVDetalle.cs">
-      <DependentUpon>AldebaranPlusEntities.tt</DependentUpon>
+      <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Grupo.cs">
-      <DependentUpon>AldebaranPlusEntities.tt</DependentUpon>
+      <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
     <Compile Include="Impuesto.cs">
-      <DependentUpon>AldebaranPlusEntities.tt</DependentUpon>
+      <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
     <Compile Include="ImpuestoRetencion.cs">
-      <DependentUpon>AldebaranPlusEntities.tt</DependentUpon>
+      <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
     <Compile Include="ImpuestoTarifa.cs">
-      <DependentUpon>AldebaranPlusEntities.tt</DependentUpon>
+      <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
     <Compile Include="Inventario.cs">
-      <DependentUpon>AldebaranPlusEntities.tt</DependentUpon>
+      <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
     <Compile Include="Kardex.cs">
-      <DependentUpon>AldebaranPlusEntities.tt</DependentUpon>
+      <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
     <Compile Include="Marca.cs">
-      <DependentUpon>AldebaranPlusEntities.tt</DependentUpon>
+      <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
     <Compile Include="Medida.cs">
-      <DependentUpon>AldebaranPlusEntities.tt</DependentUpon>
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model1.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Model1.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Model1.edmx</DependentUpon>
     </Compile>
     <Compile Include="Modulo.cs">
-      <DependentUpon>AldebaranPlusEntities.tt</DependentUpon>
+      <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
     <Compile Include="MotivoMovInv.cs">
-      <DependentUpon>AldebaranPlusEntities.tt</DependentUpon>
+      <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
     <Compile Include="MovInvCab.cs">
-      <DependentUpon>AldebaranPlusEntities.tt</DependentUpon>
+      <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
     <Compile Include="MovInvDet.cs">
-      <DependentUpon>AldebaranPlusEntities.tt</DependentUpon>
+      <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
     <Compile Include="Objetos.cs">
-      <DependentUpon>AldebaranPlusEntities.tt</DependentUpon>
+      <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
     <Compile Include="Pais.cs">
-      <DependentUpon>AldebaranPlusEntities.tt</DependentUpon>
+      <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
     <Compile Include="Parametros.cs">
-      <DependentUpon>AldebaranPlusEntities.tt</DependentUpon>
+      <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
     <Compile Include="ParametrosGlobales.cs">
-      <DependentUpon>AldebaranPlusEntities.tt</DependentUpon>
+      <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
     <Compile Include="Perfil.cs">
-      <DependentUpon>AldebaranPlusEntities.tt</DependentUpon>
+      <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
     <Compile Include="Permisos.cs">
-      <DependentUpon>AldebaranPlusEntities.tt</DependentUpon>
+      <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
     <Compile Include="Presentacion.cs">
-      <DependentUpon>AldebaranPlusEntities.tt</DependentUpon>
+      <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
     <Compile Include="Producto.cs">
-      <DependentUpon>AldebaranPlusEntities.tt</DependentUpon>
+      <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
     <Compile Include="ProductoImagen.cs">
-      <DependentUpon>AldebaranPlusEntities.tt</DependentUpon>
+      <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
     <Compile Include="ProductoInfoAdicional.cs">
-      <DependentUpon>AldebaranPlusEntities.tt</DependentUpon>
+      <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
     <Compile Include="ProductoUnidad.cs">
-      <DependentUpon>AldebaranPlusEntities.tt</DependentUpon>
+      <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
     <Compile Include="ProformaVta.cs">
-      <DependentUpon>AldebaranPlusEntities.tt</DependentUpon>
+      <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
     <Compile Include="ProformaVtaDet.cs">
-      <DependentUpon>AldebaranPlusEntities.tt</DependentUpon>
+      <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Proveedor.cs">
-      <DependentUpon>AldebaranPlusEntities.tt</DependentUpon>
+      <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
     <Compile Include="ProveedorEmail.cs">
-      <DependentUpon>AldebaranPlusEntities.tt</DependentUpon>
+      <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
     <Compile Include="ProveedorInfoAdicional.cs">
-      <DependentUpon>AldebaranPlusEntities.tt</DependentUpon>
+      <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
     <Compile Include="PuntoVenta.cs">
-      <DependentUpon>AldebaranPlusEntities.tt</DependentUpon>
+      <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
     <Compile Include="RegionMundo.cs">
-      <DependentUpon>AldebaranPlusEntities.tt</DependentUpon>
+      <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
     <Compile Include="RolPagos.cs">
-      <DependentUpon>AldebaranPlusEntities.tt</DependentUpon>
+      <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
     <Compile Include="RolPagosIndividual.cs">
-      <DependentUpon>AldebaranPlusEntities.tt</DependentUpon>
+      <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
     <Compile Include="Rpt_AperturaCajaUsuario_Result.cs">
-      <DependentUpon>AldebaranPlusEntities.tt</DependentUpon>
+      <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
     <Compile Include="Rpt_CierreCajaUsuario_Result.cs">
-      <DependentUpon>AldebaranPlusEntities.tt</DependentUpon>
+      <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
     <Compile Include="Rpt_Factura_Result.cs">
-      <DependentUpon>AldebaranPlusEntities.tt</DependentUpon>
+      <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
     <Compile Include="Rpt_MovInventario_Result.cs">
-      <DependentUpon>AldebaranPlusEntities.tt</DependentUpon>
+      <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
     <Compile Include="Rpt_Proforma_Result.cs">
-      <DependentUpon>AldebaranPlusEntities.tt</DependentUpon>
+      <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
     <Compile Include="Rpt_SubAperturaCajaUsuarioDetRubro_Result.cs">
-      <DependentUpon>AldebaranPlusEntities.tt</DependentUpon>
+      <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
     <Compile Include="Rpt_SubAperturaCajaUsuarioDet_Result.cs">
-      <DependentUpon>AldebaranPlusEntities.tt</DependentUpon>
+      <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
     <Compile Include="Rpt_SubCierreCajaUsuarioDetRubro_Result.cs">
-      <DependentUpon>AldebaranPlusEntities.tt</DependentUpon>
+      <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
     <Compile Include="Rpt_SubCierreCajaUsuarioDet_Result.cs">
-      <DependentUpon>AldebaranPlusEntities.tt</DependentUpon>
+      <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
     <Compile Include="Rpt_SubCierreCajaUsuario_Result.cs">
-      <DependentUpon>AldebaranPlusEntities.tt</DependentUpon>
+      <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
     <Compile Include="Rpt_TransaccionesUsuario_Result.cs">
-      <DependentUpon>AldebaranPlusEntities.tt</DependentUpon>
+      <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
     <Compile Include="Rpt_Ventas_Result.cs">
-      <DependentUpon>AldebaranPlusEntities.tt</DependentUpon>
+      <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
     <Compile Include="Rubro.cs">
-      <DependentUpon>AldebaranPlusEntities.tt</DependentUpon>
+      <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
     <Compile Include="RubroCaja.cs">
-      <DependentUpon>AldebaranPlusEntities.tt</DependentUpon>
+      <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
     <Compile Include="Sector.cs">
-      <DependentUpon>AldebaranPlusEntities.tt</DependentUpon>
+      <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
     <Compile Include="Sel_AllSucursal_Result.cs">
-      <DependentUpon>AldebaranPlusEntities.tt</DependentUpon>
+      <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
     <Compile Include="Sel_AperturaCaja_Result.cs">
-      <DependentUpon>AldebaranPlusEntities.tt</DependentUpon>
+      <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
     <Compile Include="Sel_CategoriaCliente_Result.cs">
-      <DependentUpon>AldebaranPlusEntities.tt</DependentUpon>
+      <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
     <Compile Include="Sel_CategoriaProveedor_Result.cs">
-      <DependentUpon>AldebaranPlusEntities.tt</DependentUpon>
+      <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
     <Compile Include="Sel_Categoria_Result.cs">
-      <DependentUpon>AldebaranPlusEntities.tt</DependentUpon>
+      <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
     <Compile Include="Sel_Ciudad_Result.cs">
-      <DependentUpon>AldebaranPlusEntities.tt</DependentUpon>
+      <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
     <Compile Include="Sel_ClienteEmail_Result.cs">
-      <DependentUpon>AldebaranPlusEntities.tt</DependentUpon>
+      <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
     <Compile Include="Sel_ClienteInfoAdicional_Result.cs">
-      <DependentUpon>AldebaranPlusEntities.tt</DependentUpon>
+      <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
     <Compile Include="Sel_Cliente_Result.cs">
-      <DependentUpon>AldebaranPlusEntities.tt</DependentUpon>
+      <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
     <Compile Include="Sel_Continente_Result.cs">
-      <DependentUpon>AldebaranPlusEntities.tt</DependentUpon>
+      <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
     <Compile Include="Sel_Denominacion_Result.cs">
-      <DependentUpon>AldebaranPlusEntities.tt</DependentUpon>
+      <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
     <Compile Include="Sel_DesgloceRubro_Result.cs">
-      <DependentUpon>AldebaranPlusEntities.tt</DependentUpon>
+      <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
     <Compile Include="Sel_Documento_Result.cs">
-      <DependentUpon>AldebaranPlusEntities.tt</DependentUpon>
+      <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
     <Compile Include="Sel_Empresa_Result.cs">
-      <DependentUpon>AldebaranPlusEntities.tt</DependentUpon>
+      <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
     <Compile Include="Sel_Estacion_Result.cs">
-      <DependentUpon>AldebaranPlusEntities.tt</DependentUpon>
+      <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
     <Compile Include="Sel_Fabricante_Result.cs">
-      <DependentUpon>AldebaranPlusEntities.tt</DependentUpon>
+      <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
     <Compile Include="Sel_FacCV_Result.cs">
-      <DependentUpon>AldebaranPlusEntities.tt</DependentUpon>
+      <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
     <Compile Include="Sel_FormaPago_Result.cs">
-      <DependentUpon>AldebaranPlusEntities.tt</DependentUpon>
+      <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
     <Compile Include="Sel_Grupo_Result.cs">
-      <DependentUpon>AldebaranPlusEntities.tt</DependentUpon>
+      <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
     <Compile Include="Sel_ImpuestoRetencion_Result.cs">
-      <DependentUpon>AldebaranPlusEntities.tt</DependentUpon>
+      <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
     <Compile Include="Sel_ImpuestoTarifa_Result.cs">
-      <DependentUpon>AldebaranPlusEntities.tt</DependentUpon>
+      <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
     <Compile Include="Sel_Impuesto_Result.cs">
-      <DependentUpon>AldebaranPlusEntities.tt</DependentUpon>
+      <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
     <Compile Include="Sel_Inventario_Result.cs">
-      <DependentUpon>AldebaranPlusEntities.tt</DependentUpon>
+      <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
     <Compile Include="Sel_Marca_Result.cs">
-      <DependentUpon>AldebaranPlusEntities.tt</DependentUpon>
+      <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
     <Compile Include="Sel_Medida_Result.cs">
-      <DependentUpon>AldebaranPlusEntities.tt</DependentUpon>
+      <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
     <Compile Include="Sel_Modulo_Result.cs">
-      <DependentUpon>AldebaranPlusEntities.tt</DependentUpon>
+      <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
     <Compile Include="Sel_MotivoMovInv_Result.cs">
-      <DependentUpon>AldebaranPlusEntities.tt</DependentUpon>
+      <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
     <Compile Include="Sel_MovInvCab_Result.cs">
-      <DependentUpon>AldebaranPlusEntities.tt</DependentUpon>
+      <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
     <Compile Include="Sel_MovInvDet_Result.cs">
-      <DependentUpon>AldebaranPlusEntities.tt</DependentUpon>
+      <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
     <Compile Include="Sel_Objeto_Result.cs">
-      <DependentUpon>AldebaranPlusEntities.tt</DependentUpon>
+      <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
     <Compile Include="Sel_Pais_Result.cs">
-      <DependentUpon>AldebaranPlusEntities.tt</DependentUpon>
+      <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
     <Compile Include="Sel_Parametro_Result.cs">
-      <DependentUpon>AldebaranPlusEntities.tt</DependentUpon>
+      <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
     <Compile Include="Sel_Perfil_Result.cs">
-      <DependentUpon>AldebaranPlusEntities.tt</DependentUpon>
+      <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
     <Compile Include="Sel_Permisos_Result.cs">
-      <DependentUpon>AldebaranPlusEntities.tt</DependentUpon>
+      <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
     <Compile Include="Sel_Presentacion_Result.cs">
-      <DependentUpon>AldebaranPlusEntities.tt</DependentUpon>
+      <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
     <Compile Include="Sel_ProdSotckBajo_Result.cs">
-      <DependentUpon>AldebaranPlusEntities.tt</DependentUpon>
+      <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
     <Compile Include="Sel_ProductoInfoAdicional_Result.cs">
-      <DependentUpon>AldebaranPlusEntities.tt</DependentUpon>
+      <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
     <Compile Include="Sel_ProductoNew_Result.cs">
-      <DependentUpon>AldebaranPlusEntities.tt</DependentUpon>
+      <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
     <Compile Include="Sel_Producto_Result.cs">
-      <DependentUpon>AldebaranPlusEntities.tt</DependentUpon>
+      <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
     <Compile Include="Sel_ProveedorEmail_Result.cs">
-      <DependentUpon>AldebaranPlusEntities.tt</DependentUpon>
+      <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
     <Compile Include="Sel_ProveedorInfoAdicional_Result.cs">
-      <DependentUpon>AldebaranPlusEntities.tt</DependentUpon>
+      <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
     <Compile Include="Sel_Proveedor_Result.cs">
-      <DependentUpon>AldebaranPlusEntities.tt</DependentUpon>
+      <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
     <Compile Include="Sel_PuntoVenta_Result.cs">
-      <DependentUpon>AldebaranPlusEntities.tt</DependentUpon>
+      <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
     <Compile Include="Sel_RegionMundo_Result.cs">
-      <DependentUpon>AldebaranPlusEntities.tt</DependentUpon>
+      <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
     <Compile Include="Sel_RegularizarCostos_Result.cs">
-      <DependentUpon>AldebaranPlusEntities.tt</DependentUpon>
+      <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
     <Compile Include="Sel_ResProdSotckBajo_Result.cs">
-      <DependentUpon>AldebaranPlusEntities.tt</DependentUpon>
+      <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
     <Compile Include="Sel_RubroFlujoCaja_Result.cs">
-      <DependentUpon>AldebaranPlusEntities.tt</DependentUpon>
+      <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
     <Compile Include="Sel_Rubro_Result.cs">
-      <DependentUpon>AldebaranPlusEntities.tt</DependentUpon>
+      <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
     <Compile Include="Sel_Sector_Result.cs">
-      <DependentUpon>AldebaranPlusEntities.tt</DependentUpon>
+      <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
     <Compile Include="Sel_Stock_Result.cs">
-      <DependentUpon>AldebaranPlusEntities.tt</DependentUpon>
+      <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
     <Compile Include="Sel_SubGrupo_Result.cs">
-      <DependentUpon>AldebaranPlusEntities.tt</DependentUpon>
+      <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
     <Compile Include="Sel_SubModulo_Result.cs">
-      <DependentUpon>AldebaranPlusEntities.tt</DependentUpon>
+      <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
     <Compile Include="Sel_Sucursal_Result.cs">
-      <DependentUpon>AldebaranPlusEntities.tt</DependentUpon>
+      <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
     <Compile Include="Sel_SumFacCV_Anos_Result.cs">
-      <DependentUpon>AldebaranPlusEntities.tt</DependentUpon>
+      <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
     <Compile Include="Sel_TipoDeducible_Result.cs">
-      <DependentUpon>AldebaranPlusEntities.tt</DependentUpon>
+      <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
     <Compile Include="Sel_TipoIdentificacion_Result.cs">
-      <DependentUpon>AldebaranPlusEntities.tt</DependentUpon>
+      <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
     <Compile Include="Sel_Unidad_Result.cs">
-      <DependentUpon>AldebaranPlusEntities.tt</DependentUpon>
+      <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
     <Compile Include="Sel_UsuarioCajas_Result.cs">
-      <DependentUpon>AldebaranPlusEntities.tt</DependentUpon>
+      <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
     <Compile Include="Sel_Usuario_Result.cs">
-      <DependentUpon>AldebaranPlusEntities.tt</DependentUpon>
+      <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
     <Compile Include="Sel_ValCajaPV_Result.cs">
-      <DependentUpon>AldebaranPlusEntities.tt</DependentUpon>
+      <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
     <Compile Include="SubGrupo.cs">
-      <DependentUpon>AldebaranPlusEntities.tt</DependentUpon>
+      <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
     <Compile Include="SubModulo.cs">
-      <DependentUpon>AldebaranPlusEntities.tt</DependentUpon>
+      <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
     <Compile Include="Sucursal.cs">
-      <DependentUpon>AldebaranPlusEntities.tt</DependentUpon>
+      <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
     <Compile Include="sysdiagrams.cs">
-      <DependentUpon>AldebaranPlusEntities.tt</DependentUpon>
+      <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
     <Compile Include="Tarjeta.cs">
-      <DependentUpon>AldebaranPlusEntities.tt</DependentUpon>
+      <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
     <Compile Include="TipoDeducible.cs">
-      <DependentUpon>AldebaranPlusEntities.tt</DependentUpon>
+      <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
     <Compile Include="TipoIdentificacion.cs">
-      <DependentUpon>AldebaranPlusEntities.tt</DependentUpon>
+      <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
     <Compile Include="Unidad.cs">
-      <DependentUpon>AldebaranPlusEntities.tt</DependentUpon>
+      <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
     <Compile Include="Usuario.cs">
-      <DependentUpon>AldebaranPlusEntities.tt</DependentUpon>
+      <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
     <Compile Include="vAperturaCajaCab.cs">
-      <DependentUpon>AldebaranPlusEntities.tt</DependentUpon>
+      <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
     <Compile Include="vAperturaCajaDet.cs">
-      <DependentUpon>AldebaranPlusEntities.tt</DependentUpon>
+      <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
     <Compile Include="vAperturaCajaDetRubro.cs">
-      <DependentUpon>AldebaranPlusEntities.tt</DependentUpon>
+      <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
     <Compile Include="vCierreCaja.cs">
-      <DependentUpon>AldebaranPlusEntities.tt</DependentUpon>
+      <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
     <Compile Include="vCobros.cs">
-      <DependentUpon>AldebaranPlusEntities.tt</DependentUpon>
+      <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
     <Compile Include="vCompra.cs">
-      <DependentUpon>AldebaranPlusEntities.tt</DependentUpon>
+      <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
     <Compile Include="vCompraCab.cs">
-      <DependentUpon>AldebaranPlusEntities.tt</DependentUpon>
+      <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
     <Compile Include="vCompraCabFull.cs">
-      <DependentUpon>AldebaranPlusEntities.tt</DependentUpon>
+      <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
     <Compile Include="vFlujoCaja.cs">
-      <DependentUpon>AldebaranPlusEntities.tt</DependentUpon>
+      <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
     <Compile Include="vNCCompras.cs">
-      <DependentUpon>AldebaranPlusEntities.tt</DependentUpon>
+      <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
     <Compile Include="vNCComprasCab.cs">
-      <DependentUpon>AldebaranPlusEntities.tt</DependentUpon>
+      <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
     <Compile Include="vNCVentas.cs">
-      <DependentUpon>AldebaranPlusEntities.tt</DependentUpon>
+      <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
     <Compile Include="vNCVentasCab.cs">
-      <DependentUpon>AldebaranPlusEntities.tt</DependentUpon>
+      <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
     <Compile Include="vPagos.cs">
-      <DependentUpon>AldebaranPlusEntities.tt</DependentUpon>
+      <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
     <Compile Include="vProformaVta.cs">
-      <DependentUpon>AldebaranPlusEntities.tt</DependentUpon>
+      <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
     <Compile Include="vProformaVtaCab.cs">
-      <DependentUpon>AldebaranPlusEntities.tt</DependentUpon>
-    </Compile>
-    <Compile Include="vRegistroCobrosFacturas.cs">
-      <DependentUpon>AldebaranPlusEntities.tt</DependentUpon>
+      <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
     <Compile Include="vRolPagos.cs">
-      <DependentUpon>AldebaranPlusEntities.tt</DependentUpon>
+      <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
     <Compile Include="vRolPagosIndividual.cs">
-      <DependentUpon>AldebaranPlusEntities.tt</DependentUpon>
+      <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
     <Compile Include="vStock.cs">
-      <DependentUpon>AldebaranPlusEntities.tt</DependentUpon>
+      <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
     <Compile Include="vTransaccion.cs">
-      <DependentUpon>AldebaranPlusEntities.tt</DependentUpon>
+      <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
     <Compile Include="vTransaccionEgreso.cs">
-      <DependentUpon>AldebaranPlusEntities.tt</DependentUpon>
+      <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
     <Compile Include="vTransaccionIngreso.cs">
-      <DependentUpon>AldebaranPlusEntities.tt</DependentUpon>
+      <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
     <Compile Include="vVenta.cs">
-      <DependentUpon>AldebaranPlusEntities.tt</DependentUpon>
+      <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
     <Compile Include="vVentaCab.cs">
-      <DependentUpon>AldebaranPlusEntities.tt</DependentUpon>
+      <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
     <Compile Include="vVentaCabFull.cs">
-      <DependentUpon>AldebaranPlusEntities.tt</DependentUpon>
+      <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="AldebaranPlusEntities.Context.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>AldebaranPlusEntities.edmx</DependentUpon>
-      <LastGenOutput>AldebaranPlusEntities.Context.cs</LastGenOutput>
-    </Content>
-    <Content Include="AldebaranPlusEntities.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>AldebaranPlusEntities.edmx</DependentUpon>
-      <LastGenOutput>AldebaranPlusEntities.cs</LastGenOutput>
-    </Content>
     <Content Include="Areas\HelpPage\HelpPage.css" />
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
@@ -767,6 +754,16 @@
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
+    <Content Include="Model1.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>Model1.edmx</DependentUpon>
+      <LastGenOutput>Model1.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="Model1.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>Model1.edmx</DependentUpon>
+      <LastGenOutput>Model1.cs</LastGenOutput>
+    </Content>
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Areas\HelpPage\Views\Web.config" />
@@ -791,12 +788,12 @@
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <EntityDeploy Include="AldebaranPlusEntities.edmx">
+    <EntityDeploy Include="Model1.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>AldebaranPlusEntities.Designer.cs</LastGenOutput>
+      <LastGenOutput>Model1.Designer.cs</LastGenOutput>
     </EntityDeploy>
-    <Content Include="AldebaranPlusEntities.edmx.diagram">
-      <DependentUpon>AldebaranPlusEntities.edmx</DependentUpon>
+    <Content Include="Model1.edmx.diagram">
+      <DependentUpon>Model1.edmx</DependentUpon>
     </Content>
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.3.1.js" />

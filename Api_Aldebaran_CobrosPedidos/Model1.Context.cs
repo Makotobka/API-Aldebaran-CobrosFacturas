@@ -123,7 +123,6 @@ namespace Api_Aldebaran_CobrosPedidos
         public virtual DbSet<vPagos> vPagos { get; set; }
         public virtual DbSet<vProformaVta> vProformaVta { get; set; }
         public virtual DbSet<vProformaVtaCab> vProformaVtaCab { get; set; }
-        public virtual DbSet<vRegistroCobrosFacturas> vRegistroCobrosFacturas { get; set; }
         public virtual DbSet<vRolPagos> vRolPagos { get; set; }
         public virtual DbSet<vRolPagosIndividual> vRolPagosIndividual { get; set; }
         public virtual DbSet<vStock> vStock { get; set; }
@@ -4584,7 +4583,7 @@ namespace Api_Aldebaran_CobrosPedidos
             return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<Nullable<int>>("Upd_TipoIdentificacion", accionParameter, iDParameter, codigoSRIParameter, nombreParameter, estadoParameter);
         }
     
-        public virtual ObjectResult<string> Actualizar(string nameServer, string baseDatos, string tabla, Nullable<int> filtroFecha, string fechaInicio)
+        public virtual int Actualizar(string nameServer, string baseDatos, string tabla)
         {
             var nameServerParameter = nameServer != null ?
                 new ObjectParameter("NameServer", nameServer) :
@@ -4598,15 +4597,24 @@ namespace Api_Aldebaran_CobrosPedidos
                 new ObjectParameter("Tabla", tabla) :
                 new ObjectParameter("Tabla", typeof(string));
     
-            var filtroFechaParameter = filtroFecha.HasValue ?
-                new ObjectParameter("FiltroFecha", filtroFecha) :
-                new ObjectParameter("FiltroFecha", typeof(int));
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("Actualizar", nameServerParameter, baseDatosParameter, tablaParameter);
+        }
     
-            var fechaInicioParameter = fechaInicio != null ?
-                new ObjectParameter("FechaInicio", fechaInicio) :
-                new ObjectParameter("FechaInicio", typeof(string));
+        public virtual int CRUD(string nameServer, string baseDatos, string tabla)
+        {
+            var nameServerParameter = nameServer != null ?
+                new ObjectParameter("NameServer", nameServer) :
+                new ObjectParameter("NameServer", typeof(string));
     
-            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<string>("Actualizar", nameServerParameter, baseDatosParameter, tablaParameter, filtroFechaParameter, fechaInicioParameter);
+            var baseDatosParameter = baseDatos != null ?
+                new ObjectParameter("BaseDatos", baseDatos) :
+                new ObjectParameter("BaseDatos", typeof(string));
+    
+            var tablaParameter = tabla != null ?
+                new ObjectParameter("Tabla", tabla) :
+                new ObjectParameter("Tabla", typeof(string));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("CRUD", nameServerParameter, baseDatosParameter, tablaParameter);
         }
     
         public virtual int Eliminar(string nameServer, string baseDatos, string tabla)
@@ -4626,12 +4634,8 @@ namespace Api_Aldebaran_CobrosPedidos
             return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("Eliminar", nameServerParameter, baseDatosParameter, tablaParameter);
         }
     
-        public virtual int Insertar(string nameServerLocal, string nameServer, string baseDatos, string tabla, Nullable<int> filtroFecha, string fechaInicio)
+        public virtual int Insertar(string nameServer, string baseDatos, string tabla)
         {
-            var nameServerLocalParameter = nameServerLocal != null ?
-                new ObjectParameter("NameServerLocal", nameServerLocal) :
-                new ObjectParameter("NameServerLocal", typeof(string));
-    
             var nameServerParameter = nameServer != null ?
                 new ObjectParameter("NameServer", nameServer) :
                 new ObjectParameter("NameServer", typeof(string));
@@ -4644,15 +4648,7 @@ namespace Api_Aldebaran_CobrosPedidos
                 new ObjectParameter("Tabla", tabla) :
                 new ObjectParameter("Tabla", typeof(string));
     
-            var filtroFechaParameter = filtroFecha.HasValue ?
-                new ObjectParameter("FiltroFecha", filtroFecha) :
-                new ObjectParameter("FiltroFecha", typeof(int));
-    
-            var fechaInicioParameter = fechaInicio != null ?
-                new ObjectParameter("FechaInicio", fechaInicio) :
-                new ObjectParameter("FechaInicio", typeof(string));
-    
-            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("Insertar", nameServerLocalParameter, nameServerParameter, baseDatosParameter, tablaParameter, filtroFechaParameter, fechaInicioParameter);
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("Insertar", nameServerParameter, baseDatosParameter, tablaParameter);
         }
     }
 }

@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="cd44fc13eb9a478fa84cef375282cc48" Name="Diagram1" ZoomLevel="80">
+        <EntityTypeShape EntityType="AldebaranPlus_Local.AperturaCaja" Width="1.5" PointX="11.25" PointY="41.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="AldebaranPlus_Local.Cargo" Width="1.5" PointX="6.75" PointY="56.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="AldebaranPlus_Local.Catalogo" Width="1.5" PointX="13.75" PointY="1.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="AldebaranPlus_Local.CatalogoDet" Width="1.5" PointX="16" PointY="0.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="AldebaranPlus_Local.Categoria" Width="1.5" PointX="3" PointY="16.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="AldebaranPlus_Local.CategoriaCliente" Width="1.5" PointX="6.75" PointY="8.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="AldebaranPlus_Local.CategoriaProveedor" Width="1.5" PointX="3.75" PointY="8.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="AldebaranPlus_Local.Ciudad" Width="1.5" PointX="6.75" PointY="11.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="AldebaranPlus_Local.Cliente" Width="1.5" PointX="9" PointY="10.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="AldebaranPlus_Local.ClienteEmail" Width="1.5" PointX="11.25" PointY="10.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="AldebaranPlus_Local.ClienteInfoAdicional" Width="1.5" PointX="11.25" PointY="13.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="AldebaranPlus_Local.Continente" Width="1.5" PointX="1.5" PointY="10" IsExpanded="true" />
+        <EntityTypeShape EntityType="AldebaranPlus_Local.CtasCobrar" Width="1.5" PointX="13.5" PointY="45.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="AldebaranPlus_Local.CtasPagar" Width="1.5" PointX="16.25" PointY="29.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="AldebaranPlus_Local.Denominacion" Width="1.5" PointX="14.25" PointY="34.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="AldebaranPlus_Local.DesgloceRubro" Width="1.5" PointX="11.25" PointY="46.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="AldebaranPlus_Local.DevCompra" Width="1.5" PointX="8.25" PointY="3" IsExpanded="true" />
+        <EntityTypeShape EntityType="AldebaranPlus_Local.DevVenta" Width="1.5" PointX="8.25" PointY="61.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="AldebaranPlus_Local.Documento" Width="1.5" PointX="3.75" PointY="11.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="AldebaranPlus_Local.Empleado" Width="1.5" PointX="9" PointY="55.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="AldebaranPlus_Local.EmpleadoRubro" Width="1.5" PointX="16.25" PointY="56.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="AldebaranPlus_Local.Empresa" Width="1.5" PointX="9" PointY="74.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="AldebaranPlus_Local.Estacion" Width="1.5" PointX="13.75" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="AldebaranPlus_Local.Fabricante" Width="1.5" PointX="3" PointY="18.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="AldebaranPlus_Local.FactCompra" Width="1.5" PointX="5.25" PointY="1.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="AldebaranPlus_Local.FactVenta" Width="1.5" PointX="11.25" PointY="53.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="AldebaranPlus_Local.FlujoDinero" Width="1.5" PointX="14.25" PointY="40.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="AldebaranPlus_Local.FormaPago" Width="1.5" PointX="13.75" PointY="7.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="AldebaranPlus_Local.Grupo" Width="1.5" PointX="3" PointY="31.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="AldebaranPlus_Local.Impuesto" Width="1.5" PointX="0.75" PointY="25.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="AldebaranPlus_Local.ImpuestoRetencion" Width="1.5" PointX="3" PointY="22.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="AldebaranPlus_Local.ImpuestoTarifa" Width="1.5" PointX="3" PointY="27.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="AldebaranPlus_Local.Kardex" Width="1.5" PointX="7.5" PointY="23.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="AldebaranPlus_Local.Marca" Width="1.5" PointX="3" PointY="34.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="AldebaranPlus_Local.Medida" Width="1.5" PointX="7.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="AldebaranPlus_Local.Modulo" Width="1.5" PointX="7.25" PointY="71.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="AldebaranPlus_Local.MotivoMovInv" Width="1.5" PointX="5.25" PointY="33.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="AldebaranPlus_Local.MovInvCab" Width="1.5" PointX="11.25" PointY="34.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="AldebaranPlus_Local.Objetos" Width="1.5" PointX="11.75" PointY="70.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="AldebaranPlus_Local.Pais" Width="1.5" PointX="0.75" PointY="18.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="AldebaranPlus_Local.Parametros" Width="1.5" PointX="13.75" PointY="10.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="AldebaranPlus_Local.ParametrosGlobales" Width="1.5" PointX="13.75" PointY="13.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="AldebaranPlus_Local.Perfil" Width="1.5" PointX="6.75" PointY="48.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="AldebaranPlus_Local.Presentacion" Width="1.5" PointX="3" PointY="37" IsExpanded="true" />
+        <EntityTypeShape EntityType="AldebaranPlus_Local.Producto" Width="1.5" PointX="5.25" PointY="20.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="AldebaranPlus_Local.ProductoImagen" Width="1.5" PointX="7.5" PointY="29" IsExpanded="true" />
+        <EntityTypeShape EntityType="AldebaranPlus_Local.ProductoInfoAdicional" Width="1.5" PointX="7.5" PointY="31.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="AldebaranPlus_Local.ProductoUnidad" Width="1.5" PointX="10.5" PointY="24.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="AldebaranPlus_Local.ProformaVta" Width="1.5" PointX="11.25" PointY="1.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="AldebaranPlus_Local.Proveedor" Width="1.5" PointX="3" PointY="2" IsExpanded="true" />
+        <EntityTypeShape EntityType="AldebaranPlus_Local.ProveedorEmail" Width="1.5" PointX="5.25" PointY="36.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="AldebaranPlus_Local.ProveedorInfoAdicional" Width="1.5" PointX="5.25" PointY="39.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="AldebaranPlus_Local.PuntoVenta" Width="1.5" PointX="9" PointY="34.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="AldebaranPlus_Local.RegionMundo" Width="1.5" PointX="1.5" PointY="12.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="AldebaranPlus_Local.Rubro" Width="1.5" PointX="14" PointY="65.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="AldebaranPlus_Local.RubroCaja" Width="1.5" PointX="12" PointY="62.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="AldebaranPlus_Local.Sector" Width="1.5" PointX="14.25" PointY="59.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="AldebaranPlus_Local.SubGrupo" Width="1.5" PointX="3" PointY="39.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="AldebaranPlus_Local.SubModulo" Width="1.5" PointX="9.5" PointY="71.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="AldebaranPlus_Local.Sucursal" Width="1.5" PointX="9" PointY="40.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="AldebaranPlus_Local.sysdiagrams" Width="1.5" PointX="15.75" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="AldebaranPlus_Local.Tarjeta" Width="1.5" PointX="16.5" PointY="35.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="AldebaranPlus_Local.TipoDeducible" Width="1.5" PointX="3" PointY="42" IsExpanded="true" />
+        <EntityTypeShape EntityType="AldebaranPlus_Local.TipoIdentificacion" Width="1.5" PointX="6.75" PointY="15.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="AldebaranPlus_Local.Unidad" Width="1.5" PointX="3" PointY="44.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="AldebaranPlus_Local.Usuario" Width="1.5" PointX="9" PointY="47" IsExpanded="true" />
+        <EntityTypeShape EntityType="AldebaranPlus_Local.AperturaCajaDet" Width="1.5" PointX="16.5" PointY="43.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="AldebaranPlus_Local.AperturaCajaDetRubros" Width="1.5" PointX="13.5" PointY="37.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="AldebaranPlus_Local.Auditoria" Width="1.5" PointX="11.25" PointY="67.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="AldebaranPlus_Local.CierreCaja" Width="1.5" PointX="13.5" PointY="56.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="AldebaranPlus_Local.DCDetalle" Width="1.5" PointX="10.5" PointY="19.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="AldebaranPlus_Local.DVDetalle" Width="1.5" PointX="10.5" PointY="29.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="AldebaranPlus_Local.FCDetalle" Width="1.5" PointX="7.5" PointY="18.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="AldebaranPlus_Local.FVDetalle" Width="1.5" PointX="13.5" PointY="24.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="AldebaranPlus_Local.Inventario" Width="1.5" PointX="13.5" PointY="21.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="AldebaranPlus_Local.MovInvDet" Width="1.5" PointX="13.5" PointY="30" IsExpanded="true" />
+        <EntityTypeShape EntityType="AldebaranPlus_Local.Permisos" Width="1.5" PointX="14" PointY="52" IsExpanded="true" />
+        <EntityTypeShape EntityType="AldebaranPlus_Local.ProformaVtaDet" Width="1.5" PointX="13.5" PointY="16.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="AldebaranPlus_Local.RolPagos" Width="1.5" PointX="11.25" PointY="75" IsExpanded="true" />
+        <EntityTypeShape EntityType="AldebaranPlus_Local.RolPagosIndividual" Width="1.5" PointX="11.25" PointY="78.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="AldebaranPlus_Local.vAperturaCajaCab" Width="1.5" PointX="15.75" PointY="7.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="AldebaranPlus_Local.vAperturaCajaDet" Width="1.5" PointX="15.75" PointY="13.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="AldebaranPlus_Local.vAperturaCajaDetRubro" Width="1.5" PointX="9.75" PointY="16.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="AldebaranPlus_Local.vCierreCaja" Width="1.5" PointX="17.75" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="AldebaranPlus_Local.vCobros" Width="1.5" PointX="17.75" PointY="7.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="AldebaranPlus_Local.vCompra" Width="1.5" PointX="17.75" PointY="14.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="AldebaranPlus_Local.vCompraCab" Width="1.5" PointX="19.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="AldebaranPlus_Local.vCompraCabFull" Width="1.5" PointX="19.75" PointY="8.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="AldebaranPlus_Local.vFlujoCaja" Width="1.5" PointX="19.75" PointY="17.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="AldebaranPlus_Local.vNCCompras" Width="1.5" PointX="21.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="AldebaranPlus_Local.vNCComprasCab" Width="1.5" PointX="21.75" PointY="10.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="AldebaranPlus_Local.vNCVentas" Width="1.5" PointX="21.75" PointY="19.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="AldebaranPlus_Local.vNCVentasCab" Width="1.5" PointX="23.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="AldebaranPlus_Local.vPagos" Width="1.5" PointX="23.75" PointY="10.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="AldebaranPlus_Local.vProformaVta" Width="1.5" PointX="23.75" PointY="16.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="AldebaranPlus_Local.vProformaVtaCab" Width="1.5" PointX="18.75" PointY="24.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="AldebaranPlus_Local.vRolPagos" Width="1.5" PointX="25.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="AldebaranPlus_Local.vRolPagosIndividual" Width="1.5" PointX="25.75" PointY="6.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="AldebaranPlus_Local.vStock" Width="1.5" PointX="15.75" PointY="24.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="AldebaranPlus_Local.vTransaccion" Width="1.5" PointX="25.75" PointY="12.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="AldebaranPlus_Local.vTransaccionEgreso" Width="1.5" PointX="25.75" PointY="19.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="AldebaranPlus_Local.vTransaccionIngreso" Width="1.5" PointX="25.75" PointY="26.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="AldebaranPlus_Local.vVenta" Width="1.5" PointX="27.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="AldebaranPlus_Local.vVentaCab" Width="1.5" PointX="27.75" PointY="14.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="AldebaranPlus_Local.vVentaCabFull" Width="1.5" PointX="27.75" PointY="25.75" IsExpanded="true" />
+        <AssociationConnector Association="AldebaranPlus_Local.FK_AperturaCaja_PuntoVenta" ManuallyRouted="false" />
+        <AssociationConnector Association="AldebaranPlus_Local.FK_AperturaCaja_Usuario" ManuallyRouted="false" />
+        <AssociationConnector Association="AldebaranPlus_Local.FK_AperturaCajaDet_AperturaCaja" ManuallyRouted="false" />
+        <AssociationConnector Association="AldebaranPlus_Local.FK_AperturaCajaDetRubros_AperturaCaja" ManuallyRouted="false" />
+        <AssociationConnector Association="AldebaranPlus_Local.FK_CierreCaja_AperturaCaja" ManuallyRouted="false" />
+        <AssociationConnector Association="AldebaranPlus_Local.FK_Empleado_Cargo" ManuallyRouted="false" />
+        <AssociationConnector Association="AldebaranPlus_Local.FK_CatalogoDet_Catalogo" ManuallyRouted="false" />
+        <AssociationConnector Association="AldebaranPlus_Local.FK_Producto_Categoria" ManuallyRouted="false" />
+        <AssociationConnector Association="AldebaranPlus_Local.FK_Cliente_CategoriaCliente" ManuallyRouted="false" />
+        <AssociationConnector Association="AldebaranPlus_Local.FK_Ciudad_Pais" ManuallyRouted="false" />
+        <AssociationConnector Association="AldebaranPlus_Local.FK_Cliente_Ciudad" ManuallyRouted="false" />
+        <AssociationConnector Association="AldebaranPlus_Local.FK_Empresa_Ciudad" ManuallyRouted="false" />
+        <AssociationConnector Association="AldebaranPlus_Local.FK_Sector_Ciudad" ManuallyRouted="false" />
+        <AssociationConnector Association="AldebaranPlus_Local.FK_Sucursal_Ciudad" ManuallyRouted="false" />
+        <AssociationConnector Association="AldebaranPlus_Local.FK_Cliente_TipoIdentificacion" ManuallyRouted="false" />
+        <AssociationConnector Association="AldebaranPlus_Local.FK_ClienteEmail_Cliente" ManuallyRouted="false" />
+        <AssociationConnector Association="AldebaranPlus_Local.FK_ClienteInfoAdicional_Cliente" ManuallyRouted="false" />
+        <AssociationConnector Association="AldebaranPlus_Local.FK_DevVenta_Cliente" ManuallyRouted="false" />
+        <AssociationConnector Association="AldebaranPlus_Local.FK_FactVenta_Cliente" ManuallyRouted="false" />
+        <AssociationConnector Association="AldebaranPlus_Local.FK_ProformaVta_Cliente" ManuallyRouted="false" />
+        <AssociationConnector Association="AldebaranPlus_Local.FK_Tarjeta_Cliente" ManuallyRouted="false" />
+        <AssociationConnector Association="AldebaranPlus_Local.FK_RegionMundo_Continente" ManuallyRouted="false" />
+        <AssociationConnector Association="AldebaranPlus_Local.FK_CtasCobrar_Empleado" ManuallyRouted="false" />
+        <AssociationConnector Association="AldebaranPlus_Local.FK_CtasCobrar_FactVenta" ManuallyRouted="false" />
+        <AssociationConnector Association="AldebaranPlus_Local.FK_CtasCobrar_PuntoVenta" ManuallyRouted="false" />
+        <AssociationConnector Association="AldebaranPlus_Local.FK_CtasCobrar_Sucursal" ManuallyRouted="false" />
+        <AssociationConnector Association="AldebaranPlus_Local.FK_CtasCobrar_Usuario" ManuallyRouted="false" />
+        <AssociationConnector Association="AldebaranPlus_Local.FK_CtasPagar_FactCompra" ManuallyRouted="false" />
+        <AssociationConnector Association="AldebaranPlus_Local.FK_CtasPagar_PuntoVenta" ManuallyRouted="false" />
+        <AssociationConnector Association="AldebaranPlus_Local.FK_CtasPagar_Sucursal" ManuallyRouted="false" />
+        <AssociationConnector Association="AldebaranPlus_Local.FK_CtasPagar_Usuario" ManuallyRouted="false" />
+        <AssociationConnector Association="AldebaranPlus_Local.FK_AperturaCajaDet_Denominacion" ManuallyRouted="false" />
+        <AssociationConnector Association="AldebaranPlus_Local.FK_AperturaCajaDetRubros_DesgloceRubro" ManuallyRouted="false" />
+        <AssociationConnector Association="AldebaranPlus_Local.FK_DCDetalle_DevCompra" ManuallyRouted="false" />
+        <AssociationConnector Association="AldebaranPlus_Local.FK_DevCompra_FactCompra" ManuallyRouted="false" />
+        <AssociationConnector Association="AldebaranPlus_Local.FK_DevCompra_Proveedor" ManuallyRouted="false" />
+        <AssociationConnector Association="AldebaranPlus_Local.FK_DevCompra_Sucursal" ManuallyRouted="false" />
+        <AssociationConnector Association="AldebaranPlus_Local.FK_DevCompra_Usuario" ManuallyRouted="false" />
+        <AssociationConnector Association="AldebaranPlus_Local.FK_DevVenta_FactVenta" ManuallyRouted="false" />
+        <AssociationConnector Association="AldebaranPlus_Local.FK_DevVenta_PuntoVenta" ManuallyRouted="false" />
+        <AssociationConnector Association="AldebaranPlus_Local.FK_DevVenta_Sucursal" ManuallyRouted="false" />
+        <AssociationConnector Association="AldebaranPlus_Local.FK_DevVenta_Usuario" ManuallyRouted="false" />
+        <AssociationConnector Association="AldebaranPlus_Local.FK_DVDetalle_DevVenta" ManuallyRouted="false" />
+        <AssociationConnector Association="AldebaranPlus_Local.FK_EmpleadoRubro_Empleado" ManuallyRouted="false" />
+        <AssociationConnector Association="AldebaranPlus_Local.FK_FactVenta_Empleado" ManuallyRouted="false" />
+        <AssociationConnector Association="AldebaranPlus_Local.FK_RolPagos_Empleado" ManuallyRouted="false" />
+        <AssociationConnector Association="AldebaranPlus_Local.FK_RolPagosIndividual_Empleado" ManuallyRouted="false" />
+        <AssociationConnector Association="AldebaranPlus_Local.FK_Tarjeta_Empleado" ManuallyRouted="false" />
+        <AssociationConnector Association="AldebaranPlus_Local.FK_EmpleadoRubro_Rubro" ManuallyRouted="false" />
+        <AssociationConnector Association="AldebaranPlus_Local.FK_Fabricante_Pais" ManuallyRouted="false" />
+        <AssociationConnector Association="AldebaranPlus_Local.FK_Producto_Fabricante" ManuallyRouted="false" />
+        <AssociationConnector Association="AldebaranPlus_Local.FK_FactCompra_Proveedor" ManuallyRouted="false" />
+        <AssociationConnector Association="AldebaranPlus_Local.FK_FactCompra_PuntoVenta" ManuallyRouted="false" />
+        <AssociationConnector Association="AldebaranPlus_Local.FK_FactCompra_Sucursal" ManuallyRouted="false" />
+        <AssociationConnector Association="AldebaranPlus_Local.FK_FactCompra_Usuario" ManuallyRouted="false" />
+        <AssociationConnector Association="AldebaranPlus_Local.FK_FCDetalle_FactCompra" ManuallyRouted="false" />
+        <AssociationConnector Association="AldebaranPlus_Local.FK_FactVenta_PuntoVenta" ManuallyRouted="false" />
+        <AssociationConnector Association="AldebaranPlus_Local.FK_FactVenta_Sucursal" ManuallyRouted="false" />
+        <AssociationConnector Association="AldebaranPlus_Local.FK_FactVenta_Usuario" ManuallyRouted="false" />
+        <AssociationConnector Association="AldebaranPlus_Local.FK_FVDetalle_FactVenta" ManuallyRouted="false" />
+        <AssociationConnector Association="AldebaranPlus_Local.FK_Tarjeta_FactVenta" ManuallyRouted="false" />
+        <AssociationConnector Association="AldebaranPlus_Local.FK_FlujoDinero_PuntoVenta" ManuallyRouted="false" />
+        <AssociationConnector Association="AldebaranPlus_Local.FK_FlujoDinero_RubroCaja" ManuallyRouted="false" />
+        <AssociationConnector Association="AldebaranPlus_Local.FK_FlujoDinero_Sucursal" ManuallyRouted="false" />
+        <AssociationConnector Association="AldebaranPlus_Local.FK_FlujoDinero_Usuario" ManuallyRouted="false" />
+        <AssociationConnector Association="AldebaranPlus_Local.FK_Producto_Grupo" ManuallyRouted="false" />
+        <AssociationConnector Association="AldebaranPlus_Local.FK_SubGrupo_Grupo" ManuallyRouted="false" />
+        <AssociationConnector Association="AldebaranPlus_Local.FK_ImpuestoRetencion_Impuesto" ManuallyRouted="false" />
+        <AssociationConnector Association="AldebaranPlus_Local.FK_ImpuestoTarifa_Impuesto" ManuallyRouted="false" />
+        <AssociationConnector Association="AldebaranPlus_Local.FK_Producto_RetencionIR" ManuallyRouted="false" />
+        <AssociationConnector Association="AldebaranPlus_Local.FK_Producto_RetencionIVA" ManuallyRouted="false" />
+        <AssociationConnector Association="AldebaranPlus_Local.FK_Producto_ImpuestoTarifaICE" ManuallyRouted="false" />
+        <AssociationConnector Association="AldebaranPlus_Local.FK_Producto_ImpuestoTarifaIRBP" ManuallyRouted="false" />
+        <AssociationConnector Association="AldebaranPlus_Local.FK_Producto_ImpuestoTarifaIVA" ManuallyRouted="false" />
+        <AssociationConnector Association="AldebaranPlus_Local.FK_Kardex_MotivoMovInv" ManuallyRouted="false" />
+        <AssociationConnector Association="AldebaranPlus_Local.FK_Kardex_Producto" ManuallyRouted="false" />
+        <AssociationConnector Association="AldebaranPlus_Local.FK_Kardex_Sucursal" ManuallyRouted="false" />
+        <AssociationConnector Association="AldebaranPlus_Local.FK_Kardex_Usuario" ManuallyRouted="false" />
+        <AssociationConnector Association="AldebaranPlus_Local.FK_Producto_Marca" ManuallyRouted="false" />
+        <AssociationConnector Association="AldebaranPlus_Local.FK_SubModulo_Modulo" ManuallyRouted="false" />
+        <AssociationConnector Association="AldebaranPlus_Local.FK_MovInvCab_MotivoMovInv" ManuallyRouted="false" />
+        <AssociationConnector Association="AldebaranPlus_Local.FK_MovInvCab_Sucursal" ManuallyRouted="false" />
+        <AssociationConnector Association="AldebaranPlus_Local.FK_MovInvCab_Usuario" ManuallyRouted="false" />
+        <AssociationConnector Association="AldebaranPlus_Local.FK_MovInvDet_MovInvCab" ManuallyRouted="false" />
+        <AssociationConnector Association="AldebaranPlus_Local.FK_Objetos_SubModulo" ManuallyRouted="false" />
+        <AssociationConnector Association="AldebaranPlus_Local.FK_Permisos_Objetos" ManuallyRouted="false" />
+        <AssociationConnector Association="AldebaranPlus_Local.FK_Pais_RegionMundo" ManuallyRouted="false" />
+        <AssociationConnector Association="AldebaranPlus_Local.FK_Permisos_Perfil" ManuallyRouted="false" />
+        <AssociationConnector Association="AldebaranPlus_Local.FK_Usuario_Perfil" ManuallyRouted="false" />
+        <AssociationConnector Association="AldebaranPlus_Local.FK_Producto_Presentacion" ManuallyRouted="false" />
+        <AssociationConnector Association="AldebaranPlus_Local.FK_DCDetalle_Producto" ManuallyRouted="false" />
+        <AssociationConnector Association="AldebaranPlus_Local.FK_DVDetalle_Producto" ManuallyRouted="false" />
+        <AssociationConnector Association="AldebaranPlus_Local.FK_FCDetalle_Producto" ManuallyRouted="false" />
+        <AssociationConnector Association="AldebaranPlus_Local.FK_FVDetalle_Producto" ManuallyRouted="false" />
+        <AssociationConnector Association="AldebaranPlus_Local.FK_Inventario_Producto" ManuallyRouted="false" />
+        <AssociationConnector Association="AldebaranPlus_Local.FK_MovInvDet_Producto" ManuallyRouted="false" />
+        <AssociationConnector Association="AldebaranPlus_Local.FK_Producto_SubGrupo" ManuallyRouted="false" />
+        <AssociationConnector Association="AldebaranPlus_Local.FK_Producto_TipoDeducible" ManuallyRouted="false" />
+        <AssociationConnector Association="AldebaranPlus_Local.FK_Producto_Unidad" ManuallyRouted="false" />
+        <AssociationConnector Association="AldebaranPlus_Local.FK_ProductoImagen_Producto" ManuallyRouted="false" />
+        <AssociationConnector Association="AldebaranPlus_Local.FK_ProductoInfoAdicional_Producto" ManuallyRouted="false" />
+        <AssociationConnector Association="AldebaranPlus_Local.FK_ProductoUnidad_Producto" ManuallyRouted="false" />
+        <AssociationConnector Association="AldebaranPlus_Local.FK_ProformaVtaDet_Producto" ManuallyRouted="false" />
+        <AssociationConnector Association="AldebaranPlus_Local.FK_ProductoUnidad_Unidad" ManuallyRouted="false" />
+        <AssociationConnector Association="AldebaranPlus_Local.FK_ProformaVta_ProformaVta" ManuallyRouted="false" />
+        <AssociationConnector Association="AldebaranPlus_Local.FK_ProformaVta_PuntoVenta" ManuallyRouted="false" />
+        <AssociationConnector Association="AldebaranPlus_Local.FK_ProformaVta_Usuario" ManuallyRouted="false" />
+        <AssociationConnector Association="AldebaranPlus_Local.FK_ProformaVtaDet_ProformaVta" ManuallyRouted="false" />
+        <AssociationConnector Association="AldebaranPlus_Local.FK_ProveedorEmail_Proveedor" ManuallyRouted="false" />
+        <AssociationConnector Association="AldebaranPlus_Local.FK_ProveedorInfoAdicional_Proveedor" ManuallyRouted="false" />
+        <AssociationConnector Association="AldebaranPlus_Local.FK_PuntoVenta_Sucursal" ManuallyRouted="false" />
+        <AssociationConnector Association="AldebaranPlus_Local.FK_Tarjeta_Sector" ManuallyRouted="false" />
+        <AssociationConnector Association="AldebaranPlus_Local.FK_Inventario_Sucursal" ManuallyRouted="false" />
+        <AssociationConnector Association="AldebaranPlus_Local.FK_Tarjeta_Sucursal" ManuallyRouted="false" />
+        <AssociationConnector Association="AldebaranPlus_Local.FK_Auditoria_Usuario" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
