@@ -19,6 +19,7 @@ namespace Api_Aldebaran_CobrosPedidos
         public string Apellido { get; set; }
         public string Login { get; set; }
         public string Clave { get; set; }
+        public decimal Cupo { get; set; }
         public bool Estado { get; set; }
     }
 }

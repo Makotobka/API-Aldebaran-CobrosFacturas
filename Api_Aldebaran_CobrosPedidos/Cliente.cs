@@ -17,12 +17,19 @@ namespace Api_Aldebaran_CobrosPedidos
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
         public Cliente()
         {
+            this.ClienteCta = new HashSet<ClienteCta>();
             this.ClienteEmail = new HashSet<ClienteEmail>();
             this.ClienteInfoAdicional = new HashSet<ClienteInfoAdicional>();
+            this.Credito = new HashSet<Credito>();
+            this.DevTHabiente = new HashSet<DevTHabiente>();
             this.DevVenta = new HashSet<DevVenta>();
             this.FactVenta = new HashSet<FactVenta>();
             this.ProformaVta = new HashSet<ProformaVta>();
+            this.Sociedad = new HashSet<Sociedad>();
             this.Tarjeta = new HashSet<Tarjeta>();
+            this.FactVenta1 = new HashSet<FactVenta>();
+            this.TarjetaHabiente = new HashSet<TarjetaHabiente>();
+            this.ClienteFlota = new HashSet<ClienteFlota>();
         }
     
         public int IDCT { get; set; }
@@ -45,9 +52,15 @@ namespace Api_Aldebaran_CobrosPedidos
         public virtual Ciudad Ciudad { get; set; }
         public virtual TipoIdentificacion TipoIdentificacion { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<ClienteCta> ClienteCta { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<ClienteEmail> ClienteEmail { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<ClienteInfoAdicional> ClienteInfoAdicional { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<Credito> Credito { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<DevTHabiente> DevTHabiente { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<DevVenta> DevVenta { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
@@ -55,6 +68,14 @@ namespace Api_Aldebaran_CobrosPedidos
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<ProformaVta> ProformaVta { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<Sociedad> Sociedad { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Tarjeta> Tarjeta { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<FactVenta> FactVenta1 { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<TarjetaHabiente> TarjetaHabiente { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<ClienteFlota> ClienteFlota { get; set; }
     }
 }

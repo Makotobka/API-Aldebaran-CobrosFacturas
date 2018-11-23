@@ -19,6 +19,8 @@ namespace Api_Aldebaran_CobrosPedidos
         {
             this.Producto = new HashSet<Producto>();
             this.Producto1 = new HashSet<Producto>();
+            this.RetencionCDet = new HashSet<RetencionCDet>();
+            this.RetencionVDet = new HashSet<RetencionVDet>();
         }
     
         public int ID { get; set; }
@@ -39,5 +41,9 @@ namespace Api_Aldebaran_CobrosPedidos
         public virtual ICollection<Producto> Producto { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Producto> Producto1 { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<RetencionCDet> RetencionCDet { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<RetencionVDet> RetencionVDet { get; set; }
     }
 }

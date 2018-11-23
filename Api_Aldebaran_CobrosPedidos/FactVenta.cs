@@ -20,11 +20,14 @@ namespace Api_Aldebaran_CobrosPedidos
             this.CtasCobrar = new HashSet<CtasCobrar>();
             this.DevVenta = new HashSet<DevVenta>();
             this.FVDetalle = new HashSet<FVDetalle>();
+            this.RetencionV = new HashSet<RetencionV>();
             this.Tarjeta = new HashSet<Tarjeta>();
         }
     
         public int IDFV { get; set; }
+        public Nullable<int> IDP { get; set; }
         public int IDCT { get; set; }
+        public Nullable<int> IDIN { get; set; }
         public int IDSU { get; set; }
         public int IDPT { get; set; }
         public int IDUS { get; set; }
@@ -52,6 +55,7 @@ namespace Api_Aldebaran_CobrosPedidos
         public Nullable<bool> Impreso { get; set; }
     
         public virtual Cliente Cliente { get; set; }
+        public virtual Cliente Cliente1 { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<CtasCobrar> CtasCobrar { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
@@ -63,6 +67,11 @@ namespace Api_Aldebaran_CobrosPedidos
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<FVDetalle> FVDetalle { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<RetencionV> RetencionV { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Tarjeta> Tarjeta { get; set; }
+        public virtual PuntoVenta PuntoVenta1 { get; set; }
+        public virtual Sucursal Sucursal1 { get; set; }
+        public virtual Usuario Usuario1 { get; set; }
     }
 }
