@@ -35,9 +35,6 @@ namespace Api_Aldebaran_CobrosPedidos
         public decimal Efectivo { get; set; }
         public decimal Cambio { get; set; }
         public string ESTADO { get; set; }
-        public Nullable<decimal> ValorRetencionIva { get; set; }
-        public Nullable<decimal> ValorRetencionRenta { get; set; }
-        public Nullable<int> IDIN { get; set; }
         public int IDCT { get; set; }
         public string CEDRUC { get; set; }
         public string CLIENTE { get; set; }
@@ -47,9 +44,6 @@ namespace Api_Aldebaran_CobrosPedidos
         public int DETIDPD { get; set; }
         public bool DETAPLICAIVA { get; set; }
         public decimal DETIVA { get; set; }
-        public Nullable<int> IDImpuesto { get; set; }
-        public string CodigoSriImpTar { get; set; }
-        public int IDDFV { get; set; }
         public string DETCODIGO { get; set; }
         public string DETITEM { get; set; }
         public decimal DETPRECIO { get; set; }
@@ -59,8 +53,6 @@ namespace Api_Aldebaran_CobrosPedidos
         public Nullable<decimal> DETCOMISION { get; set; }
         public decimal DETCOSTO { get; set; }
         public decimal DETPCP { get; set; }
-        public Nullable<decimal> DETDESC { get; set; }
-        public Nullable<int> IDClasificacion { get; set; }
         public int IDUS { get; set; }
         public string USUARIONOMBRE { get; set; }
         public string USUARIO { get; set; }

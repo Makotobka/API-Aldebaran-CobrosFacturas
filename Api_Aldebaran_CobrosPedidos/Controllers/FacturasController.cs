@@ -9,7 +9,7 @@ namespace Api_Aldebaran_CobrosPedidos.Controllers
 {
     public class FacturasController : ApiController
     {
-        ChinoServer db = new ChinoServer();
+        AldebaranPlus_HomeKino db = new AldebaranPlus_HomeKino();
 
         [HttpGet]
         [Route("F/getFacturasCredito")]

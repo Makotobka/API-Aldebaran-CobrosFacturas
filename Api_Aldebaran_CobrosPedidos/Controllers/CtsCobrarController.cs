@@ -11,7 +11,7 @@ namespace Api_Aldebaran_CobrosPedidos.Controllers
 {
     public class CtsCobrarController : ApiController
     {
-        ChinoServer db = new ChinoServer();
+        AldebaranPlus_HomeKino db = new AldebaranPlus_HomeKino();
 
         [HttpGet]
         [Route("CTS/getCtsPagarFactura/{IDFV}")]
@@ -26,9 +26,10 @@ namespace Api_Aldebaran_CobrosPedidos.Controllers
         [HttpPost]
         [Route("CTS/setCtasAll")]
         [ResponseType(typeof(CtasCobrar[]))]
-        public string Get(CtasCobrar[] datos)
-        {   
-            for(int c = 0; c < datos.Length; c++)
+        public ObjectResult<int?> Get(CtasCobrar[] datos)
+        {
+            ObjectResult<int?> res = null;
+            for (int c = 0; c < datos.Length; c++)
             {
                 string estado = "";
                 if (datos[c].Estado)
@@ -39,10 +40,10 @@ namespace Api_Aldebaran_CobrosPedidos.Controllers
                 {
                     estado = "0";
                 }
-                //ObjectResult<int?> res = db.Ins_CtasCobrar(                    datos[c].IDSU,                    datos[c].IDPT,                    datos[c].IDFV,                    datos[c].IDUS,                    datos[c].IDEP,                    datos[c].Fecha,                    datos[c].Tipo,                    datos[c].FormaPago,                    datos[c].Valor,                    datos[c].Saldo,                    datos[c].PorcentajeComision,                    datos[c].Comision,                    estado                );
+                res = db.Ins_CtasCobrar(                    datos[c].IDSU,                    datos[c].IDPT,                    datos[c].IDFV,                    datos[c].IDUS,                    datos[c].IDEP,                    datos[c].Fecha,                    datos[c].Tipo,                    datos[c].FormaPago,                    datos[c].Valor,                    datos[c].Saldo,                    datos[c].PorcentajeComision,                    datos[c].Comision,                    estado                );
                 string asdasd = "asda";
             }
-            return "value";
+            return res;
         }
 
         // POST: api/CtsCobrar
