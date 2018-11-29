@@ -20,6 +20,7 @@ namespace Api_Aldebaran_CobrosPedidos
             this.AperturaCajaDet = new HashSet<AperturaCajaDet>();
             this.AperturaCajaDetRubros = new HashSet<AperturaCajaDetRubros>();
             this.CierreCaja = new HashSet<CierreCaja>();
+            this.DetalleApertura = new HashSet<DetalleApertura>();
         }
     
         public int ID { get; set; }
@@ -43,5 +44,7 @@ namespace Api_Aldebaran_CobrosPedidos
         public virtual ICollection<AperturaCajaDetRubros> AperturaCajaDetRubros { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<CierreCaja> CierreCaja { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<DetalleApertura> DetalleApertura { get; set; }
     }
 }

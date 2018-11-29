@@ -11,7 +11,7 @@ namespace Api_Aldebaran_CobrosPedidos.Controllers
 {
     public class CtsCobrarController : ApiController
     {
-        AldebaranPlus_HomeKino db = new AldebaranPlus_HomeKino();
+        AldebaranPlus db = new AldebaranPlus();
 
         [HttpGet]
         [Route("CTS/getCtsPagarFactura/{IDFV}")]

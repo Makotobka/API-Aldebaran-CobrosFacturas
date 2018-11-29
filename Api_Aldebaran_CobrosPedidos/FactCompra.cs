@@ -20,6 +20,7 @@ namespace Api_Aldebaran_CobrosPedidos
             this.CtasPagar = new HashSet<CtasPagar>();
             this.DevCompra = new HashSet<DevCompra>();
             this.FCDetalle = new HashSet<FCDetalle>();
+            this.RetencionC = new HashSet<RetencionC>();
         }
     
         public int IDFC { get; set; }
@@ -54,5 +55,7 @@ namespace Api_Aldebaran_CobrosPedidos
         public virtual Usuario Usuario { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<FCDetalle> FCDetalle { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<RetencionC> RetencionC { get; set; }
     }
 }

@@ -21,14 +21,21 @@ namespace Api_Aldebaran_CobrosPedidos
             this.CtasCobrar = new HashSet<CtasCobrar>();
             this.CtasPagar = new HashSet<CtasPagar>();
             this.DevCompra = new HashSet<DevCompra>();
+            this.DevTHabiente = new HashSet<DevTHabiente>();
             this.DevVenta = new HashSet<DevVenta>();
             this.FactCompra = new HashSet<FactCompra>();
             this.FactVenta = new HashSet<FactVenta>();
+            this.FactVenta1 = new HashSet<FactVenta>();
             this.FlujoDinero = new HashSet<FlujoDinero>();
             this.Kardex = new HashSet<Kardex>();
             this.MovInvCab = new HashSet<MovInvCab>();
             this.ProformaVta = new HashSet<ProformaVta>();
+            this.RetencionC = new HashSet<RetencionC>();
+            this.RetencionV = new HashSet<RetencionV>();
+            this.TarjetaHabiente = new HashSet<TarjetaHabiente>();
             this.Auditoria = new HashSet<Auditoria>();
+            this.Pedido = new HashSet<Pedido>();
+            this.UsuarioSucursal = new HashSet<UsuarioSucursal>();
         }
     
         public int IDUS { get; set; }
@@ -48,11 +55,15 @@ namespace Api_Aldebaran_CobrosPedidos
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<DevCompra> DevCompra { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<DevTHabiente> DevTHabiente { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<DevVenta> DevVenta { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<FactCompra> FactCompra { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<FactVenta> FactVenta { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<FactVenta> FactVenta1 { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<FlujoDinero> FlujoDinero { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
@@ -63,6 +74,16 @@ namespace Api_Aldebaran_CobrosPedidos
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<ProformaVta> ProformaVta { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<RetencionC> RetencionC { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<RetencionV> RetencionV { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<TarjetaHabiente> TarjetaHabiente { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Auditoria> Auditoria { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<Pedido> Pedido { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<UsuarioSucursal> UsuarioSucursal { get; set; }
     }
 }

@@ -157,14 +157,29 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AldebaranPlus.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AldebaranPlus.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AldebaranPlus.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AldebaranPlus.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AldebaranPlus.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AldebaranPlus.edmx</DependentUpon>
+    </Compile>
     <Compile Include="AperturaCaja.cs">
-      <DependentUpon>BD_Aldebaran.tt</DependentUpon>
+      <DependentUpon>AldebaranPlus.tt</DependentUpon>
     </Compile>
     <Compile Include="AperturaCajaDet.cs">
-      <DependentUpon>BD_Aldebaran.tt</DependentUpon>
+      <DependentUpon>AldebaranPlus.tt</DependentUpon>
     </Compile>
     <Compile Include="AperturaCajaDetRubros.cs">
-      <DependentUpon>BD_Aldebaran.tt</DependentUpon>
+      <DependentUpon>AldebaranPlus.tt</DependentUpon>
     </Compile>
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
@@ -199,564 +214,837 @@
     <Compile Include="Areas\HelpPage\SampleGeneration\TextSample.cs" />
     <Compile Include="Areas\HelpPage\XmlDocumentationProvider.cs" />
     <Compile Include="Auditoria.cs">
-      <DependentUpon>BD_Aldebaran.tt</DependentUpon>
-    </Compile>
-    <Compile Include="BD_Aldebaran.Context.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>BD_Aldebaran.Context.tt</DependentUpon>
-    </Compile>
-    <Compile Include="BD_Aldebaran.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>BD_Aldebaran.tt</DependentUpon>
-    </Compile>
-    <Compile Include="BD_Aldebaran.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>BD_Aldebaran.edmx</DependentUpon>
+      <DependentUpon>AldebaranPlus.tt</DependentUpon>
     </Compile>
     <Compile Include="Cargo.cs">
-      <DependentUpon>BD_Aldebaran.tt</DependentUpon>
+      <DependentUpon>AldebaranPlus.tt</DependentUpon>
     </Compile>
     <Compile Include="Catalogo.cs">
-      <DependentUpon>BD_Aldebaran.tt</DependentUpon>
+      <DependentUpon>AldebaranPlus.tt</DependentUpon>
     </Compile>
     <Compile Include="CatalogoDet.cs">
-      <DependentUpon>BD_Aldebaran.tt</DependentUpon>
+      <DependentUpon>AldebaranPlus.tt</DependentUpon>
     </Compile>
     <Compile Include="Categoria.cs">
-      <DependentUpon>BD_Aldebaran.tt</DependentUpon>
+      <DependentUpon>AldebaranPlus.tt</DependentUpon>
     </Compile>
     <Compile Include="CategoriaCliente.cs">
-      <DependentUpon>BD_Aldebaran.tt</DependentUpon>
+      <DependentUpon>AldebaranPlus.tt</DependentUpon>
     </Compile>
     <Compile Include="CategoriaProveedor.cs">
-      <DependentUpon>BD_Aldebaran.tt</DependentUpon>
+      <DependentUpon>AldebaranPlus.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CBODetalle.cs">
+      <DependentUpon>AldebaranPlus.tt</DependentUpon>
     </Compile>
     <Compile Include="CierreCaja.cs">
-      <DependentUpon>BD_Aldebaran.tt</DependentUpon>
+      <DependentUpon>AldebaranPlus.tt</DependentUpon>
     </Compile>
     <Compile Include="Ciudad.cs">
-      <DependentUpon>BD_Aldebaran.tt</DependentUpon>
+      <DependentUpon>AldebaranPlus.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Clase.cs">
+      <DependentUpon>AldebaranPlus.tt</DependentUpon>
     </Compile>
     <Compile Include="Cliente.cs">
-      <DependentUpon>BD_Aldebaran.tt</DependentUpon>
+      <DependentUpon>AldebaranPlus.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ClienteCta.cs">
+      <DependentUpon>AldebaranPlus.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ClienteCtaDetalle.cs">
+      <DependentUpon>AldebaranPlus.tt</DependentUpon>
     </Compile>
     <Compile Include="ClienteEmail.cs">
-      <DependentUpon>BD_Aldebaran.tt</DependentUpon>
+      <DependentUpon>AldebaranPlus.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ClienteFlota.cs">
+      <DependentUpon>AldebaranPlus.tt</DependentUpon>
     </Compile>
     <Compile Include="ClienteInfoAdicional.cs">
-      <DependentUpon>BD_Aldebaran.tt</DependentUpon>
+      <DependentUpon>AldebaranPlus.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Color.cs">
+      <DependentUpon>AldebaranPlus.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Combo.cs">
+      <DependentUpon>AldebaranPlus.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ComboImagen.cs">
+      <DependentUpon>AldebaranPlus.tt</DependentUpon>
     </Compile>
     <Compile Include="Continente.cs">
-      <DependentUpon>BD_Aldebaran.tt</DependentUpon>
+      <DependentUpon>AldebaranPlus.tt</DependentUpon>
     </Compile>
     <Compile Include="Controllers\CtsCobrarController.cs" />
     <Compile Include="Controllers\FacturasController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\UsuariosController.cs" />
     <Compile Include="Controllers\ValuesController.cs" />
+    <Compile Include="Costo.cs">
+      <DependentUpon>AldebaranPlus.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CostoPlatillo.cs">
+      <DependentUpon>AldebaranPlus.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Credito.cs">
+      <DependentUpon>AldebaranPlus.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CreditoDetalle.cs">
+      <DependentUpon>AldebaranPlus.tt</DependentUpon>
+    </Compile>
     <Compile Include="CtasCobrar.cs">
-      <DependentUpon>BD_Aldebaran.tt</DependentUpon>
+      <DependentUpon>AldebaranPlus.tt</DependentUpon>
     </Compile>
     <Compile Include="CtasPagar.cs">
-      <DependentUpon>BD_Aldebaran.tt</DependentUpon>
+      <DependentUpon>AldebaranPlus.tt</DependentUpon>
     </Compile>
     <Compile Include="DCDetalle.cs">
-      <DependentUpon>BD_Aldebaran.tt</DependentUpon>
+      <DependentUpon>AldebaranPlus.tt</DependentUpon>
     </Compile>
     <Compile Include="Denominacion.cs">
-      <DependentUpon>BD_Aldebaran.tt</DependentUpon>
+      <DependentUpon>AldebaranPlus.tt</DependentUpon>
     </Compile>
     <Compile Include="DesgloceRubro.cs">
-      <DependentUpon>BD_Aldebaran.tt</DependentUpon>
+      <DependentUpon>AldebaranPlus.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DetalleApertura.cs">
+      <DependentUpon>AldebaranPlus.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DetDispensadorIslero.cs">
+      <DependentUpon>AldebaranPlus.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DetUsuarioDespacho.cs">
+      <DependentUpon>AldebaranPlus.tt</DependentUpon>
     </Compile>
     <Compile Include="DevCompra.cs">
-      <DependentUpon>BD_Aldebaran.tt</DependentUpon>
+      <DependentUpon>AldebaranPlus.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DevTHabiente.cs">
+      <DependentUpon>AldebaranPlus.tt</DependentUpon>
     </Compile>
     <Compile Include="DevVenta.cs">
-      <DependentUpon>BD_Aldebaran.tt</DependentUpon>
+      <DependentUpon>AldebaranPlus.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Dispensador.cs">
+      <DependentUpon>AldebaranPlus.tt</DependentUpon>
     </Compile>
     <Compile Include="Documento.cs">
-      <DependentUpon>BD_Aldebaran.tt</DependentUpon>
+      <DependentUpon>AldebaranPlus.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DTHDetalle.cs">
+      <DependentUpon>AldebaranPlus.tt</DependentUpon>
     </Compile>
     <Compile Include="DVDetalle.cs">
-      <DependentUpon>BD_Aldebaran.tt</DependentUpon>
+      <DependentUpon>AldebaranPlus.tt</DependentUpon>
     </Compile>
     <Compile Include="Empleado.cs">
-      <DependentUpon>BD_Aldebaran.tt</DependentUpon>
+      <DependentUpon>AldebaranPlus.tt</DependentUpon>
     </Compile>
     <Compile Include="EmpleadoRubro.cs">
-      <DependentUpon>BD_Aldebaran.tt</DependentUpon>
+      <DependentUpon>AldebaranPlus.tt</DependentUpon>
     </Compile>
     <Compile Include="Empresa.cs">
-      <DependentUpon>BD_Aldebaran.tt</DependentUpon>
+      <DependentUpon>AldebaranPlus.tt</DependentUpon>
     </Compile>
     <Compile Include="Estacion.cs">
-      <DependentUpon>BD_Aldebaran.tt</DependentUpon>
+      <DependentUpon>AldebaranPlus.tt</DependentUpon>
     </Compile>
     <Compile Include="Fabricante.cs">
-      <DependentUpon>BD_Aldebaran.tt</DependentUpon>
+      <DependentUpon>AldebaranPlus.tt</DependentUpon>
     </Compile>
     <Compile Include="FactCompra.cs">
-      <DependentUpon>BD_Aldebaran.tt</DependentUpon>
+      <DependentUpon>AldebaranPlus.tt</DependentUpon>
+    </Compile>
+    <Compile Include="FacturaDocumentoDigital.cs">
+      <DependentUpon>AldebaranPlus.tt</DependentUpon>
     </Compile>
     <Compile Include="FactVenta.cs">
-      <DependentUpon>BD_Aldebaran.tt</DependentUpon>
+      <DependentUpon>AldebaranPlus.tt</DependentUpon>
     </Compile>
     <Compile Include="FCDetalle.cs">
-      <DependentUpon>BD_Aldebaran.tt</DependentUpon>
+      <DependentUpon>AldebaranPlus.tt</DependentUpon>
     </Compile>
     <Compile Include="FlujoDinero.cs">
-      <DependentUpon>BD_Aldebaran.tt</DependentUpon>
+      <DependentUpon>AldebaranPlus.tt</DependentUpon>
     </Compile>
     <Compile Include="FormaPago.cs">
-      <DependentUpon>BD_Aldebaran.tt</DependentUpon>
+      <DependentUpon>AldebaranPlus.tt</DependentUpon>
     </Compile>
     <Compile Include="FVDetalle.cs">
-      <DependentUpon>BD_Aldebaran.tt</DependentUpon>
+      <DependentUpon>AldebaranPlus.tt</DependentUpon>
     </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Grupo.cs">
-      <DependentUpon>BD_Aldebaran.tt</DependentUpon>
+      <DependentUpon>AldebaranPlus.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Guarnicion.cs">
+      <DependentUpon>AldebaranPlus.tt</DependentUpon>
     </Compile>
     <Compile Include="Impuesto.cs">
-      <DependentUpon>BD_Aldebaran.tt</DependentUpon>
+      <DependentUpon>AldebaranPlus.tt</DependentUpon>
     </Compile>
     <Compile Include="ImpuestoRetencion.cs">
-      <DependentUpon>BD_Aldebaran.tt</DependentUpon>
+      <DependentUpon>AldebaranPlus.tt</DependentUpon>
     </Compile>
     <Compile Include="ImpuestoTarifa.cs">
-      <DependentUpon>BD_Aldebaran.tt</DependentUpon>
+      <DependentUpon>AldebaranPlus.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Ingredientes.cs">
+      <DependentUpon>AldebaranPlus.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Institucion.cs">
+      <DependentUpon>AldebaranPlus.tt</DependentUpon>
+    </Compile>
+    <Compile Include="InstitucionBono.cs">
+      <DependentUpon>AldebaranPlus.tt</DependentUpon>
     </Compile>
     <Compile Include="Inventario.cs">
-      <DependentUpon>BD_Aldebaran.tt</DependentUpon>
+      <DependentUpon>AldebaranPlus.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Islero.cs">
+      <DependentUpon>AldebaranPlus.tt</DependentUpon>
     </Compile>
     <Compile Include="Kardex.cs">
-      <DependentUpon>BD_Aldebaran.tt</DependentUpon>
+      <DependentUpon>AldebaranPlus.tt</DependentUpon>
+    </Compile>
+    <Compile Include="LogBD.cs">
+      <DependentUpon>AldebaranPlus.tt</DependentUpon>
     </Compile>
     <Compile Include="Marca.cs">
-      <DependentUpon>BD_Aldebaran.tt</DependentUpon>
+      <DependentUpon>AldebaranPlus.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Marca1.cs">
+      <DependentUpon>AldebaranPlus.tt</DependentUpon>
     </Compile>
     <Compile Include="Medida.cs">
-      <DependentUpon>BD_Aldebaran.tt</DependentUpon>
+      <DependentUpon>AldebaranPlus.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MensajeApp.cs">
+      <DependentUpon>AldebaranPlus.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Mesa.cs">
+      <DependentUpon>AldebaranPlus.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Modelo.cs">
+      <DependentUpon>AldebaranPlus.tt</DependentUpon>
     </Compile>
     <Compile Include="Modulo.cs">
-      <DependentUpon>BD_Aldebaran.tt</DependentUpon>
+      <DependentUpon>AldebaranPlus.tt</DependentUpon>
     </Compile>
     <Compile Include="MotivoMovInv.cs">
-      <DependentUpon>BD_Aldebaran.tt</DependentUpon>
+      <DependentUpon>AldebaranPlus.tt</DependentUpon>
     </Compile>
     <Compile Include="MovInvCab.cs">
-      <DependentUpon>BD_Aldebaran.tt</DependentUpon>
+      <DependentUpon>AldebaranPlus.tt</DependentUpon>
     </Compile>
     <Compile Include="MovInvDet.cs">
-      <DependentUpon>BD_Aldebaran.tt</DependentUpon>
+      <DependentUpon>AldebaranPlus.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MSpeer_conflictdetectionconfigrequest.cs">
+      <DependentUpon>AldebaranPlus.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MSpeer_conflictdetectionconfigresponse.cs">
+      <DependentUpon>AldebaranPlus.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MSpeer_lsns.cs">
+      <DependentUpon>AldebaranPlus.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MSpeer_originatorid_history.cs">
+      <DependentUpon>AldebaranPlus.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MSpeer_request.cs">
+      <DependentUpon>AldebaranPlus.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MSpeer_response.cs">
+      <DependentUpon>AldebaranPlus.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MSpeer_topologyrequest.cs">
+      <DependentUpon>AldebaranPlus.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MSpeer_topologyresponse.cs">
+      <DependentUpon>AldebaranPlus.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MSpub_identity_range.cs">
+      <DependentUpon>AldebaranPlus.tt</DependentUpon>
     </Compile>
     <Compile Include="Objetos.cs">
-      <DependentUpon>BD_Aldebaran.tt</DependentUpon>
+      <DependentUpon>AldebaranPlus.tt</DependentUpon>
+    </Compile>
+    <Compile Include="OrdenPDetalle.cs">
+      <DependentUpon>AldebaranPlus.tt</DependentUpon>
+    </Compile>
+    <Compile Include="OrdenPreparacion.cs">
+      <DependentUpon>AldebaranPlus.tt</DependentUpon>
     </Compile>
     <Compile Include="Pais.cs">
-      <DependentUpon>BD_Aldebaran.tt</DependentUpon>
+      <DependentUpon>AldebaranPlus.tt</DependentUpon>
     </Compile>
     <Compile Include="Parametros.cs">
-      <DependentUpon>BD_Aldebaran.tt</DependentUpon>
+      <DependentUpon>AldebaranPlus.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Parametros1.cs">
+      <DependentUpon>AldebaranPlus.tt</DependentUpon>
     </Compile>
     <Compile Include="ParametrosGlobales.cs">
-      <DependentUpon>BD_Aldebaran.tt</DependentUpon>
+      <DependentUpon>AldebaranPlus.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Pedido.cs">
+      <DependentUpon>AldebaranPlus.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PedidoDetalle.cs">
+      <DependentUpon>AldebaranPlus.tt</DependentUpon>
     </Compile>
     <Compile Include="Perfil.cs">
-      <DependentUpon>BD_Aldebaran.tt</DependentUpon>
+      <DependentUpon>AldebaranPlus.tt</DependentUpon>
     </Compile>
     <Compile Include="Permisos.cs">
-      <DependentUpon>BD_Aldebaran.tt</DependentUpon>
+      <DependentUpon>AldebaranPlus.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Platillo.cs">
+      <DependentUpon>AldebaranPlus.tt</DependentUpon>
     </Compile>
     <Compile Include="Presentacion.cs">
-      <DependentUpon>BD_Aldebaran.tt</DependentUpon>
+      <DependentUpon>AldebaranPlus.tt</DependentUpon>
     </Compile>
     <Compile Include="Producto.cs">
-      <DependentUpon>BD_Aldebaran.tt</DependentUpon>
+      <DependentUpon>AldebaranPlus.tt</DependentUpon>
     </Compile>
     <Compile Include="ProductoImagen.cs">
-      <DependentUpon>BD_Aldebaran.tt</DependentUpon>
+      <DependentUpon>AldebaranPlus.tt</DependentUpon>
     </Compile>
     <Compile Include="ProductoInfoAdicional.cs">
-      <DependentUpon>BD_Aldebaran.tt</DependentUpon>
+      <DependentUpon>AldebaranPlus.tt</DependentUpon>
     </Compile>
     <Compile Include="ProductoUnidad.cs">
-      <DependentUpon>BD_Aldebaran.tt</DependentUpon>
+      <DependentUpon>AldebaranPlus.tt</DependentUpon>
     </Compile>
     <Compile Include="ProformaVta.cs">
-      <DependentUpon>BD_Aldebaran.tt</DependentUpon>
+      <DependentUpon>AldebaranPlus.tt</DependentUpon>
     </Compile>
     <Compile Include="ProformaVtaDet.cs">
-      <DependentUpon>BD_Aldebaran.tt</DependentUpon>
+      <DependentUpon>AldebaranPlus.tt</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Proveedor.cs">
-      <DependentUpon>BD_Aldebaran.tt</DependentUpon>
+      <DependentUpon>AldebaranPlus.tt</DependentUpon>
     </Compile>
     <Compile Include="ProveedorEmail.cs">
-      <DependentUpon>BD_Aldebaran.tt</DependentUpon>
+      <DependentUpon>AldebaranPlus.tt</DependentUpon>
     </Compile>
     <Compile Include="ProveedorInfoAdicional.cs">
-      <DependentUpon>BD_Aldebaran.tt</DependentUpon>
+      <DependentUpon>AldebaranPlus.tt</DependentUpon>
     </Compile>
     <Compile Include="PuntoVenta.cs">
-      <DependentUpon>BD_Aldebaran.tt</DependentUpon>
+      <DependentUpon>AldebaranPlus.tt</DependentUpon>
     </Compile>
     <Compile Include="RegionMundo.cs">
-      <DependentUpon>BD_Aldebaran.tt</DependentUpon>
+      <DependentUpon>AldebaranPlus.tt</DependentUpon>
+    </Compile>
+    <Compile Include="RetencionC.cs">
+      <DependentUpon>AldebaranPlus.tt</DependentUpon>
+    </Compile>
+    <Compile Include="RetencionCDet.cs">
+      <DependentUpon>AldebaranPlus.tt</DependentUpon>
+    </Compile>
+    <Compile Include="RetencionDocumentoDigital.cs">
+      <DependentUpon>AldebaranPlus.tt</DependentUpon>
+    </Compile>
+    <Compile Include="RetencionV.cs">
+      <DependentUpon>AldebaranPlus.tt</DependentUpon>
+    </Compile>
+    <Compile Include="RetencionVDet.cs">
+      <DependentUpon>AldebaranPlus.tt</DependentUpon>
     </Compile>
     <Compile Include="RolPagos.cs">
-      <DependentUpon>BD_Aldebaran.tt</DependentUpon>
+      <DependentUpon>AldebaranPlus.tt</DependentUpon>
     </Compile>
     <Compile Include="RolPagosIndividual.cs">
-      <DependentUpon>BD_Aldebaran.tt</DependentUpon>
+      <DependentUpon>AldebaranPlus.tt</DependentUpon>
     </Compile>
     <Compile Include="Rpt_AperturaCajaUsuario_Result.cs">
-      <DependentUpon>BD_Aldebaran.tt</DependentUpon>
+      <DependentUpon>AldebaranPlus.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Rpt_CierreCajaJ_Result.cs">
+      <DependentUpon>AldebaranPlus.tt</DependentUpon>
     </Compile>
     <Compile Include="Rpt_CierreCajaUsuario_Result.cs">
-      <DependentUpon>BD_Aldebaran.tt</DependentUpon>
+      <DependentUpon>AldebaranPlus.tt</DependentUpon>
     </Compile>
     <Compile Include="Rpt_Factura_Result.cs">
-      <DependentUpon>BD_Aldebaran.tt</DependentUpon>
+      <DependentUpon>AldebaranPlus.tt</DependentUpon>
     </Compile>
     <Compile Include="Rpt_MovInventario_Result.cs">
-      <DependentUpon>BD_Aldebaran.tt</DependentUpon>
+      <DependentUpon>AldebaranPlus.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Rpt_OrdenPrepAracion_Result.cs">
+      <DependentUpon>AldebaranPlus.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Rpt_OrdenPreperacion_Result.cs">
+      <DependentUpon>AldebaranPlus.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Rpt_Pedido_Result.cs">
+      <DependentUpon>AldebaranPlus.tt</DependentUpon>
     </Compile>
     <Compile Include="Rpt_Proforma_Result.cs">
-      <DependentUpon>BD_Aldebaran.tt</DependentUpon>
+      <DependentUpon>AldebaranPlus.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Rpt_Sel_FElectronica_Result.cs">
+      <DependentUpon>AldebaranPlus.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Rpt_Sel_RElectronica_Result.cs">
+      <DependentUpon>AldebaranPlus.tt</DependentUpon>
     </Compile>
     <Compile Include="Rpt_SubAperturaCajaUsuarioDetRubro_Result.cs">
-      <DependentUpon>BD_Aldebaran.tt</DependentUpon>
+      <DependentUpon>AldebaranPlus.tt</DependentUpon>
     </Compile>
     <Compile Include="Rpt_SubAperturaCajaUsuarioDet_Result.cs">
-      <DependentUpon>BD_Aldebaran.tt</DependentUpon>
+      <DependentUpon>AldebaranPlus.tt</DependentUpon>
     </Compile>
     <Compile Include="Rpt_SubCierreCajaUsuarioDetRubro_Result.cs">
-      <DependentUpon>BD_Aldebaran.tt</DependentUpon>
+      <DependentUpon>AldebaranPlus.tt</DependentUpon>
     </Compile>
     <Compile Include="Rpt_SubCierreCajaUsuarioDet_Result.cs">
-      <DependentUpon>BD_Aldebaran.tt</DependentUpon>
+      <DependentUpon>AldebaranPlus.tt</DependentUpon>
     </Compile>
     <Compile Include="Rpt_SubCierreCajaUsuario_Result.cs">
-      <DependentUpon>BD_Aldebaran.tt</DependentUpon>
+      <DependentUpon>AldebaranPlus.tt</DependentUpon>
     </Compile>
     <Compile Include="Rpt_TransaccionesUsuario_Result.cs">
-      <DependentUpon>BD_Aldebaran.tt</DependentUpon>
+      <DependentUpon>AldebaranPlus.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Rpt_VentasxUsuario_Result.cs">
+      <DependentUpon>AldebaranPlus.tt</DependentUpon>
     </Compile>
     <Compile Include="Rpt_Ventas_Result.cs">
-      <DependentUpon>BD_Aldebaran.tt</DependentUpon>
+      <DependentUpon>AldebaranPlus.tt</DependentUpon>
     </Compile>
     <Compile Include="Rubro.cs">
-      <DependentUpon>BD_Aldebaran.tt</DependentUpon>
+      <DependentUpon>AldebaranPlus.tt</DependentUpon>
     </Compile>
     <Compile Include="RubroCaja.cs">
-      <DependentUpon>BD_Aldebaran.tt</DependentUpon>
+      <DependentUpon>AldebaranPlus.tt</DependentUpon>
     </Compile>
     <Compile Include="Sector.cs">
-      <DependentUpon>BD_Aldebaran.tt</DependentUpon>
+      <DependentUpon>AldebaranPlus.tt</DependentUpon>
     </Compile>
-    <Compile Include="Sel_AllSucursal_Result.cs">
-      <DependentUpon>BD_Aldebaran.tt</DependentUpon>
+    <Compile Include="secuencia2_Result.cs">
+      <DependentUpon>AldebaranPlus.tt</DependentUpon>
     </Compile>
     <Compile Include="Sel_AperturaCaja_Result.cs">
-      <DependentUpon>BD_Aldebaran.tt</DependentUpon>
+      <DependentUpon>AldebaranPlus.tt</DependentUpon>
     </Compile>
     <Compile Include="Sel_CategoriaCliente_Result.cs">
-      <DependentUpon>BD_Aldebaran.tt</DependentUpon>
+      <DependentUpon>AldebaranPlus.tt</DependentUpon>
     </Compile>
     <Compile Include="Sel_CategoriaProveedor_Result.cs">
-      <DependentUpon>BD_Aldebaran.tt</DependentUpon>
+      <DependentUpon>AldebaranPlus.tt</DependentUpon>
     </Compile>
     <Compile Include="Sel_Categoria_Result.cs">
-      <DependentUpon>BD_Aldebaran.tt</DependentUpon>
+      <DependentUpon>AldebaranPlus.tt</DependentUpon>
     </Compile>
     <Compile Include="Sel_Ciudad_Result.cs">
-      <DependentUpon>BD_Aldebaran.tt</DependentUpon>
+      <DependentUpon>AldebaranPlus.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Sel_ClienteCtas_Result.cs">
+      <DependentUpon>AldebaranPlus.tt</DependentUpon>
     </Compile>
     <Compile Include="Sel_ClienteEmail_Result.cs">
-      <DependentUpon>BD_Aldebaran.tt</DependentUpon>
+      <DependentUpon>AldebaranPlus.tt</DependentUpon>
     </Compile>
     <Compile Include="Sel_ClienteInfoAdicional_Result.cs">
-      <DependentUpon>BD_Aldebaran.tt</DependentUpon>
+      <DependentUpon>AldebaranPlus.tt</DependentUpon>
     </Compile>
     <Compile Include="Sel_Cliente_Result.cs">
-      <DependentUpon>BD_Aldebaran.tt</DependentUpon>
+      <DependentUpon>AldebaranPlus.tt</DependentUpon>
     </Compile>
     <Compile Include="Sel_Continente_Result.cs">
-      <DependentUpon>BD_Aldebaran.tt</DependentUpon>
+      <DependentUpon>AldebaranPlus.tt</DependentUpon>
     </Compile>
     <Compile Include="Sel_Denominacion_Result.cs">
-      <DependentUpon>BD_Aldebaran.tt</DependentUpon>
+      <DependentUpon>AldebaranPlus.tt</DependentUpon>
     </Compile>
     <Compile Include="Sel_DesgloceRubro_Result.cs">
-      <DependentUpon>BD_Aldebaran.tt</DependentUpon>
+      <DependentUpon>AldebaranPlus.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Sel_DetDisIslero_Result.cs">
+      <DependentUpon>AldebaranPlus.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Sel_Dispensador_Result.cs">
+      <DependentUpon>AldebaranPlus.tt</DependentUpon>
     </Compile>
     <Compile Include="Sel_Documento_Result.cs">
-      <DependentUpon>BD_Aldebaran.tt</DependentUpon>
+      <DependentUpon>AldebaranPlus.tt</DependentUpon>
     </Compile>
     <Compile Include="Sel_Empresa_Result.cs">
-      <DependentUpon>BD_Aldebaran.tt</DependentUpon>
+      <DependentUpon>AldebaranPlus.tt</DependentUpon>
     </Compile>
     <Compile Include="Sel_Estacion_Result.cs">
-      <DependentUpon>BD_Aldebaran.tt</DependentUpon>
+      <DependentUpon>AldebaranPlus.tt</DependentUpon>
     </Compile>
     <Compile Include="Sel_Fabricante_Result.cs">
-      <DependentUpon>BD_Aldebaran.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Sel_FacCV_Result.cs">
-      <DependentUpon>BD_Aldebaran.tt</DependentUpon>
+      <DependentUpon>AldebaranPlus.tt</DependentUpon>
     </Compile>
     <Compile Include="Sel_FormaPago_Result.cs">
-      <DependentUpon>BD_Aldebaran.tt</DependentUpon>
+      <DependentUpon>AldebaranPlus.tt</DependentUpon>
     </Compile>
     <Compile Include="Sel_Grupo_Result.cs">
-      <DependentUpon>BD_Aldebaran.tt</DependentUpon>
+      <DependentUpon>AldebaranPlus.tt</DependentUpon>
     </Compile>
     <Compile Include="Sel_ImpuestoRetencion_Result.cs">
-      <DependentUpon>BD_Aldebaran.tt</DependentUpon>
+      <DependentUpon>AldebaranPlus.tt</DependentUpon>
     </Compile>
     <Compile Include="Sel_ImpuestoTarifa_Result.cs">
-      <DependentUpon>BD_Aldebaran.tt</DependentUpon>
+      <DependentUpon>AldebaranPlus.tt</DependentUpon>
     </Compile>
     <Compile Include="Sel_Impuesto_Result.cs">
-      <DependentUpon>BD_Aldebaran.tt</DependentUpon>
+      <DependentUpon>AldebaranPlus.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Sel_Institucion_Result.cs">
+      <DependentUpon>AldebaranPlus.tt</DependentUpon>
     </Compile>
     <Compile Include="Sel_Inventario_Result.cs">
-      <DependentUpon>BD_Aldebaran.tt</DependentUpon>
+      <DependentUpon>AldebaranPlus.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Sel_Islero_Result.cs">
+      <DependentUpon>AldebaranPlus.tt</DependentUpon>
     </Compile>
     <Compile Include="Sel_Marca_Result.cs">
-      <DependentUpon>BD_Aldebaran.tt</DependentUpon>
+      <DependentUpon>AldebaranPlus.tt</DependentUpon>
     </Compile>
     <Compile Include="Sel_Medida_Result.cs">
-      <DependentUpon>BD_Aldebaran.tt</DependentUpon>
+      <DependentUpon>AldebaranPlus.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Sel_Mesero_Result.cs">
+      <DependentUpon>AldebaranPlus.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Sel_MinMax_Result.cs">
+      <DependentUpon>AldebaranPlus.tt</DependentUpon>
     </Compile>
     <Compile Include="Sel_Modulo_Result.cs">
-      <DependentUpon>BD_Aldebaran.tt</DependentUpon>
+      <DependentUpon>AldebaranPlus.tt</DependentUpon>
     </Compile>
     <Compile Include="Sel_MotivoMovInv_Result.cs">
-      <DependentUpon>BD_Aldebaran.tt</DependentUpon>
+      <DependentUpon>AldebaranPlus.tt</DependentUpon>
     </Compile>
     <Compile Include="Sel_MovInvCab_Result.cs">
-      <DependentUpon>BD_Aldebaran.tt</DependentUpon>
+      <DependentUpon>AldebaranPlus.tt</DependentUpon>
     </Compile>
     <Compile Include="Sel_MovInvDet_Result.cs">
-      <DependentUpon>BD_Aldebaran.tt</DependentUpon>
+      <DependentUpon>AldebaranPlus.tt</DependentUpon>
     </Compile>
     <Compile Include="Sel_Objeto_Result.cs">
-      <DependentUpon>BD_Aldebaran.tt</DependentUpon>
+      <DependentUpon>AldebaranPlus.tt</DependentUpon>
     </Compile>
     <Compile Include="Sel_Pais_Result.cs">
-      <DependentUpon>BD_Aldebaran.tt</DependentUpon>
+      <DependentUpon>AldebaranPlus.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Sel_Parametro1_Result.cs">
+      <DependentUpon>AldebaranPlus.tt</DependentUpon>
     </Compile>
     <Compile Include="Sel_Parametro_Result.cs">
-      <DependentUpon>BD_Aldebaran.tt</DependentUpon>
+      <DependentUpon>AldebaranPlus.tt</DependentUpon>
     </Compile>
     <Compile Include="Sel_Perfil_Result.cs">
-      <DependentUpon>BD_Aldebaran.tt</DependentUpon>
+      <DependentUpon>AldebaranPlus.tt</DependentUpon>
     </Compile>
     <Compile Include="Sel_Permisos_Result.cs">
-      <DependentUpon>BD_Aldebaran.tt</DependentUpon>
+      <DependentUpon>AldebaranPlus.tt</DependentUpon>
     </Compile>
     <Compile Include="Sel_Presentacion_Result.cs">
-      <DependentUpon>BD_Aldebaran.tt</DependentUpon>
+      <DependentUpon>AldebaranPlus.tt</DependentUpon>
     </Compile>
-    <Compile Include="Sel_ProdSotckBajo_Result.cs">
-      <DependentUpon>BD_Aldebaran.tt</DependentUpon>
+    <Compile Include="Sel_Producto1_Result.cs">
+      <DependentUpon>AldebaranPlus.tt</DependentUpon>
     </Compile>
     <Compile Include="Sel_ProductoInfoAdicional_Result.cs">
-      <DependentUpon>BD_Aldebaran.tt</DependentUpon>
+      <DependentUpon>AldebaranPlus.tt</DependentUpon>
     </Compile>
     <Compile Include="Sel_ProductoNew_Result.cs">
-      <DependentUpon>BD_Aldebaran.tt</DependentUpon>
+      <DependentUpon>AldebaranPlus.tt</DependentUpon>
     </Compile>
     <Compile Include="Sel_Producto_Result.cs">
-      <DependentUpon>BD_Aldebaran.tt</DependentUpon>
+      <DependentUpon>AldebaranPlus.tt</DependentUpon>
     </Compile>
     <Compile Include="Sel_ProveedorEmail_Result.cs">
-      <DependentUpon>BD_Aldebaran.tt</DependentUpon>
+      <DependentUpon>AldebaranPlus.tt</DependentUpon>
     </Compile>
     <Compile Include="Sel_ProveedorInfoAdicional_Result.cs">
-      <DependentUpon>BD_Aldebaran.tt</DependentUpon>
+      <DependentUpon>AldebaranPlus.tt</DependentUpon>
     </Compile>
     <Compile Include="Sel_Proveedor_Result.cs">
-      <DependentUpon>BD_Aldebaran.tt</DependentUpon>
+      <DependentUpon>AldebaranPlus.tt</DependentUpon>
     </Compile>
     <Compile Include="Sel_PuntoVenta_Result.cs">
-      <DependentUpon>BD_Aldebaran.tt</DependentUpon>
+      <DependentUpon>AldebaranPlus.tt</DependentUpon>
     </Compile>
     <Compile Include="Sel_RegionMundo_Result.cs">
-      <DependentUpon>BD_Aldebaran.tt</DependentUpon>
+      <DependentUpon>AldebaranPlus.tt</DependentUpon>
     </Compile>
     <Compile Include="Sel_RegularizarCostos_Result.cs">
-      <DependentUpon>BD_Aldebaran.tt</DependentUpon>
+      <DependentUpon>AldebaranPlus.tt</DependentUpon>
     </Compile>
-    <Compile Include="Sel_ResProdSotckBajo_Result.cs">
-      <DependentUpon>BD_Aldebaran.tt</DependentUpon>
+    <Compile Include="Sel_Retenciones_Result.cs">
+      <DependentUpon>AldebaranPlus.tt</DependentUpon>
     </Compile>
     <Compile Include="Sel_RubroFlujoCaja_Result.cs">
-      <DependentUpon>BD_Aldebaran.tt</DependentUpon>
+      <DependentUpon>AldebaranPlus.tt</DependentUpon>
     </Compile>
     <Compile Include="Sel_Rubro_Result.cs">
-      <DependentUpon>BD_Aldebaran.tt</DependentUpon>
+      <DependentUpon>AldebaranPlus.tt</DependentUpon>
     </Compile>
     <Compile Include="Sel_Sector_Result.cs">
-      <DependentUpon>BD_Aldebaran.tt</DependentUpon>
+      <DependentUpon>AldebaranPlus.tt</DependentUpon>
     </Compile>
     <Compile Include="Sel_Stock_Result.cs">
-      <DependentUpon>BD_Aldebaran.tt</DependentUpon>
+      <DependentUpon>AldebaranPlus.tt</DependentUpon>
     </Compile>
     <Compile Include="Sel_SubGrupo_Result.cs">
-      <DependentUpon>BD_Aldebaran.tt</DependentUpon>
+      <DependentUpon>AldebaranPlus.tt</DependentUpon>
     </Compile>
     <Compile Include="Sel_SubModulo_Result.cs">
-      <DependentUpon>BD_Aldebaran.tt</DependentUpon>
+      <DependentUpon>AldebaranPlus.tt</DependentUpon>
     </Compile>
     <Compile Include="Sel_Sucursal_Result.cs">
-      <DependentUpon>BD_Aldebaran.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Sel_SumFacCV_Anos_Result.cs">
-      <DependentUpon>BD_Aldebaran.tt</DependentUpon>
+      <DependentUpon>AldebaranPlus.tt</DependentUpon>
     </Compile>
     <Compile Include="Sel_TipoDeducible_Result.cs">
-      <DependentUpon>BD_Aldebaran.tt</DependentUpon>
+      <DependentUpon>AldebaranPlus.tt</DependentUpon>
     </Compile>
     <Compile Include="Sel_TipoIdentificacion_Result.cs">
-      <DependentUpon>BD_Aldebaran.tt</DependentUpon>
+      <DependentUpon>AldebaranPlus.tt</DependentUpon>
     </Compile>
     <Compile Include="Sel_Unidad_Result.cs">
-      <DependentUpon>BD_Aldebaran.tt</DependentUpon>
+      <DependentUpon>AldebaranPlus.tt</DependentUpon>
     </Compile>
-    <Compile Include="Sel_UsuarioCajas_Result.cs">
-      <DependentUpon>BD_Aldebaran.tt</DependentUpon>
+    <Compile Include="Sel_UsuariosPVentas1_Result.cs">
+      <DependentUpon>AldebaranPlus.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Sel_UsuariosPVentas_Result.cs">
+      <DependentUpon>AldebaranPlus.tt</DependentUpon>
     </Compile>
     <Compile Include="Sel_Usuario_Result.cs">
-      <DependentUpon>BD_Aldebaran.tt</DependentUpon>
+      <DependentUpon>AldebaranPlus.tt</DependentUpon>
     </Compile>
-    <Compile Include="Sel_ValCajaPV_Result.cs">
-      <DependentUpon>BD_Aldebaran.tt</DependentUpon>
+    <Compile Include="Sociedad.cs">
+      <DependentUpon>AldebaranPlus.tt</DependentUpon>
+    </Compile>
+    <Compile Include="split_Result.cs">
+      <DependentUpon>AldebaranPlus.tt</DependentUpon>
     </Compile>
     <Compile Include="SubGrupo.cs">
-      <DependentUpon>BD_Aldebaran.tt</DependentUpon>
+      <DependentUpon>AldebaranPlus.tt</DependentUpon>
     </Compile>
     <Compile Include="SubModulo.cs">
-      <DependentUpon>BD_Aldebaran.tt</DependentUpon>
+      <DependentUpon>AldebaranPlus.tt</DependentUpon>
     </Compile>
     <Compile Include="Sucursal.cs">
-      <DependentUpon>BD_Aldebaran.tt</DependentUpon>
+      <DependentUpon>AldebaranPlus.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sysarticlecolumns.cs">
+      <DependentUpon>AldebaranPlus.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sysarticles.cs">
+      <DependentUpon>AldebaranPlus.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sysarticleupdates.cs">
+      <DependentUpon>AldebaranPlus.tt</DependentUpon>
     </Compile>
     <Compile Include="sysdiagrams.cs">
-      <DependentUpon>BD_Aldebaran.tt</DependentUpon>
+      <DependentUpon>AldebaranPlus.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sysextendedarticlesview.cs">
+      <DependentUpon>AldebaranPlus.tt</DependentUpon>
+    </Compile>
+    <Compile Include="syspublications.cs">
+      <DependentUpon>AldebaranPlus.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sysreplservers.cs">
+      <DependentUpon>AldebaranPlus.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sysschemaarticles.cs">
+      <DependentUpon>AldebaranPlus.tt</DependentUpon>
+    </Compile>
+    <Compile Include="syssubscriptions.cs">
+      <DependentUpon>AldebaranPlus.tt</DependentUpon>
+    </Compile>
+    <Compile Include="systranschemas.cs">
+      <DependentUpon>AldebaranPlus.tt</DependentUpon>
     </Compile>
     <Compile Include="Tarjeta.cs">
-      <DependentUpon>BD_Aldebaran.tt</DependentUpon>
+      <DependentUpon>AldebaranPlus.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TarjetaHabiente.cs">
+      <DependentUpon>AldebaranPlus.tt</DependentUpon>
+    </Compile>
+    <Compile Include="THDetalle.cs">
+      <DependentUpon>AldebaranPlus.tt</DependentUpon>
     </Compile>
     <Compile Include="TipoDeducible.cs">
-      <DependentUpon>BD_Aldebaran.tt</DependentUpon>
+      <DependentUpon>AldebaranPlus.tt</DependentUpon>
     </Compile>
     <Compile Include="TipoIdentificacion.cs">
-      <DependentUpon>BD_Aldebaran.tt</DependentUpon>
+      <DependentUpon>AldebaranPlus.tt</DependentUpon>
     </Compile>
     <Compile Include="Unidad.cs">
-      <DependentUpon>BD_Aldebaran.tt</DependentUpon>
+      <DependentUpon>AldebaranPlus.tt</DependentUpon>
     </Compile>
     <Compile Include="Usuario.cs">
-      <DependentUpon>BD_Aldebaran.tt</DependentUpon>
+      <DependentUpon>AldebaranPlus.tt</DependentUpon>
+    </Compile>
+    <Compile Include="UsuarioDespacho.cs">
+      <DependentUpon>AldebaranPlus.tt</DependentUpon>
+    </Compile>
+    <Compile Include="UsuarioSucursal.cs">
+      <DependentUpon>AldebaranPlus.tt</DependentUpon>
     </Compile>
     <Compile Include="vAperturaCajaCab.cs">
-      <DependentUpon>BD_Aldebaran.tt</DependentUpon>
+      <DependentUpon>AldebaranPlus.tt</DependentUpon>
     </Compile>
     <Compile Include="vAperturaCajaDet.cs">
-      <DependentUpon>BD_Aldebaran.tt</DependentUpon>
+      <DependentUpon>AldebaranPlus.tt</DependentUpon>
     </Compile>
     <Compile Include="vAperturaCajaDetRubro.cs">
-      <DependentUpon>BD_Aldebaran.tt</DependentUpon>
+      <DependentUpon>AldebaranPlus.tt</DependentUpon>
     </Compile>
     <Compile Include="vCierreCaja.cs">
-      <DependentUpon>BD_Aldebaran.tt</DependentUpon>
+      <DependentUpon>AldebaranPlus.tt</DependentUpon>
+    </Compile>
+    <Compile Include="vCliente.cs">
+      <DependentUpon>AldebaranPlus.tt</DependentUpon>
+    </Compile>
+    <Compile Include="vClienteCtas.cs">
+      <DependentUpon>AldebaranPlus.tt</DependentUpon>
+    </Compile>
+    <Compile Include="vClienteFull.cs">
+      <DependentUpon>AldebaranPlus.tt</DependentUpon>
     </Compile>
     <Compile Include="vCobros.cs">
-      <DependentUpon>BD_Aldebaran.tt</DependentUpon>
+      <DependentUpon>AldebaranPlus.tt</DependentUpon>
     </Compile>
     <Compile Include="vCompra.cs">
-      <DependentUpon>BD_Aldebaran.tt</DependentUpon>
+      <DependentUpon>AldebaranPlus.tt</DependentUpon>
     </Compile>
     <Compile Include="vCompraCab.cs">
-      <DependentUpon>BD_Aldebaran.tt</DependentUpon>
+      <DependentUpon>AldebaranPlus.tt</DependentUpon>
     </Compile>
     <Compile Include="vCompraCabFull.cs">
-      <DependentUpon>BD_Aldebaran.tt</DependentUpon>
+      <DependentUpon>AldebaranPlus.tt</DependentUpon>
+    </Compile>
+    <Compile Include="vDetDispensadeorIslero.cs">
+      <DependentUpon>AldebaranPlus.tt</DependentUpon>
+    </Compile>
+    <Compile Include="vDetDispensadorIslero.cs">
+      <DependentUpon>AldebaranPlus.tt</DependentUpon>
+    </Compile>
+    <Compile Include="vDispensadores.cs">
+      <DependentUpon>AldebaranPlus.tt</DependentUpon>
+    </Compile>
+    <Compile Include="vDistGeografica.cs">
+      <DependentUpon>AldebaranPlus.tt</DependentUpon>
+    </Compile>
+    <Compile Include="vDistGeograficaFull.cs">
+      <DependentUpon>AldebaranPlus.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Vehiculo.cs">
+      <DependentUpon>AldebaranPlus.tt</DependentUpon>
     </Compile>
     <Compile Include="vFlujoCaja.cs">
-      <DependentUpon>BD_Aldebaran.tt</DependentUpon>
+      <DependentUpon>AldebaranPlus.tt</DependentUpon>
+    </Compile>
+    <Compile Include="vIsleros.cs">
+      <DependentUpon>AldebaranPlus.tt</DependentUpon>
+    </Compile>
+    <Compile Include="vMinAndMax.cs">
+      <DependentUpon>AldebaranPlus.tt</DependentUpon>
     </Compile>
     <Compile Include="vNCCompras.cs">
-      <DependentUpon>BD_Aldebaran.tt</DependentUpon>
+      <DependentUpon>AldebaranPlus.tt</DependentUpon>
     </Compile>
     <Compile Include="vNCComprasCab.cs">
-      <DependentUpon>BD_Aldebaran.tt</DependentUpon>
+      <DependentUpon>AldebaranPlus.tt</DependentUpon>
     </Compile>
     <Compile Include="vNCVentas.cs">
-      <DependentUpon>BD_Aldebaran.tt</DependentUpon>
-    </Compile>
-    <Compile Include="vNCVentasCab.cs">
-      <DependentUpon>BD_Aldebaran.tt</DependentUpon>
+      <DependentUpon>AldebaranPlus.tt</DependentUpon>
     </Compile>
     <Compile Include="vPagos.cs">
-      <DependentUpon>BD_Aldebaran.tt</DependentUpon>
+      <DependentUpon>AldebaranPlus.tt</DependentUpon>
+    </Compile>
+    <Compile Include="vPedido.cs">
+      <DependentUpon>AldebaranPlus.tt</DependentUpon>
     </Compile>
     <Compile Include="vProformaVta.cs">
-      <DependentUpon>BD_Aldebaran.tt</DependentUpon>
+      <DependentUpon>AldebaranPlus.tt</DependentUpon>
     </Compile>
     <Compile Include="vProformaVtaCab.cs">
-      <DependentUpon>BD_Aldebaran.tt</DependentUpon>
+      <DependentUpon>AldebaranPlus.tt</DependentUpon>
+    </Compile>
+    <Compile Include="vProveedor.cs">
+      <DependentUpon>AldebaranPlus.tt</DependentUpon>
+    </Compile>
+    <Compile Include="vProveedorFull.cs">
+      <DependentUpon>AldebaranPlus.tt</DependentUpon>
+    </Compile>
+    <Compile Include="vRetencionCompra.cs">
+      <DependentUpon>AldebaranPlus.tt</DependentUpon>
+    </Compile>
+    <Compile Include="vRetencionDE.cs">
+      <DependentUpon>AldebaranPlus.tt</DependentUpon>
+    </Compile>
+    <Compile Include="vRetencionVenta.cs">
+      <DependentUpon>AldebaranPlus.tt</DependentUpon>
     </Compile>
     <Compile Include="vRolPagos.cs">
-      <DependentUpon>BD_Aldebaran.tt</DependentUpon>
+      <DependentUpon>AldebaranPlus.tt</DependentUpon>
     </Compile>
     <Compile Include="vRolPagosIndividual.cs">
-      <DependentUpon>BD_Aldebaran.tt</DependentUpon>
+      <DependentUpon>AldebaranPlus.tt</DependentUpon>
     </Compile>
     <Compile Include="vStock.cs">
-      <DependentUpon>BD_Aldebaran.tt</DependentUpon>
+      <DependentUpon>AldebaranPlus.tt</DependentUpon>
+    </Compile>
+    <Compile Include="vTarjetaHabiente.cs">
+      <DependentUpon>AldebaranPlus.tt</DependentUpon>
     </Compile>
     <Compile Include="vTransaccion.cs">
-      <DependentUpon>BD_Aldebaran.tt</DependentUpon>
+      <DependentUpon>AldebaranPlus.tt</DependentUpon>
     </Compile>
     <Compile Include="vTransaccionEgreso.cs">
-      <DependentUpon>BD_Aldebaran.tt</DependentUpon>
+      <DependentUpon>AldebaranPlus.tt</DependentUpon>
     </Compile>
     <Compile Include="vTransaccionIngreso.cs">
-      <DependentUpon>BD_Aldebaran.tt</DependentUpon>
+      <DependentUpon>AldebaranPlus.tt</DependentUpon>
     </Compile>
     <Compile Include="vVenta.cs">
-      <DependentUpon>BD_Aldebaran.tt</DependentUpon>
+      <DependentUpon>AldebaranPlus.tt</DependentUpon>
     </Compile>
     <Compile Include="vVentaCab.cs">
-      <DependentUpon>BD_Aldebaran.tt</DependentUpon>
+      <DependentUpon>AldebaranPlus.tt</DependentUpon>
     </Compile>
     <Compile Include="vVentaCabFull.cs">
-      <DependentUpon>BD_Aldebaran.tt</DependentUpon>
+      <DependentUpon>AldebaranPlus.tt</DependentUpon>
+    </Compile>
+    <Compile Include="vVentaFFE.cs">
+      <DependentUpon>AldebaranPlus.tt</DependentUpon>
+    </Compile>
+    <Compile Include="vVentaTH.cs">
+      <DependentUpon>AldebaranPlus.tt</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="AldebaranPlus.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>AldebaranPlus.edmx</DependentUpon>
+      <LastGenOutput>AldebaranPlus.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="AldebaranPlus.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>AldebaranPlus.edmx</DependentUpon>
+      <LastGenOutput>AldebaranPlus.cs</LastGenOutput>
+    </Content>
     <Content Include="Areas\HelpPage\HelpPage.css" />
-    <Content Include="BD_Aldebaran.Context.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>BD_Aldebaran.edmx</DependentUpon>
-      <LastGenOutput>BD_Aldebaran.Context.cs</LastGenOutput>
-    </Content>
-    <Content Include="BD_Aldebaran.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>BD_Aldebaran.edmx</DependentUpon>
-      <LastGenOutput>BD_Aldebaran.cs</LastGenOutput>
-    </Content>
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
@@ -788,20 +1076,23 @@
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <EntityDeploy Include="BD_Aldebaran.edmx">
+    <EntityDeploy Include="AldebaranPlus.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>BD_Aldebaran.Designer.cs</LastGenOutput>
+      <LastGenOutput>AldebaranPlus.Designer.cs</LastGenOutput>
     </EntityDeploy>
-    <Content Include="BD_Aldebaran.edmx.diagram">
-      <DependentUpon>BD_Aldebaran.edmx</DependentUpon>
+    <Content Include="AldebaranPlus.edmx.diagram">
+      <DependentUpon>AldebaranPlus.edmx</DependentUpon>
     </Content>
+    <None Include="Properties\PublishProfiles\FolderProfile.pubxml" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.3.1.js" />
     <Content Include="Scripts\jquery-3.3.1.min.js" />
     <Content Include="Scripts\jquery-3.3.1.slim.js" />
     <Content Include="Scripts\jquery-3.3.1.slim.min.js" />
     <Content Include="Scripts\modernizr-2.8.3.js" />
-    <Content Include="Web.config" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </Content>
